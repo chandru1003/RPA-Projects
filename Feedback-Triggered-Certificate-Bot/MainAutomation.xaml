@@ -106,7 +106,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow is designed to automate email-related tasks, specifically monitoring and processing incoming emails. It uses the &quot;Get IMAP Mail Messages&quot; activity to retrieve email messages, and then it processes these messages, extracting important information for further actions. This automation can be customized to handle tasks such as email filtering, content analysis, and notification&#xA;" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="500,2249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow is designed to automate email-related tasks, specifically monitoring and processing incoming emails. It uses the &quot;Get IMAP Mail Messages&quot; activity to retrieve email messages, and then it processes these messages, extracting important information for further actions. This automation can be customized to handle tasks such as email filtering, content analysis, and notification&#xA;" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="500,2430" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="outputmail" />
       <Variable x:TypeArguments="sd:DataTable" Name="MailDT" />
@@ -266,5 +266,6 @@
         </Sequence>
       </If.Else>
     </If>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,141" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Mail Automation done&quot;]" />
   </Sequence>
 </Activity>
