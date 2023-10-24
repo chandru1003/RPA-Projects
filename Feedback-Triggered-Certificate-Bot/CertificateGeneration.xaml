@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,998</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>700,1870</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CertificateGeneration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -92,20 +92,21 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="450,933" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="572,1805" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CertificateContent" />
       <Variable x:TypeArguments="x:String" Name="outputMailDT" />
+      <Variable x:TypeArguments="x:String" Name="outputDirectory" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;CertificateGeneration has started &quot;]" />
-    <ui:OutputDataTable DataTable="[In_mailDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputMailDT]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[outputMailDT]" />
-    <ui:ReadTextFile File="{x:Null}" Content="[CertificateContent]" DisplayName="Read Text File" FileName="Feedback-Triggered-Certificate-Bot\Student certificate.pdf" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;CertificateGeneration has started &quot;]" />
+    <ui:OutputDataTable DataTable="[In_mailDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="510,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputMailDT]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[outputMailDT]" />
+    <ui:ReadTextFile File="{x:Null}" Content="[CertificateContent]" DisplayName="Read Text File" FileName="Feedback-Triggered-Certificate-Bot\Student certificate.pdf" sap:VirtualizedContainerService.HintSize="510,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -113,7 +114,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadTextFile>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Certificate Content&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Certificate Content&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,7 +122,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[CertificateContent]">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[CertificateContent]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,5 +130,45 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </WriteLine>
+    <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[outputDirectory]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "\Certificate\"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDirectory]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_mailDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,529" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,343" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[CertificateContent]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[certificateContent.Replace("&lt;&lt;Student Name&gt;&gt;", row("Name").ToString)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString + &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[CertificateContent]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
   </Sequence>
 </Activity>
