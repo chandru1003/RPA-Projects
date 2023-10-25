@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,3789</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>700,3697</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CertificateGeneration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -137,7 +137,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="668,3724" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="668,3632" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CertificateContent" />
       <Variable x:TypeArguments="x:String" Name="outputMailDT" />
@@ -181,25 +181,6 @@
     <ui:OutputDataTable DataTable="[In_mailDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="606,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputMailDT]" />
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="606,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[outputMailDT]" />
     <p:DocumentReadText DisplayName="Read Text" FilePath="Feedback-Triggered-Certificate-Bot\Certificat.docx" sap:VirtualizedContainerService.HintSize="606,93" sap2010:WorkflowViewState.IdRef="DocumentReadText_1" Text="[CertificateContent]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="606,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,313" sap2010:WorkflowViewState.IdRef="Sequence_5">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadTextFile File="{x:Null}" Content="[CertificateContent]" DisplayName="Read Text File" FileName="Feedback-Triggered-Certificate-Bot\Certificat.doc" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-          <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="Feedback-Triggered-Certificate-Bot\Student certificate.pdf" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[CertificateContent]" />
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Certificate Content&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">

@@ -138,7 +138,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:GetIMAPMailMessages ClientVersion="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" ClientName="Chandru" DeleteMessages="False" DisplayName="Private: Get IMAP Mail Messages" Email="Chandrukongari@gmail.com" EnableSSL="True" FilterExpression="[&quot;SUBJECT &quot;&quot;Feedback&quot;&quot;&quot;]" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[outputmail]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Password="vfbz knyx imds bxmt" Port="993" SecureConnection="SslOnConnect" Server="imap.gmail.com" Top="30" />
+        <ui:GetIMAPMailMessages ClientVersion="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" ClientName="Chandru" DeleteMessages="False" DisplayName="Private: Get IMAP Mail Messages" EnableSSL="True" FilterExpression="[&quot;SUBJECT &quot;&quot;Feedback&quot;&quot;&quot;]" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[outputmail]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Port="993" SecureConnection="SslOnConnect" Server="imap.gmail.com" Top="30">
+          <ui:GetIMAPMailMessages.Email>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ui:GetIMAPMailMessages.Email>
+          <ui:GetIMAPMailMessages.Password>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ui:GetIMAPMailMessages.Password>
+        </ui:GetIMAPMailMessages>
       </TryCatch.Try>
       <TryCatch.Catches>
         <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
