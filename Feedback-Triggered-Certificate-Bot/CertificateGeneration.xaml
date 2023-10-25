@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="CertificateGeneration" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_mailDT" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="out_OutputDriectory" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,4264</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>710,4029</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CertificateGeneration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -136,7 +137,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="668,4199" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CertificateGeneration" sap:VirtualizedContainerService.HintSize="720,3964" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CertificateContent" />
       <Variable x:TypeArguments="x:String" Name="outputMailDT" />
@@ -148,9 +149,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;CertificateGeneration has started &quot;]" />
-    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[FolderExists]" sap:VirtualizedContainerService.HintSize="606,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Environment.CurrentDirectory+&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot;]" PathType="Folder" />
-    <If Condition="[FolderExists]" sap:VirtualizedContainerService.HintSize="606,1362" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="658,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;CertificateGeneration has started &quot;]" />
+    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[FolderExists]" sap:VirtualizedContainerService.HintSize="658,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Environment.CurrentDirectory+&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot;]" PathType="Folder" />
+    <If Condition="[FolderExists]" sap:VirtualizedContainerService.HintSize="658,1362" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence sap:VirtualizedContainerService.HintSize="376,650" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
@@ -177,10 +178,10 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:OutputDataTable DataTable="[In_mailDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="606,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputMailDT]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="606,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[outputMailDT]" />
-    <p:DocumentReadText DisplayName="Read Text" FilePath="Feedback-Triggered-Certificate-Bot\Certificat.docx" sap:VirtualizedContainerService.HintSize="606,93" sap2010:WorkflowViewState.IdRef="DocumentReadText_1" Text="[CertificateContent]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="606,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:OutputDataTable DataTable="[In_mailDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="658,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputMailDT]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="658,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[outputMailDT]" />
+    <p:DocumentReadText DisplayName="Read Text" FilePath="Feedback-Triggered-Certificate-Bot\Certificat.docx" sap:VirtualizedContainerService.HintSize="658,93" sap2010:WorkflowViewState.IdRef="DocumentReadText_1" Text="[CertificateContent]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="658,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,313" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
@@ -199,7 +200,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Certificate Content&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="658,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Certificate Content&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -207,7 +208,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="606,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[CertificateContent]">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="658,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[CertificateContent]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -215,7 +216,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </WriteLine>
-    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign sap:VirtualizedContainerService.HintSize="658,82" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[outputDirectory]</OutArgument>
       </Assign.To>
@@ -223,14 +224,14 @@
         <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, "Feedback-Triggered-Certificate-Bot","Certificate")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDirectory]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_mailDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1261" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="658,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDirectory]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_mailDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="658,904" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,1075" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="624,718" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="modifiedContent" />
             </Sequence.Variables>
@@ -239,87 +240,181 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,160" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[modifiedContent]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[CertificateContent.Replace("&lt;&lt;Student Name&gt;&gt;", row("Name").ToString)]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[modifiedContent]" />
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
-            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="Feedback-Triggered-Certificate-Bot\Certificat.docx" sap:VirtualizedContainerService.HintSize="530,424" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="Feedback-Triggered-Certificate-Bot\Certificat.docx" sap:VirtualizedContainerService.HintSize="582,630" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
               <p:WordApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WordDocument">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,314" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,520" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                    <p:WordSaveAs DisplayName="Save Document As" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="486,169" sap2010:WorkflowViewState.IdRef="WordSaveAs_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </p:WordSaveAs>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,200" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[row(&quot;Name&quot;).ToString]" ReplaceAll="True" Search="&lt;&lt;Student Name&gt;&gt;">
+                          <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3">
+                            <p:WordApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ui:WordDocument">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,426" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[row(&quot;Name&quot;).ToString]" ReplaceAll="True" Search="&lt;&lt;Student Name&gt;&gt;">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </p:WordReplaceText>
+                                  <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="WordExportToPdf_3" />
+                                </Sequence>
+                              </ActivityAction>
+                            </p:WordApplicationScope.Body>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                          </p:WordReplaceText>
+                          </p:WordApplicationScope>
+                          <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
+                            <p:WordApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ui:WordDocument">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,1182" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="Name" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[row("Name").ToString]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="532,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="532,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Created new file /name&quot; + Name]" />
+                                  <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="532,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_1" Replace="[Name]" Search="&lt;&lt;Student Name&gt;&gt;" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,354" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,275" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[Name]" ReplaceAll="True" Search="&lt;&lt;Student Name&gt;&gt;">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </p:WordReplaceText>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                  <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="532,111" sap2010:WorkflowViewState.IdRef="WordExportToPdf_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </p:WordExportToPdf>
+                                </Sequence>
+                              </ActivityAction>
+                            </p:WordApplicationScope.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </p:WordApplicationScope>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_mailDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,181" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="modifiedContent" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="434,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_3" Replace="[row(&quot;Name&quot;).ToString]" Search="&lt;&lt;Student Name&gt;&gt;" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEachRow>
                         </Sequence>
                       </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="WordExportToPdf_2" />
                   </Sequence>
                 </ActivityAction>
               </p:WordApplicationScope.Body>
-            </p:WordApplicationScope>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,323" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Path.Combine(outputDirectory, row(&quot;Name&quot;).ToString + &quot;.docx&quot;)]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[modifiedContent]" />
-                </Sequence>
-              </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
+            </p:WordApplicationScope>
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
@@ -330,5 +425,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="658,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[out_OutputDriectory]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[outputDirectory]</InArgument>
+      </Assign.Value>
+    </Assign>
   </Sequence>
 </Activity>

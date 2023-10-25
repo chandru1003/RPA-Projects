@@ -4,7 +4,6 @@
   "description": "Create a bot that automates the process of generating and sending certificates to individuals who have provided feedback via email. This project aims to streamline and personalize the certificate issuance process, making it more efficient and responsive.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.AdobePdfServices.IntegrationService.Activities": "[4.0.6]",
     "UiPath.DocumentUnderstanding.Activities": "[2.4.0]",
     "UiPath.Excel.Activities": "[2.22.1-preview]",
     "UiPath.Mail.Activities": "[1.20.3]",
