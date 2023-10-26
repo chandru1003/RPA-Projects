@@ -1,1 +1,17 @@
-# RPA-Projects
+# RPA Projects
+
+Welcome to the "RPA Projects" repository, where you can find a collection of my Robotic Process Automation (RPA) projects. Each project is designed to automate specific tasks and processes, making your work more efficient and error-free.
+
+
+## Projects
+
+### Project 1: [Feedback-Triggered-Certificate-Bot](Feedback-Triggered-Certificate-Bot)
+<p>A bot that automates the process of generating and sending certificates to individuals who have provided feedback via email. This project aims to streamline and personalize the certificate issuance process, making it more efficient and responsive.
+<p>
+
+
+### Installation
+- [UIPath Studio Community Edition](https://www.geeksforgeeks.org/how-to-install-uipath-studio-community-edition-for-robotics-process-automation/) 
+
+
+
