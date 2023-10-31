@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="testworkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="testworkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_MAilDT" Type="InArgument(sd:DataTable)" />
     <x:Property Name="In_OutDirectory" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>872,1784</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>700,1449</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>testworkflow_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -42,6 +42,7 @@
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,20 +109,25 @@
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="testworkflow" sap:VirtualizedContainerService.HintSize="882,1719" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="testworkflow" sap:VirtualizedContainerService.HintSize="548,1384" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="FileList" />
       <Variable x:TypeArguments="x:String" Name="outputDirectory" />
       <Variable x:TypeArguments="x:String" Name="Actuladate" />
+      <Variable x:TypeArguments="s:String[]" Name="DocsFilelist" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="820,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[outputdirectory]</OutArgument>
       </Assign.To>
@@ -129,26 +135,29 @@
         <InArgument x:TypeArguments="x:String">[In_OutDirectory]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="820,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDirectory]" />
-    <Assign sap:VirtualizedContainerService.HintSize="820,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDirectory]" />
+    <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
-        <OutArgument x:TypeArguments="x:Object">[acu]</OutArgument>
+        <OutArgument x:TypeArguments="x:String">[Actuladate]</OutArgument>
       </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">30-10-2023</InArgument>
+      </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_MAilDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="820,1183" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_MAilDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,53" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="786,997" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="780,1001" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="744,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" />
-            <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="744,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_1" Replace="[row(&quot;Name&quot;).ToString]" Search="&lt;&lt;Student Name&gt;&gt;">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="738,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" />
+            <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="738,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_1" Replace="[row(&quot;Name&quot;).ToString]" Search="&lt;&lt;Student Name&gt;&gt;">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,7 +165,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:DocumentReplaceText>
-            <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="744,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_2" Replace="[Actuladate.ToString]" Search="&lt;&lt;Date&gt;&gt;">
+            <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="738,93" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_2" Replace="[Actuladate.ToString]" Search="&lt;&lt;Date&gt;&gt;">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,20 +173,20 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:DocumentReplaceText>
-            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="744,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="744,332" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="738,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString +&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="738,333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
               <p:WordApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WordDocument">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,222" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,223" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+                    <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[Environment.CurrentDirectory +&quot;\Feedback-Triggered-Certificate-Bot\Certificate\&quot; +row(&quot;Name&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
                   </Sequence>
                 </ActivityAction>
               </p:WordApplicationScope.Body>
@@ -185,6 +194,51 @@
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[DocsFilelist]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(outputDirectory,"*.docx")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="486,628" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DocsFilelist]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,440" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[Path.GetExtension(item).ToLower =&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="410,352" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,169" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_9" />
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
   </Sequence>
 </Activity>
