@@ -1,0 +1,63 @@
+{
+  "name": "Customer Support Ticket Routing",
+  "projectId": "ed9a63b2-0737-4b72-a8d6-daf3e36c692c",
+  "description": "The Customer Support Ticket Routing project is designed to automate the classification and routing of customer support tickets based on their content. The system assigns tickets to the appropriate support teams or individuals for resolution.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.22.2]",
+    "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.System.Activities": "[23.10.2]",
+    "UiPath.Testing.Activities": "[23.10.0]",
+    "UiPath.UIAutomation.Activities": "[23.10.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "b2f99997-6b05-4020-ac22-cc583749ad25",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
