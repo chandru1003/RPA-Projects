@@ -4,8 +4,10 @@
   "description": "The Customer Support Ticket Routing project is designed to automate the classification and routing of customer support tickets based on their content. The system assigns tickets to the appropriate support teams or individuals for resolution.",
   "main": "Main.xaml",
   "dependencies": {
+    "System.Collections": "[4.3.0]",
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.Python.Activities": "[1.7.1]",
     "UiPath.System.Activities": "[23.10.2]",
     "UiPath.Testing.Activities": "[23.10.0]",
     "UiPath.UIAutomation.Activities": "[23.10.3]"
