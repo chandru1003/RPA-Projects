@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DataAnalysis" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="536,1127" sap2010:WorkflowViewState.IdRef="DataAnalysis_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DataAnalysis" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="644,1374" sap2010:WorkflowViewState.IdRef="DataAnalysis_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:acs="clr-namespace:Azure.Core.Serialization;assembly=Azure.Core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -34,6 +34,8 @@
       <x:String>UiPath.Python</x:String>
       <x:String>UiPath.Python.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Azure.Core.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -99,13 +101,18 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>Azure.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DataAnalysis" sap:VirtualizedContainerService.HintSize="546,1062" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DataAnalysis" sap:VirtualizedContainerService.HintSize="546,1309" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtSupportTickets" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="commonTaskTypes" />
       <Variable x:TypeArguments="x:String" Name="PreprocessedDescriptions" />
+      <Variable x:TypeArguments="x:String" Name="num" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="ticketDescriptionsList" />
+      <Variable x:TypeArguments="acs:JsonObjectSerializer" Name="jsonTicketDescriptions" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -123,25 +130,36 @@
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Identified Common Task Types: &quot; + String.Join(&quot;, &quot;, CommonTaskTypes)]" />
-    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="484,453" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\Users\Chandru\AppData\Local\Programs\Python\Python310\" TargetPlatform="x64" Version="Python &gt;=3.10" WorkingFolder="C:\GITREPO\RPA-Projects\Customer Support Ticket Routing\Customer Support Ticket Routing\Code">
+    <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:String)">[ticketDescriptionsList]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:String)">[dtSupportTickets.AsEnumerable().Select(Function(row) row("Ticket Description").ToString()).ToList()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="484,578" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\Chandru\AppData\Local\Programs\Python\Python310\python310.dll" Path="C:\Users\Chandru\AppData\Local\Programs\Python\Python310\" TargetPlatform="x64" Version="Python &gt;=3.10" WorkingFolder="C:\GITREPO\RPA-Projects\Customer Support Ticket Routing\Customer Support Ticket Routing\Code">
       <p:PythonScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,416" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,541" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="PreprocessedDescriptions" />
               <Variable x:TypeArguments="p:PythonObject" Name="NlpOutput" />
+              <Variable x:TypeArguments="p:PythonObject" Name="nlpScript" />
+              <Variable x:TypeArguments="x:String" Name="nlpTextOutput" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:LoadScript Code="{x:Null}" Result="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" ScriptFile="NLP.py" />
-            <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" Name="preprocess_text" Parameters="[dtSupportTickets.AsEnumerable().Select(Function(row) row(&quot;Ticket Description&quot;).ToString()).ToList()]" Result="[NlpOutput]" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[NlpOutput]" />
+            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[nlpScript]" ScriptFile="Code\NLP.py" />
+            <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" Instance="[nlpScript]" Name="preprocess_text" Parameters="[{Newtonsoft.Json.JsonConvert.SerializeObject(ticketDescriptionsList)}]" Result="[NlpOutput]" />
+            <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="GetObject`1_8" PythonObject="[NlpOutput]" Result="[nlpTextOutput]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[nlpTextOutput]" />
           </Sequence>
         </ActivityAction>
       </p:PythonScope.Body>

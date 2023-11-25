@@ -1,36 +1,35 @@
-import nltk
+import json
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 import string
 
-# Download NLTK resources (only need to run this once)
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+def preprocess_text(descriptions_json):
+    descriptions = json.loads(descriptions_json)
 
-def preprocess_text(description):
-    # Tokenize the text
-    words = word_tokenize(description)
+    preprocessed_texts = []
 
-    # Remove stop words
-    stop_words = set(stopwords.words('english'))
-    words = [word for word in words if word.lower() not in stop_words]
+    for description in descriptions:
+        # Tokenize the text
+        words = word_tokenize(description)
 
-    # Remove punctuation
-    words = [word for word in words if word not in string.punctuation]
+        # Remove stop words
+        stop_words = set(stopwords.words('english'))
+        words = [word for word in words if word.lower() not in stop_words]
 
-    # Perform stemming
-    porter_stemmer = PorterStemmer()
-    words = [porter_stemmer.stem(word) for word in words]
+        # Remove punctuations
+        words = [word for word in words if word not in string.punctuation]
 
-    # Perform lemmatization
-    lemmatizer = WordNetLemmatizer()
-    words = [lemmatizer.lemmatize(word) for word in words]
+        # Perform stemming
+        porter_stemmer = PorterStemmer()
+        words = [porter_stemmer.stem(word) for word in words]
 
-    # Join the processed words back into a string
-    processed_text = ' '.join(words)
+        # Perform lemmatization
+        lemmatizer = WordNetLemmatizer()
+        words = [lemmatizer.lemmatize(word) for word in words]
 
-    return processed_text
+        # Join the processed words back into a string
+        processed_text = ' '.join(words)
+        preprocessed_texts.append(processed_text)
 
-
+    return str(preprocessed_texts)
