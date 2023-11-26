@@ -1,17 +1,14 @@
 {
-  "name": "Customer Support Ticket Routing",
-  "projectId": "ed9a63b2-0737-4b72-a8d6-daf3e36c692c",
-  "description": "The Customer Support Ticket Routing project is designed to automate the classification and routing of customer support tickets based on their content. The system assigns tickets to the appropriate support teams or individuals for resolution.",
+  "name": "Routine IT Support Task Automation Bot",
+  "projectId": "1c9bd494-dc63-46a3-a605-638f0a090797",
+  "description": "Integrate RPA to handle routine IT tasks. By automating repetitive activities the It Helpdesk can operate more efficiently reducing manual workload and minimizing the risk of human error",
   "main": "Main.xaml",
   "dependencies": {
-    "System.Collections": "[4.3.0]",
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.Python.Activities": "1.7.1",
     "UiPath.System.Activities": "[23.10.2]",
     "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.3]",
-    "UiPath.WebAPI.Activities": "[1.18.0]"
+    "UiPath.UIAutomation.Activities": "[23.10.3]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -54,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "b2f99997-6b05-4020-ac22-cc583749ad25",
+      "uniqueId": "ac33574a-4b20-4470-b83c-610862e9b5ad",
       "input": [],
       "output": []
     }
