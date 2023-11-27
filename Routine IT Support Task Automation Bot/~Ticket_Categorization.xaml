@@ -101,6 +101,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Ticket_Categorization" sap:VirtualizedContainerService.HintSize="964,3889" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -115,6 +116,7 @@
       <Variable x:TypeArguments="x:String" Name="Designation" />
       <Variable x:TypeArguments="x:String" Name="techSwitch" />
       <Variable x:TypeArguments="x:String" Name="empName" />
+      <Variable x:TypeArguments="x:Int32" Name="empCount" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
