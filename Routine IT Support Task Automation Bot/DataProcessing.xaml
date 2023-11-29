@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DataProcessing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="644,1195" sap2010:WorkflowViewState.IdRef="DataProcessing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DataProcessing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="625,1754" sap2010:WorkflowViewState.IdRef="DataProcessing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -33,6 +33,7 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -94,7 +95,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow focuses on reading and preprocessing the customer support ticket data. It includes activities to read the CSV file, clean and preprocess text data, and store the processed data in a DataTable variable." DisplayName="DataProcessing" sap:VirtualizedContainerService.HintSize="623,1130" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow focuses on reading and preprocessing the customer support ticket data. It includes activities to read the CSV file, clean and preprocess text data, and store the processed data in a DataTable variable." DisplayName="DataProcessing" sap:VirtualizedContainerService.HintSize="623,1689" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="inpDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="processedDT" />
@@ -108,109 +109,64 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="561,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DataProcessing start&quot;]" />
     <ui:ReadCsvFile DataTable="[inpDT]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\input\customer_support_tickets.csv" sap:VirtualizedContainerService.HintSize="561,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-    <ui:FilterDataTable DataTable="[inpDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="561,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[processedDT]" SelectColumnsMode="Remove">
+    <ui:FilterDataTable DataTable="[inpDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="561,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[processedDT]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
-        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="16">
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket ID"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Customer Name"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Customer Email"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Customer Age"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Customer Gender"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Product Purchased"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Date of Purchase"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket Type"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket Subject"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket Description"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
             <ui:FilterOperationArgument.Column>
               <InArgument x:TypeArguments="x:String">["Ticket Status"]</InArgument>
             </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket Priority"]</InArgument>
-            </ui:FilterOperationArgument.Column>
-          </ui:FilterOperationArgument>
-          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-            <ui:FilterOperationArgument.Column>
-              <InArgument x:TypeArguments="x:String">["Ticket Channel"]</InArgument>
-            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["Closed"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
           </ui:FilterOperationArgument>
         </scg:List>
       </ui:FilterDataTable.Filters>
       <ui:FilterDataTable.SelectColumns>
-        <scg:List x:TypeArguments="InArgument" Capacity="4">
-          <x:Null />
+        <scg:List x:TypeArguments="InArgument" Capacity="16">
+          <InArgument x:TypeArguments="x:String">["Ticket ID"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Customer Name"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Customer Email"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Customer Gender"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Product Purchased"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Date of Purchase"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Type"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Subject"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Description"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Status"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Priority"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Channel"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["First Response Time"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
     <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[processedFileExists]" sap:VirtualizedContainerService.HintSize="561,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" PathType="File" />
-    <If Condition="[processedFileExists]" sap:VirtualizedContainerService.HintSize="561,52" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[processedFileExists]" sap:VirtualizedContainerService.HintSize="561,611" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="300,232" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap:VirtualizedContainerService.HintSize="376,349" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[processedFileExists]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;processed File Exists&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
+          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -218,7 +174,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_3" />
+        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
       </If.Else>
     </If>
     <ui:WriteCsvFile AddHeaders="True" DataTable="[processedDT]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="561,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
