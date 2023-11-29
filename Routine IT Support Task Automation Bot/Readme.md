@@ -22,6 +22,38 @@ This repository contains a dataset related to customer support tickets in an IT 
 5. **Ticket Escalation Handling:**
    - Develop a bot to analyze ticket details and automatically escalate tickets based on predefined criteria.
 
+### Ticket Categories and Assigned Designation
+
+The following ticket categories are defined along with their assigned Designation:
+- Designation: Technical Analyst
+   - Ticket Categories: {"Account access", "Peripheral compatibility", "Product recommendation"}
+
+- Designation: Software Engineer
+  - Ticket Categories: {"Software bug", "Product setup"}
+
+- Designation: Hardware Specialist
+  - Ticket Categories: {"Hardware issue"}
+
+- Designation: Network Engineer
+  - Ticket Categories: {"Network problem"}
+
+- Designation: Installation Expert
+   - Ticket Categories: {"Installation support"}
+
+- Designation: Peripheral Compatibility Specialist
+  - Ticket Categories: {"Peripheral compatibility"}
+
+- Designation: Product Recommendation Specialist
+  - Ticket Categories: {"Product recommendation"}
+
+- Designation: Refund and Payment Specialist
+  - Ticket Categories: {"Payment issue", "Refund request"}
+
+- Designation: Software Bug Analyst
+  - Ticket Categories: {"Software bug"}
+
+- Designation: Display and Product Setup Expert
+  - Ticket Categories: {"Display issue", "Product setup"}
 
 
 ## How to Use
