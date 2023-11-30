@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Ticket_Categorization" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,4452" sap2010:WorkflowViewState.IdRef="Ticket_Categorization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Ticket_Categorization" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="701,2454" sap2010:WorkflowViewState.IdRef="Ticket_Categorization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -125,7 +125,7 @@
       <Variable x:TypeArguments="x:String" Name="Subject" />
       <Variable x:TypeArguments="x:String" Name="switch" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="techanalystCurrentIndex" />
-      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="RefundandPaymentSpecialistCurrentIndex" />
       <Variable x:TypeArguments="x:String" Name="variable2" />
       <Variable x:TypeArguments="x:String" Name="variable3" />
     </Sequence.Variables>
@@ -156,7 +156,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[count &lt;9]" sap:VirtualizedContainerService.HintSize="688,2913" sap2010:WorkflowViewState.IdRef="If_17">
+            <If Condition="[count &lt;=2]" sap:VirtualizedContainerService.HintSize="688,2913" sap2010:WorkflowViewState.IdRef="If_17">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="654,2561" sap2010:WorkflowViewState.IdRef="Sequence_83">
                   <sap:WorkflowViewStateService.ViewState>
@@ -190,7 +190,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This is Network problem issue&quot;]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This is Network problem issue&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -198,7 +198,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_26">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[techSwitch]</OutArgument>
                         </Assign.To>
@@ -206,7 +206,7 @@
                           <InArgument x:TypeArguments="x:String">[row("Ticket Subject").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_69">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_69">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
                         </Assign.To>
@@ -214,7 +214,7 @@
                           <InArgument x:TypeArguments="x:String">Network Engineer</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_70">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_70">
                         <Assign.To>
                           <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
                         </Assign.To>
@@ -222,15 +222,15 @@
                           <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_14">
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_14">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="476,1329" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_69">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
                             </Sequence.Variables>
@@ -272,7 +272,7 @@
                                 <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;ul&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;&quot;&lt;/ul&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
                               <ui:SendMail.Files>
                                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                               </ui:SendMail.Files>
@@ -283,7 +283,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:SendMail>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
                             <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_83">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
@@ -292,7 +292,7 @@
                                 <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_75">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_75">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[networkCurrentIndex]</OutArgument>
                               </Assign.To>
@@ -306,7 +306,7 @@
                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_71" />
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_82">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_82">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                         </Assign.To>
@@ -396,7 +396,7 @@
                                 <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;ul&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xD;&#xA;&quot;&lt;/ul&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xD;&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
                               <ui:SendMail.Files>
                                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                               </ui:SendMail.Files>
@@ -407,7 +407,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:SendMail>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Access issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
                             <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_84">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
@@ -439,7 +439,131 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <ui:LogMessage x:Key="Refund request" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Refund request isuue&quot;]" />
+                    <Sequence x:Key="Refund request" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Refund request isuue&quot;]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_86">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">Refund and Payment Specialist</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_87">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Refund and Payment Specialist Current Index &quot; + RefundandPaymentSpecialistCurrentIndex.ToString]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="sd:DataRow">[designationWorkers( RefundandPaymentSpecialistCurrentIndex)]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_89">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_90">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_91">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_6" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                                <ui:SendMail.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                </ui:SendMail.Files>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:SendMail>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_92">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_93">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[RefundandPaymentSpecialistCurrentIndex]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[(RefundandPaymentSpecialistCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_87" />
+                          </If.Else>
+                        </If>
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_94">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
                     <ui:LogMessage x:Key="Cancellation request" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Cancellation request&quot;]" />
                     <ui:LogMessage x:Key="Product inquiry" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Product inquiry&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
@@ -480,6 +604,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\Customer_support_tickets_Output&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="649,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
   </Sequence>
 </Activity>
