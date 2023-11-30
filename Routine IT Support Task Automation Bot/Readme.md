@@ -24,17 +24,7 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 ### Ticket Categories and Assigned Designation
 
-The following ticket categories are defined along with their assigned Designation:
-- Designation: Technical Analyst
-   - Ticket Categories: {"Account access", "Peripheral compatibility", "Product recommendation"}
 
-- Designation: Software Engineer
-  - Ticket Categories: {"Software bug", "Product setup"}
-
-- Designation: Hardware Specialist
-  - Ticket Categories: {"Hardware issue"}
-
-- Designation: Network Engineer
   - Ticket Categories: {"Network problem"}
 
 - Designation: Installation Expert
@@ -53,7 +43,17 @@ The following ticket categories are defined along with their assigned Designatio
   - Ticket Categories: {"Software bug"}
 
 - Designation: Display and Product Setup Expert
-  - Ticket Categories: {"Display issue", "Product setup"}
+  - Ticket Categories: {"Display issue", "Product setup"}The following ticket categories are defined along with their assigned Designation:
+- Designation: Technical Analyst
+   - Ticket Categories: {"Account access", "Peripheral compatibility", "Product recommendation"}
+
+- Designation: Software Engineer
+  - Ticket Categories: {"Software bug", "Product setup"}
+
+- Designation: Hardware Specialist
+  - Ticket Categories: {"Hardware issue"}
+
+- Designation: Network Engineer
 
 
 ## How to Use

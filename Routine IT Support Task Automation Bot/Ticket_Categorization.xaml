@@ -108,7 +108,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Ticket_Categorization" sap:VirtualizedContainerService.HintSize="826,4387" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Ticket_Categorization" sap:VirtualizedContainerService.HintSize="888,6503" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTicketCategorizantion" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtTechnicalDept" />
@@ -134,18 +134,18 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="764,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket_Categorizantion start&quot;]" />
-    <ui:BuildDataTable DataTable="[dtTechnicalDept]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="764,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Gender&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Purchased&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Purchase&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Subject&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Description&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Status&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Resolution&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Priority&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Channel&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ReadCsvFile DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-    <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ticket Assigned To" DataTable="[dtTicketCategorizantion]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="764,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-    <ui:ReadCsvFile DataTable="[dtTechnicalDeptEmp]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\Input\TechnicalDepartment.csv" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTicketCategorizantion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="764,3187" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="826,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket_Categorizantion start&quot;]" />
+    <ui:BuildDataTable DataTable="[dtTechnicalDept]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="826,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Gender&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Purchased&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Purchase&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Subject&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Description&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Status&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Resolution&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Priority&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Channel&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ReadCsvFile DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="826,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ticket Assigned To" DataTable="[dtTicketCategorizantion]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="826,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:ReadCsvFile DataTable="[dtTechnicalDeptEmp]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\Input\TechnicalDepartment.csv" sap:VirtualizedContainerService.HintSize="826,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTicketCategorizantion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="649,1211" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="730,3001" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="615,1025" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="StrLength" />
               <Variable x:TypeArguments="x:Int32" Name="techLength" />
@@ -156,15 +156,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[count &lt;=2]" sap:VirtualizedContainerService.HintSize="688,2913" sap2010:WorkflowViewState.IdRef="If_17">
+            <If Condition="[count &lt;=30]" sap:VirtualizedContainerService.HintSize="573,937" sap2010:WorkflowViewState.IdRef="If_17">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="654,2561" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                <Sequence sap:VirtualizedContainerService.HintSize="539,585" sap2010:WorkflowViewState.IdRef="Sequence_83">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="612,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+                  <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_25">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[switch]</OutArgument>
                     </Assign.To>
@@ -172,7 +172,7 @@
                       <InArgument x:TypeArguments="x:String">[row("Ticket Subject").ToString.Trim]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[switch]" sap:VirtualizedContainerService.HintSize="612,2351" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[switch]" sap:VirtualizedContainerService.HintSize="497,375" sap2010:WorkflowViewState.IdRef="Switch`1_4">
                     <Switch.Default>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No mail Sent&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
@@ -315,10 +315,10 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <Sequence x:Key="Account access" sap:VirtualizedContainerService.HintSize="572,2079" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                    <Sequence x:Key="Account access" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_85">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -564,15 +564,379 @@
                         </Assign>
                       </Sequence>
                     </Sequence>
-                    <ui:LogMessage x:Key="Cancellation request" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Cancellation request&quot;]" />
-                    <ui:LogMessage x:Key="Product inquiry" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Product inquiry&quot;]">
+                    <Sequence x:Key="Peripheral compatibility" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_94">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Peripheral compatibility&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_104">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Technical Analyst</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_105">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_48" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tech analyst Current Index &quot; + techanalystCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_106">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(techanalystCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_107">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_108">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_109">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_8" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_49" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_110">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_111">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[techanalystCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(techanalystCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_96" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_112">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Product recommendation" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_101">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Product inquiry&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_113">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Technical Analyst</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_114">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_52" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tech analyst Current Index &quot; + techanalystCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_115">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(techanalystCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_116">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_117">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_118">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_9" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_53" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_119">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_120">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[techanalystCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(techanalystCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_99" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_121">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Payment issue" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_105">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Refund request isuue&quot;]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_122">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">Refund and Payment Specialist</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_123">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_55" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Refund and Payment Specialist Current Index &quot; + RefundandPaymentSpecialistCurrentIndex.ToString]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_124">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="sd:DataRow">[designationWorkers( RefundandPaymentSpecialistCurrentIndex)]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_125">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_126">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_127">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="Chandrukongari@gmail.com" EnableSSL="True" From="Chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_10" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="just nwdm pmzm vkhz" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                                <ui:SendMail.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                </ui:SendMail.Files>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:SendMail>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_56" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_128">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_129">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[RefundandPaymentSpecialistCurrentIndex]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[(RefundandPaymentSpecialistCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_103" />
+                          </If.Else>
+                        </If>
+                        <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_130">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
                   </Switch>
                 </Sequence>
               </If.Then>
@@ -604,6 +968,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="649,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="826,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
   </Sequence>
 </Activity>
