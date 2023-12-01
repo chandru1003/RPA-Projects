@@ -24,33 +24,18 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 ### Ticket Categories and Assigned Designation
 
-- Designation: Installation Expert
-   - Ticket Categories: {"Installation support"}
+| S. No. | Designation                          | Ticket Categories                                       |
+|--------|--------------------------------------|---------------------------------------------------------|
+| 1      | Installation Expert                  | {"Installation support"}                                |
+| 2      | Peripheral Compatibility Specialist | {"Peripheral compatibility"}                           |
+| 3      | Product Recommendation Specialist    | {"Product recommendation"}                              |
+| 4      | Refund and Payment Specialist        | {"Payment issue", "Refund request"}                     |
+| 5      | Display and Product Setup Expert     | {"Display issue", "Product setup"}                      |
+| 6      | Technical Analyst                    | {"Account access"}                                      |
+| 7      | Software Engineer                    | {"Software bug", "Product setup"}                       |
+| 8      | Hardware Specialist                  | {"Hardware issue"}                                      |
+| 9      | Network Engineer                      | {"Network problem"}                                     |
 
-- Designation: Peripheral Compatibility Specialist
-  - Ticket Categories: {"Peripheral compatibility"}
-
-- Designation: Product Recommendation Specialist
-  - Ticket Categories: {"Product recommendation"}
-
-- Designation: Refund and Payment Specialist
-  - Ticket Categories: {"Payment issue", "Refund request"}
-
-- Designation: Software Bug Analyst
-  - Ticket Categories: {"Software bug"}
-
-- Designation: Display and Product Setup Expert
-  - Ticket Categories: {"Display issue", "Product setup"}The following ticket categories are defined along with their assigned Designation:
-- Designation: Technical Analyst
-   - Ticket Categories: {"Account access", "Peripheral compatibility", "Product recommendation"}
-
-- Designation: Software Engineer
-  - Ticket Categories: {"Software bug", "Product setup"}
-
-- Designation: Hardware Specialist
-  - Ticket Categories: {"Hardware issue"}
-
-- Designation: Network Engineer
 
 
 ## How to Use
