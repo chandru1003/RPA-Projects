@@ -24,9 +24,6 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 ### Ticket Categories and Assigned Designation
 
-
-  - Ticket Categories: {"Network problem"}
-
 - Designation: Installation Expert
    - Ticket Categories: {"Installation support"}
 
