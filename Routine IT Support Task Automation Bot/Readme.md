@@ -24,17 +24,20 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 ### Ticket Categories and Assigned Designation
 
+
 | S. No. | Designation                          | Ticket Categories                                       |
 |--------|--------------------------------------|---------------------------------------------------------|
 | 1      | Installation Expert                  | {"Installation support"}                                |
 | 2      | Peripheral Compatibility Specialist | {"Peripheral compatibility"}                           |
 | 3      | Product Recommendation Specialist    | {"Product recommendation"}                              |
-| 4      | Refund and Payment Specialist        | {"Payment issue", "Refund request"}                     |
+| 4      | Refund and Payment Specialist        | {"Payment issue", "Refund request"}     |
 | 5      | Display and Product Setup Expert     | {"Display issue", "Product setup"}                      |
-| 6      | Technical Analyst                    | {"Account access"}                                      |
-| 7      | Software Engineer                    | {"Software bug", "Product setup"}                       |
-| 8      | Hardware Specialist                  | {"Hardware issue"}                                      |
+| 6      | Technical Analyst                    | {"Account access", "Product Compatibility"}             |
+| 7      | Software Engineer                    | {"Software bug","Data loss"}                       |
+| 8      | Hardware Specialist                  | {"Hardware issue","Battery life"}          |
 | 9      | Network Engineer                      | {"Network problem"}                                     |
+| 10     | General Specialist                   | {"Delivery problem", "Cancellation request"}            |
+
 
 
 

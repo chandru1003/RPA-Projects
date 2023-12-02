@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Ticket_Categorization" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="878,2475" sap2010:WorkflowViewState.IdRef="Ticket_Categorization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Ticket_Categorization" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,4761" sap2010:WorkflowViewState.IdRef="Ticket_Categorization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -108,7 +108,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Ticket_Categorization" sap:VirtualizedContainerService.HintSize="711,2433" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Ticket_Categorization" sap:VirtualizedContainerService.HintSize="826,4718" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTicketCategorizantion" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtTechnicalDept" />
@@ -126,50 +126,42 @@
       <Variable x:TypeArguments="x:String" Name="switch" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="techanalystCurrentIndex" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="RefundandPaymentSpecialistCurrentIndex" />
-      <Variable x:TypeArguments="x:String" Name="smtppassword">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">femz fnxx euqr gbmb</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="username">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Chandrukongari@gmail.com</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="fromName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Chandru</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="PeripheralCompatibilityCurrentIndex">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="femz fnxx euqr gbmb" Name="smtppassword" />
+      <Variable x:TypeArguments="x:String" Default="Chandrukongari@gmail.com" Name="username" />
+      <Variable x:TypeArguments="x:String" Default="Chandru" Name="fromName" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="PeripheralCompatibilityCurrentIndex" />
       <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
-      <Variable x:TypeArguments="x:Int32" Name="ProductRecommendationCurrentIndex">
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="ProductRecommendationCurrentIndex" />
+      <Variable x:TypeArguments="x:Int32" Name="DisplayProductSetupCurrentIndex">
         <Variable.Default>
           <Literal x:TypeArguments="x:Int32" />
         </Variable.Default>
       </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="SoftwareEngineerCurrentIndex" />
+      <Variable x:TypeArguments="x:Int32" Name="HardwareSpecialistCurrentIndex">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="GeneralRequestsCurrentIndex" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="649,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket_Categorizantion start&quot;]" />
-    <ui:BuildDataTable DataTable="[dtTechnicalDept]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="649,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Gender&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Purchased&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Purchase&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Subject&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Description&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Status&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Resolution&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Priority&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Channel&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ReadCsvFile DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="649,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-    <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ticket Assigned To" DataTable="[dtTicketCategorizantion]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="649,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-    <ui:ReadCsvFile DataTable="[dtTechnicalDeptEmp]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\Input\TechnicalDepartment.csv" sap:VirtualizedContainerService.HintSize="649,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTicketCategorizantion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="649,1233" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="764,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket_Categorizantion start&quot;]" />
+    <ui:BuildDataTable DataTable="[dtTechnicalDept]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="764,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Gender&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Purchased&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Purchase&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Subject&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Description&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Status&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Resolution&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Priority&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ticket_x0020_Channel&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ReadCsvFile DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[&quot;Data\Processed\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ticket Assigned To" DataTable="[dtTicketCategorizantion]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="764,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:ReadCsvFile DataTable="[dtTechnicalDeptEmp]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\Input\Employee_details.csv" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTicketCategorizantion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="764,3518" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="615,1047" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="730,3332" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="StrLength" />
               <Variable x:TypeArguments="x:Int32" Name="techLength" />
@@ -180,15 +172,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[count &lt;=50]" sap:VirtualizedContainerService.HintSize="573,959" sap2010:WorkflowViewState.IdRef="If_17">
+            <If Condition="[count &lt;=100]" sap:VirtualizedContainerService.HintSize="688,3244" sap2010:WorkflowViewState.IdRef="If_17">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="539,607" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                <Sequence sap:VirtualizedContainerService.HintSize="654,2892" sap2010:WorkflowViewState.IdRef="Sequence_83">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+                  <Assign sap:VirtualizedContainerService.HintSize="612,82" sap2010:WorkflowViewState.IdRef="Assign_25">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[switch]</OutArgument>
                     </Assign.To>
@@ -196,25 +188,41 @@
                       <InArgument x:TypeArguments="x:String">[row("Ticket Subject").ToString.Trim]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[switch]" sap:VirtualizedContainerService.HintSize="497,397" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[switch]" sap:VirtualizedContainerService.HintSize="612,2682" sap2010:WorkflowViewState.IdRef="Switch`1_4">
                     <Switch.Default>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No mail Sent&quot;]">
+                      <Sequence sap:VirtualizedContainerService.HintSize="496,374" sap2010:WorkflowViewState.IdRef="Sequence_133">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </ui:LogMessage>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No mail Sent&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_212">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Object">["No mail sent"]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
                     </Switch.Default>
-                    <Sequence x:Key="Network problem" sap:VirtualizedContainerService.HintSize="572,2290" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                    <Sequence x:Key="Network problem" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_37">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This is Network problem issue&quot;]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This is Network problem issue&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -222,7 +230,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_26">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[techSwitch]</OutArgument>
                         </Assign.To>
@@ -230,7 +238,7 @@
                           <InArgument x:TypeArguments="x:String">[row("Ticket Subject").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_69">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_69">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
                         </Assign.To>
@@ -238,7 +246,7 @@
                           <InArgument x:TypeArguments="x:String">Network Engineer</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_70">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_70">
                         <Assign.To>
                           <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
                         </Assign.To>
@@ -246,10 +254,10 @@
                           <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_14">
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_14">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -330,7 +338,7 @@
                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_71" />
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_82">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_82">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                         </Assign.To>
@@ -346,10 +354,10 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Account access  isuue&quot;]">
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Account access  issue&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -835,8 +843,8 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Payment issue &quot;]" />
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_122">
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Payment issue &quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_122">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
                         </Assign.To>
@@ -844,7 +852,7 @@
                           <InArgument x:TypeArguments="x:String">Refund and Payment Specialist</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_123">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_123">
                         <Assign.To>
                           <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
                         </Assign.To>
@@ -852,10 +860,10 @@
                           <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_22">
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_22">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -936,7 +944,7 @@
                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_103" />
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_130">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_130">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                         </Assign.To>
@@ -945,17 +953,13 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <Sequence x:Key="Installation support" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_107">
+                    <Sequence x:Key="Installation support" sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_107">
                       <Sequence.Variables>
-                        <Variable x:TypeArguments="x:Int32" Name="installationExpertCurrentIndex">
-                          <Variable.Default>
-                            <Literal x:TypeArguments="x:Int32" />
-                          </Variable.Default>
-                        </Variable>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -993,7 +997,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_58" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Installation support Current Index &quot; + installationExpertCurrentIndex.ToString]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_58" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Installation Expert Current Index &quot; + installationExpertCurrentIndex.ToString]" />
                             <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_133">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
@@ -1069,6 +1073,1125 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
+                    <Sequence x:Key="Display issue" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_60" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Display issue&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_140">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Display and Product Setup Expert"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_141">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_61" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Display and Product Setup Expert Current Index &quot; + DisplayProductSetupCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_142">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(DisplayProductSetupCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_143">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_144">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_145">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_12" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_62" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_146">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_147">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[DisplayProductSetupCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(DisplayProductSetupCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_148">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Product setup" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_63" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Product setup issue&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_149">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Display and Product Setup Expert"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_150">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_25">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_70" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Installation support Current Index &quot; + DisplayProductSetupCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_151">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(DisplayProductSetupCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_152">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_153">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_154">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_13" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_71" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_155">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_156">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[DisplayProductSetupCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(DisplayProductSetupCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_157">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Software bug" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_113">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_64" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Software bug  issue&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_158">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Software Engineer"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_159">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_65" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Software Engineer  Current Index &quot; + SoftwareEngineerCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_160">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(SoftwareEngineerCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_161">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_162">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_163">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_14" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_66" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_164">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_165">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[SoftwareEngineerCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(SoftwareEngineerCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_166">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Hardware issue" sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_67" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Hardware  issue&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_167">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Hardware Specialist"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_168">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_27">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_68" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Hardware Specialist Current Index &quot; + SoftwareEngineerCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_169">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(HardwareSpecialistCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_170">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_171">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_172">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_15" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_69" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_173">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_174">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[HardwareSpecialistCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(HardwareSpecialistCurrentIndex+ 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_175">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Battery life" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_72" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Battery life issue &quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_176">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Hardware Specialist"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_177">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1508" sap2010:WorkflowViewState.IdRef="If_28">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1326" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_77" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Hardware Specialist Current Index &quot; +HardwareSpecialistCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_178">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(HardwareSpecialistCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_179">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_180">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_181">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_16" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_78" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_182">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_183">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[HardwareSpecialistCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(HardwareSpecialistCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_125" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_184">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Product compatibility" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_73" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Product Compatibility isuue&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,81" sap2010:WorkflowViewState.IdRef="Assign_185">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Technical Analyst</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,81" sap2010:WorkflowViewState.IdRef="Assign_186">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1506" sap2010:WorkflowViewState.IdRef="If_29">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1324" sap2010:WorkflowViewState.IdRef="Sequence_122">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_79" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tech analyst Current Index &quot; + techanalystCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_187">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(techanalystCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_188">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_189">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_190">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_17" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_80" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_191">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_192">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[techanalystCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(techanalystCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_127" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_193">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Delivery problem" sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_74" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Delivery problem issue&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_194">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["General Request Specialist"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_195">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_30">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_75" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;General Requests  Current Index &quot; + GeneralRequestsCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_196">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(techanalystCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_197">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_198">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_199">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_18" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_76" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_200">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_201">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[GeneralRequestsCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(GeneralRequestsCurrentIndex+ 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_129" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_202">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Cancellation request" sap:VirtualizedContainerService.HintSize="572,2168" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_81" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Cancellation request issue&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_203">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["General Request Specialist"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_204">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_31">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_82" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;General Requests  Current Index &quot; + GeneralRequestsCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_205">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(techanalystCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_206">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_207">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_208">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_19" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_83" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_209">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_210">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[GeneralRequestsCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(GeneralRequestsCurrentIndex+ 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_132" />
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_211">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="Data loss" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="installationExpertCurrentIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_85" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Software bug  issue&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_213">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Designation]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["Software Engineer"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_214">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataRow[]">[designationWorkers]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataRow[]">[dtTechnicalDeptEmp.Select("Designation = '" &amp; Designation &amp; "'")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[designationWorkers.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="510,1510" sap2010:WorkflowViewState.IdRef="If_32">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,1328" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataRow" Name="AssignedEngineer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_86" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Software Engineer  Current Index &quot; + SoftwareEngineerCurrentIndex.ToString]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_215">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="sd:DataRow">[AssignedEngineer]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="sd:DataRow">[designationWorkers(SoftwareEngineerCurrentIndex)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_216">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Name").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_217">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empMail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Employee Email").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_218">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[empDesignation]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[AssignedEngineer("Designation").ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;p&gt;Dear Support team &quot; + empName + &quot;,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;There is a technical issue related to the ticket with the following details:&lt;/p&gt;&quot; +&#xA;&quot;&lt;ul&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket ID:&lt;/strong&gt; &quot; + row(&quot;Ticket ID&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Name:&lt;/strong&gt; &quot; + row(&quot;Customer Name&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Customer Email:&lt;/strong&gt; &quot; + row(&quot;Customer Email&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Product Purchased:&lt;/strong&gt; &quot; + row(&quot;Product Purchased&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Date of Purchase:&lt;/strong&gt; &quot; + row(&quot;Date of Purchase&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Subject:&lt;/strong&gt; &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Description:&lt;/strong&gt; &quot; + row(&quot;Ticket Description&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Status:&lt;/strong&gt; &quot; + row(&quot;Ticket Status&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Resolution:&lt;/strong&gt; &lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Priority:&lt;/strong&gt; &quot; + row(&quot;Ticket Priority&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;   &quot;&lt;li&gt;&lt;strong&gt;Ticket Channel:&lt;/strong&gt; &quot; + row(&quot;Ticket Channel&quot;).ToString + &quot;&lt;/li&gt;&quot; +&#xA;&quot;&lt;/ul&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you for your prompt attention to this matter.&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Best regards,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="SendMail_20" IgnoreCRL="False" IsBodyHtml="True" Name="[fromName]" Password="[smtppassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[row(&quot;Ticket Type&quot;).ToString +&quot;  Notification - &quot; + row(&quot;Ticket Subject&quot;).ToString + &quot; - Priority: &quot; + row(&quot;Ticket Priority&quot;).ToString]" To="[empMail]">
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_87" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[row(&quot;Ticket Subject&quot;).ToString + &quot; issue assigned  to &quot; +&quot;Mail sent to &quot;+ empName+ &quot; &quot;+ empDesignation + &quot; &quot;+ empMail]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_219">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[row("Ticket Assigned To")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[empName]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_220">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[SoftwareEngineerCurrentIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[(SoftwareEngineerCurrentIndex + 1) Mod designationWorkers.Length]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_221">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
                   </Switch>
                 </Sequence>
               </If.Then>
@@ -1100,6 +2223,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="649,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtTicketCategorizantion]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Output\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="764,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
   </Sequence>
 </Activity>
