@@ -1,11 +1,11 @@
-Ticket ID,Customer Name,Customer Email,Customer Gender,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time,Time to Resolution,Customer Satisfaction Rating
+﻿Ticket ID,Customer Name,Customer Email,Customer Gender,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time,Time to Resolution,Customer Satisfaction Rating
 1,Marisa Obrien,carrollallison@example.com,Other,GoPro Hero,22-03-2021,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 Your billing zip code is: 71701.
 
 We appreciate that you have requested a website address.
 
-Please double check your email address. I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Closed,Critical,Social media,01-06-2023 12:15,01-06-2023 16:45,4
+Please double check your email address. I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Critical,Social media,01-06-2023 12:15,,
 2,Jessica Rios,clarkeashley@example.com,Female,LG Smart TV,22-05-2021,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 If you need to change an existing product.
@@ -16,10 +16,10 @@ If The issue I'm facing is intermittent. Sometimes it works fine, but other time
 6,Rebecca Fleming,sheenasmith@example.com,Male,Microsoft Office,28-07-2020,Cancellation request,Payment issue,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. To remove the new {product_purch I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,,,
 7,Jacqueline Wright,donaldkeith@example.org,Other,Microsoft Surface,23-02-2020,Product inquiry,Refund request,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account?
 
-Solution 1 I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Critical,Social media,30-05-2023 10:32,,
+Solution 1 I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Critical,Social media,,,
 8,Denise Lee,joelwilliams@example.com,Male,Philips Hue Lights,09-08-2020,Refund request,Battery life,"I'm having an issue with the {product_purchased}. Please assist. (Thanks) I will contact all my suppliers and confirm.
 
-Please try and find out whether their inventory is currently stocked, or any other reason. I am I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Closed,Critical,Social media,31-05-2023 10:32,01-06-2023 10:32,3
+Please try and find out whether their inventory is currently stocked, or any other reason. I am I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Critical,Social media,,,
 9,Nicolas Wilson,joshua24@example.com,Other,Fitbit Versa Smartwatch,16-07-2020,Technical issue,Installation support,"I'm having an issue with the {product_purchased}. Please assist. Thank you.
 
 {product_purchased} is not the exact type you might prefer, they use the exact same method for different uses. Please help I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Social media,01-06-2023 10:32,,
@@ -118,7 +118,7 @@ Don't see my issue? Please contact me. I'm unable to find the option to perform 
 
 There are several packages that run in memory by default. These I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Medium,Chat,,,
 55,Carrie Ayers,natasha18@example.com,Female,Microsoft Xbox Controller,14-10-2021,Technical issue,Network problem,"I've noticed a software bug in the {product_purchased} app. It's causing data loss and unexpected errors. How can I resolve this issue? For those who live in the U.S., you can use the {product_ I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Low,Chat,01-06-2023 07:25,,
-56,Sarah Cole,williamscynthia@example.org,Female,Nintendo Switch Pro Controller,19-11-2021,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist. The requested address will be returned within 3 ? 9 business days. Please do not hesitate to contact us using the appropriate form.
+56,Sarah Cole,williamscynthia@example.org,Female,Nintendo Switch Pro Controller,19-11-2021,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist. The requested address will be returned within 3 – 9 business days. Please do not hesitate to contact us using the appropriate form.
 
 (9 weeks from purchase time I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Critical,Chat,01-06-2023 11:14,,
 57,Alison Ford,mcgeebrandon@example.org,Male,Autodesk AutoCAD,22-12-2021,Technical issue,Software bug,I'm having an issue with the {product_purchased}. Please assist. I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.,Pending Customer Response,Medium,Social media,01-06-2023 10:33,,
@@ -424,11 +424,11 @@ Note: If you are using one of the many I've tried troubleshooting steps mentione
 196,Andre Jones,qfoster@example.org,Other,Nest Thermostat,11-06-2020,Refund request,Product compatibility,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue?
 
 I have setup a DNS server to determine if the requested service provider I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Open,High,Social media,,,
-197,Kelly Brown,steindanny@example.net,Female,HP Pavilion,08-08-2021,Refund request,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ?
+197,Kelly Brown,steindanny@example.net,Female,HP Pavilion,08-08-2021,Refund request,Display issue,"I'm having an issue with the {product_purchased}. Please assist. —
 
-?
+—
 
-My #1 goal is to have these items shipped by Dec 10th ? but there are three more problems with them. My email message I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Low,Social media,01-06-2023 18:04,,
+My #1 goal is to have these items shipped by Dec 10th — but there are three more problems with them. My email message I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Low,Social media,01-06-2023 18:04,,
 201,Michelle Miller,hthomas@example.com,Other,Asus ROG,13-01-2021,Product inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist.
 
 0 1
@@ -515,7 +515,7 @@ I'm having an issue with the (product_purchased). Please assist.
 
 This does not help me to continue to play the game I The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,High,Email,,,
 234,Rachel Jones,andrea53@example.org,Other,Bose SoundLink Speaker,01-02-2021,Refund request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. Thanks! I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,High,Chat,01-06-2023 13:13,,
-235,Ashley Wiggins,john06@example.org,Female,Dyson Vacuum Cleaner,29-03-2020,Cancellation request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. ?Please note that the manufacturer may want your name on the label in several cases. ?However, I never have, nor will I ever be used to I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Critical,Chat,,,
+235,Ashley Wiggins,john06@example.org,Female,Dyson Vacuum Cleaner,29-03-2020,Cancellation request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.  Please note that the manufacturer may want your name on the label in several cases.  However, I never have, nor will I ever be used to I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Critical,Chat,,,
 236,Ruth Fritz,williamnelson@example.net,Female,Canon EOS,04-12-2020,Billing inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. That's not right either; we don't offer any services to create or sell products without the consent of purchasers.
 
 What is My Account? I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Critical,Email,01-06-2023 05:47,,
@@ -524,7 +524,7 @@ What is My Account? I'm unable to find the option to perform the desired action 
 We've worked the hard in making your app available in all languages. You can download I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Critical,Email,01-06-2023 16:22,,
 240,Sara Meza,jonesvictoria@example.net,Male,Nest Thermostat,22-02-2020,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
-When you select the product on our site and click on the 'add to cart' button, it says: 'Sorry ? no product is found. Please I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Low,Email,,,
+When you select the product on our site and click on the 'add to cart' button, it says: 'Sorry – no product is found. Please I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Low,Email,,,
 243,Chelsea James,dana94@example.net,Male,Fitbit Charge,29-05-2021,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. If an order is made, please send me your name, email address & phone number so I can get in touch and get back to them. Thanks. You can I'm worried that the issue might be hardware-related and might require repair or replacement.",Open,Critical,Chat,,,
 244,Nicholas Scott,nicholaspacheco@example.org,Other,LG Washing Machine,21-05-2020,Technical issue,Delivery problem,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account? If your business is I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Critical,Chat,01-06-2023 06:35,,
 245,Kathleen Thornton,qburton@example.com,Female,Microsoft Office,15-01-2020,Cancellation request,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
@@ -543,7 +543,7 @@ I've been using the product for 2 months. I've bought it I'm using the original 
 
 
 3/28 The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Medium,Chat,01-06-2023 05:41,,
-248,Edward Bush,clarkadrian@example.org,Other,Microsoft Xbox Controller,22-01-2020,Billing inquiry,Hardware issue,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. ? Donald J. Trump (@realDonaldTrump) January 24, 2016
+248,Edward Bush,clarkadrian@example.org,Other,Microsoft Xbox Controller,22-01-2020,Billing inquiry,Hardware issue,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. — Donald J. Trump (@realDonaldTrump) January 24, 2016
 
 The campaign later said the deleted The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Medium,Chat,,,
 249,Jared Greene,shirleyweaver@example.com,Male,Autodesk AutoCAD,22-04-2021,Refund request,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
@@ -791,18 +791,18 @@ We'll also find someone with our skills to help. We'd love to help out! I'm unab
 We understand you're trying to use an outdated code or you may have broken a rule. Please let us know via PM.
 
 This is not what I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Medium,Phone,01-06-2023 01:32,,
-355,Joan Smith,jessicaruiz@example.com,Male,PlayStation,11-07-2020,Billing inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. ? Kevin
+355,Joan Smith,jessicaruiz@example.com,Male,PlayStation,11-07-2020,Billing inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. — Kevin
 
 This week we are going to look at why and when it was announced on July 26th, this is not only the first year that we saw I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Medium,Phone,31-05-2023 23:23,,
 356,Jenna Allen,pyoung@example.com,Other,LG Washing Machine,06-01-2020,Billing inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 A customer that purchased these items also got:
 
-? 3.6 years old
+· 3.6 years old
 
-? 4 year old
+· 4 year old
 
-? 6 year old I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,High,Social media,01-06-2023 02:07,,
+· 6 year old I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,High,Social media,01-06-2023 02:07,,
 358,James Serrano,gpruitt@example.net,Female,Samsung Soundbar,18-11-2021,Refund request,Software bug,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. Please do not create new data that I need.
 
 The data and metadata were inadvertently deleted with I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Social media,,,
@@ -955,7 +955,7 @@ Please report anything missing from our app or website. If your I've followed on
 
 What should i find I need to update the shipping?
 
-? Make sure you have an account of your choice. Your account may be listed below if I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,Critical,Phone,01-06-2023 20:33,,
+• Make sure you have an account of your choice. Your account may be listed below if I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,Critical,Phone,01-06-2023 20:33,,
 422,Katherine Montgomery,jimenezkimberly@example.com,Female,Adobe Photoshop,11-08-2021,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. https://github.com/Totem/totem-tetris-free
 
 2.5.5
@@ -964,7 +964,7 @@ What should i find I need to update the shipping?
 423,Anna Dickerson,nicholas56@example.com,Male,Sony Xperia,14-10-2021,Cancellation request,Data loss,"I'm having an issue with the {product_purchased}. Please assist. The product was given.
 
 10 10/31/2016 19:16:14 21 10/31/2016 19:16:17 23 N/a I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Low,Email,01-06-2023 19:30,,
-424,Ricky Rangel,nstanley@example.org,Male,Nintendo Switch,19-04-2020,Product inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ? Michael R. Smith (@michaelsmith) November 15, 2014
+424,Ricky Rangel,nstanley@example.org,Male,Nintendo Switch,19-04-2020,Product inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist. — Michael R. Smith (@michaelsmith) November 15, 2014
 
 On the other hand, I can go a step further with my recommendation above. You The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,High,Phone,01-06-2023 01:27,,
 425,Brittany Hernandez,mcclureangela@example.org,Female,Samsung Galaxy,28-05-2020,Product inquiry,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. It does my job and I have no need or desire to pay you.
@@ -1355,7 +1355,7 @@ Thank you.
 593,Jodi Dickson,kstein@example.com,Male,HP Pavilion,02-05-2020,Technical issue,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 
-? Please be sure you check your email to confirm which invoice you've purchased. It may take up to 3-4 weeks for the payment information to arrive I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Email,,,
+• Please be sure you check your email to confirm which invoice you've purchased. It may take up to 3-4 weeks for the payment information to arrive I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Email,,,
 594,Brian Bell,ashleygilbert@example.net,Female,GoPro Hero,22-09-2021,Technical issue,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 How can I give you as much as you want. You will have been asked about this a long time ago by some of our very loyal customers all over I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Low,Phone,,,
@@ -1376,7 +1376,7 @@ A lot of people will be happy to help you because you're good. I'm not sure if t
 600,Candace Taylor,richardspencer@example.net,Other,LG OLED,05-04-2021,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist. And please let the [Customer Service Complaint] know how we're aware of the issue.""
 
 It's not just the company, however, that is experiencing I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Social media,31-05-2023 22:05,,
-602,Gary Wilkerson,carolvalencia@example.com,Other,Fitbit Charge,05-05-2020,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. ? Dan Acheson (@ACharson) April 2, 2016
+602,Gary Wilkerson,carolvalencia@example.com,Other,Fitbit Charge,05-05-2020,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. — Dan Acheson (@ACharson) April 2, 2016
 
 The update also included a link giving the retailer a statement saying that there was no This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,High,Email,01-06-2023 17:25,,
 603,Jamie Nelson,cody03@example.org,Male,Nintendo Switch Pro Controller,13-02-2021,Billing inquiry,Delivery problem,I'm having an issue with the {product_purchased}. Please assist. Please feel free to contact me at [email protected]. Thank you. $15-40 is for new products and services only. It is not sale-priced or I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.,Pending Customer Response,Critical,Phone,01-06-2023 17:24,,
@@ -1578,7 +1578,7 @@ I was unable to find any refund to address the cost of shipping. I've noticed a 
 694,Douglas Harvey,cummingsyolanda@example.net,Male,LG Washing Machine,29-10-2020,Product inquiry,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
 
 My cart, which is the part where I'm showing you the photos of some great models from the past two years, has some beautiful accessories, but the I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Phone,,,
-695,Dana Harrington,moranclayton@example.com,Other,Roomba Robot Vacuum,02-02-2020,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. "" ?A.O.
+695,Dana Harrington,moranclayton@example.com,Other,Roomba Robot Vacuum,02-02-2020,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. "" —A.O.
 
 The A.O. provides an overview of all of the software versions under investigation. The information provided by the A.O I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Medium,Email,01-06-2023 00:00,,
 696,Nicholas Mercado,emartinez@example.com,Other,Apple AirPods,12-11-2021,Cancellation request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -1676,7 +1676,7 @@ Thanks for your reply, I was wondering if the I've followed online tutorials and
 742,Cynthia Taylor,rogersdonna@example.net,Female,Autodesk AutoCAD,02-07-2021,Cancellation request,Account access,"I'm having an issue with the {product_purchased}. Please assist. I have not been able to contact ux and ux will have no more comment by this post.
 
 UPDATE: We apologize for the delay in reporting such I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Chat,,,
-743,Sara Carroll,rogersjuan@example.org,Female,Sony PlayStation,31-07-2020,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. ? Dr. Stephen
+743,Sara Carroll,rogersjuan@example.org,Female,Sony PlayStation,31-07-2020,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. — Dr. Stephen
 
 I received several different types of items from you and wanted to know what the exact product you were ordering was and how much they were. I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,Critical,Social media,,,
 745,Johnny Hernandez,margaret51@example.org,Female,Dyson Vacuum Cleaner,07-02-2020,Refund request,Installation support,"I'm having an issue with the {product_purchased}. Please assist. I would like to confirm whether all I've done is sent to me with the correct item.
@@ -1829,9 +1829,9 @@ Not really, at least from a hardware perspective. The hardware I've tried using 
 This product has been purchased and used as a part of a project that includes building a new desk, creating a furniture, adding something new to the house, I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Critical,Email,31-05-2023 22:37,,
 794,Teresa Glover,stacymccann@example.net,Male,LG Washing Machine,10-06-2021,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
-? Please ensure that the account is updated and the account is valid for a time.
+• Please ensure that the account is updated and the account is valid for a time.
 
-? Please ensure that all new cards are delivered within 1 month I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Critical,Social media,01-06-2023 19:26,,
+• Please ensure that all new cards are delivered within 1 month I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Critical,Social media,01-06-2023 19:26,,
 795,Gordon Banks,taylorreyes@example.com,Female,Samsung Galaxy,10-09-2021,Billing inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 What is this?
@@ -2130,7 +2130,7 @@ Citation
 
 
 My review for the G4 4K was a mixed bag, very Alright-y. The G4 has very nice white balance. I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,Critical,Chat,,,
-915,Brian Hale,harrisonbarbara@example.net,Female,Canon DSLR Camera,06-07-2020,Refund request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. ? Ryan A. (@RyanBryan) April 27, 2014
+915,Brian Hale,harrisonbarbara@example.net,Female,Canon DSLR Camera,06-07-2020,Refund request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. — Ryan A. (@RyanBryan) April 27, 2014
 
 The man who was arrested by officers in the area who also tried to detain him has since I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,Critical,Chat,31-05-2023 22:54,,
 916,Kristie Murphy,humphreyalfred@example.net,Female,Canon DSLR Camera,22-03-2020,Cancellation request,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -2390,7 +2390,7 @@ Click here to create your order with: I'm using the original charger that came w
 1019,Angela White,cameron64@example.com,Female,Sony 4K HDR TV,16-02-2020,Refund request,Software bug,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? How can I fix this?
 
 If you find this issue, you This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Low,Social media,01-06-2023 05:31,,
-1021,Thomas Contreras,brandonharper@example.com,Male,Nintendo Switch,04-03-2020,Cancellation request,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ?I'm not sure this would make sense since I've seen my product sent to the store for more than one month, and nothing is ever sent for nearly I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Critical,Social media,01-06-2023 01:03,,
+1021,Thomas Contreras,brandonharper@example.com,Male,Nintendo Switch,04-03-2020,Cancellation request,Display issue,"I'm having an issue with the {product_purchased}. Please assist.  I'm not sure this would make sense since I've seen my product sent to the store for more than one month, and nothing is ever sent for nearly I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Critical,Social media,01-06-2023 01:03,,
 1023,Miss Natalie Rios,tamiconway@example.net,Other,Autodesk AutoCAD,25-08-2020,Cancellation request,Hardware issue,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available?
 
 Not that yet. I also do not expect all updates or I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.",Pending Customer Response,High,Email,01-06-2023 11:33,,
@@ -2701,7 +2701,7 @@ A couple weeks ago I found a lot of my friends that were interested in the new p
 I'm having an issue with the {product_product_changed}. Please assist.
 
 I'm having an issue with the {product_product_ I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,High,Social media,,,
-1129,Mr. Roberto Marquez,lesliethompson@example.org,Male,Roomba Robot Vacuum,06-07-2021,Technical issue,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. ? the product
+1129,Mr. Roberto Marquez,lesliethompson@example.org,Male,Roomba Robot Vacuum,06-07-2021,Technical issue,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. — the product
 
 The product is not an item in your inventory. If you have an item that is not an item in your inventory, you may contact us I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Low,Phone,,,
 1131,Jesus Snyder,ashleythompson@example.com,Other,LG Smart TV,19-11-2020,Cancellation request,Refund request,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? If you are a business, this question should be answered above. Do you have I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Pending Customer Response,Medium,Chat,31-05-2023 23:15,,
@@ -2981,7 +2981,7 @@ If I buy one of the other items and it doesn't come with a free shipping address
 
 4 I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Open,High,Chat,,,
 1253,Mark Hart,george47@example.com,Female,Roomba Robot Vacuum,18-10-2020,Cancellation request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. Please assist by making purchases if possible. Thanks. "" (This is more than one month). You just spent what you would normally. Please help. If only your I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,Critical,Social media,,,
-1254,Joshua Webster,mgay@example.com,Male,Canon DSLR Camera,15-05-2021,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. All I ask for is that I can continue to work in the company while I continue to serve my community. That is the only place to find anything."" ?S I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Critical,Chat,,,
+1254,Joshua Webster,mgay@example.com,Male,Canon DSLR Camera,15-05-2021,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. All I ask for is that I can continue to work in the company while I continue to serve my community. That is the only place to find anything."" —S I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Critical,Chat,,,
 1255,Connie Davis,david98@example.org,Female,Dyson Vacuum Cleaner,02-04-2021,Billing inquiry,Data loss,"I'm having an issue with the {product_purchased}. Please assist.
 
 
@@ -3183,7 +3183,7 @@ My problem here is with the {product_id}. You've been asked to use what's called
 
 A few notes on the website:
 
-?I cannot find an explanation for my refund policy, so my only I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,Critical,Chat,,,
+•I cannot find an explanation for my refund policy, so my only I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,Critical,Chat,,,
 1350,Ricardo Martin,anne77@example.com,Female,LG Washing Machine,30-01-2021,Product inquiry,Account access,"I'm having an issue with the {product_purchased}. Please assist. No other email address is required.
 
 A confirmation email is required and I'll contact you shortly. I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,High,Phone,,,
@@ -3456,7 +3456,7 @@ Product Name Product Number Product AEG-TAC-3200-1
 Manufacturer ID OEM Time of Manufacture I'm worried that the issue might be hardware-related and might require repair or replacement.",Pending Customer Response,Critical,Social media,31-05-2023 23:20,,
 1470,Maria Murphy,ymosley@example.com,Female,Bose QuietComfort,22-05-2021,Refund request,Installation support,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem?
 
-? Don't connect to this account with an older network password. If I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,High,Phone,01-06-2023 15:25,,
+• Don't connect to this account with an older network password. If I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,High,Phone,01-06-2023 15:25,,
 1471,Derek King,laura36@example.com,Male,Nest Thermostat,19-11-2020,Refund request,Peripheral compatibility,"I'm facing issues logging into my {product_purchased} account. It says my account is locked. What should I do to unlock it? I didn't change my password and I have no more privileges. Do I need to reinstall I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Low,Social media,,,
 1472,Brady Osborn,mitchell05@example.net,Male,LG OLED,10-06-2020,Cancellation request,Installation support,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this?
 
@@ -3476,7 +3476,7 @@ CJ This problem started occurring after the recent software update. I haven't ma
 UPDATE: On the other hand I'm not using it and the product is still there I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,Critical,Email,,,
 1475,Madison Williamson,katherine06@example.net,Other,iPhone,13-09-2021,Refund request,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
-In my case, I bought this book (one review at a time) and it was like the whole time I was writing a review?I couldn't I'm worried that the issue might be hardware-related and might require repair or replacement.",Pending Customer Response,High,Social media,01-06-2023 00:55,,
+In my case, I bought this book (one review at a time) and it was like the whole time I was writing a review…I couldn't I'm worried that the issue might be hardware-related and might require repair or replacement.",Pending Customer Response,High,Social media,01-06-2023 00:55,,
 1476,Jeffery Boone,alijack@example.org,Female,Fitbit Versa Smartwatch,07-09-2020,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 I am an ITM (Interactive Payment Network), and in order to get a payment in your country, must visit https://itm.org. I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Critical,Chat,01-06-2023 01:59,,
@@ -3664,7 +3664,7 @@ The item cannot be moved or removed. I've already contacted customer support mul
 
 Here is an example:
 
-{product_purchased} My cart is: ?Suit?
+{product_purchased} My cart is: 【Suit】
 
 The product is: I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Email,,,
 1556,Tanya Cohen,zlawson@example.com,Other,Amazon Kindle,01-07-2021,Technical issue,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
@@ -3981,7 +3981,7 @@ I was just wondering, how much I pay as a monthly fee.
 My billing is $7.45 per month, $6 if I pay I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Low,Email,,,
 1695,William Stewart,christopheranderson@example.org,Female,MacBook Pro,29-11-2021,Billing inquiry,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
-I have one of my best friends, a young man that I adore dearly, who is taking all my classes with him. Once he?s out of I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Medium,Phone,,,
+I have one of my best friends, a young man that I adore dearly, who is taking all my classes with him. Once heπs out of I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Medium,Phone,,,
 1696,Bryan Rivera,emily66@example.com,Male,Amazon Kindle,10-11-2020,Billing inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 
@@ -4139,7 +4139,7 @@ Product #1
 1 - https://goo.gl/b9DkJL
 
 2 - http://www.thingiverse.com I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Critical,Email,01-06-2023 00:51,,
-1770,Christine Perez,reyesmichael@example.org,Female,Samsung Soundbar,22-04-2021,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Chris
+1770,Christine Perez,reyesmichael@example.org,Female,Samsung Soundbar,22-04-2021,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Chris
 
 # # Examples
 
@@ -4376,9 +4376,9 @@ I accept return and exchangeogenesis! I've reviewed the troubleshooting steps on
 1841,David Lee,christopher67@example.net,Female,Amazon Echo,22-07-2021,Technical issue,Peripheral compatibility,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? This is the first in a series I wrote up for you once I found I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Medium,Chat,,,
 1842,Victoria Holt,randall15@example.com,Other,MacBook Pro,20-04-2021,Cancellation request,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
-? Use the ""Add me here"" dialog to update your cart on my site and to add another cart.
+• Use the ""Add me here"" dialog to update your cart on my site and to add another cart.
 
-? Select all my other options: I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Medium,Social media,,,
+• Select all my other options: I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Medium,Social media,,,
 1843,Nathaniel Walls,lovehunter@example.net,Female,Nikon D,25-07-2020,Cancellation request,Product setup,"I've forgotten my password for my {product_purchased} account, and the password reset option is not working. How can I recover my account?
 
 Step 4: Verify password integrity
@@ -4455,7 +4455,7 @@ The system does I'm experiencing this issue on multiple devices of the same mode
 
 Product Description:
 
-Nimbus - Quick to Install PC Monitor?
+Nimbus - Quick to Install PC Monitor™
 
 Specifications:
 
@@ -4545,7 +4545,7 @@ raint
 // Register an event I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,High,Social media,01-06-2023 10:29,,
 1908,Dr. Christian Morris,leslielynch@example.com,Other,LG Smart TV,21-09-2021,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. :) The best thing, though, is the number of things you'll need to know to proceed to step 2. The first thing we will need to do is get I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Low,Chat,01-06-2023 00:23,,
 1909,Jennifer Banks,fmcneil@example.net,Other,Amazon Echo,10-08-2021,Product inquiry,Data loss,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? If you're using SCCM or controls, would you recommend something I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Critical,Phone,,,
-1910,Sarah Harris,sandy98@example.org,Female,MacBook Pro,05-04-2021,Product inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. ? I believe this means that I have not found my phone. My previous order of $10 left them with less than $3. I know they didn't want I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Pending Customer Response,Low,Chat,01-06-2023 20:37,,
+1910,Sarah Harris,sandy98@example.org,Female,MacBook Pro,05-04-2021,Product inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. — I believe this means that I have not found my phone. My previous order of $10 left them with less than $3. I know they didn't want I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Pending Customer Response,Low,Chat,01-06-2023 20:37,,
 1911,Malik Robles,jferguson@example.net,Female,Nest Thermostat,20-01-2021,Product inquiry,Delivery problem,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? http://wiki.freedesktop.org/Software/File I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Medium,Phone,,,
 1912,Alan Ford,martin46@example.org,Male,GoPro Hero,03-10-2021,Product inquiry,Refund request,"I'm having an issue with the {product_purchased}. Please assist. If it's not working, it'll take your credit card number. Be sure to ask us for help (if there are any issues): $39
 
@@ -4564,9 +4564,9 @@ If we don't have enough money, then we have to remove all I've already contacted
 I've run into multiple issues with this package from other users. I haven't I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Critical,Phone,,,
 1923,Linda Rodriguez,mariacruz@example.net,Other,Bose SoundLink Speaker,25-04-2021,Billing inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
-? This is an issue with {product_purchased}. Please assist.
+• This is an issue with {product_purchased}. Please assist.
 
-? This is an issue with {product_purchased}. I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Open,Low,Chat,,,
+• This is an issue with {product_purchased}. I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Open,Low,Chat,,,
 1924,Lisa Perez,shepherdchristopher@example.com,Female,Roomba Robot Vacuum,02-03-2021,Technical issue,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
 
 There is no such thing as a free lunch for us! We promise you we will give you a great treat, with every single cent we provide, it I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,Critical,Phone,,,
@@ -4585,7 +4585,7 @@ Please explain exactly I've performed a factory reset on my {product_purchased},
 
 
 I I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Low,Phone,01-06-2023 21:27,,
-1931,Matthew Evans,burnsadam@example.com,Other,Bose SoundLink Speaker,21-02-2020,Billing inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. If you have any difficulties, please PM me. ?Otherwise, I could go back to getting our $40 million commitment and make a new announcement about The Simpsons I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Critical,Email,31-05-2023 23:19,,
+1931,Matthew Evans,burnsadam@example.com,Other,Bose SoundLink Speaker,21-02-2020,Billing inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. If you have any difficulties, please PM me.  Otherwise, I could go back to getting our $40 million commitment and make a new announcement about The Simpsons I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Critical,Email,31-05-2023 23:19,,
 1932,James Williams,jefferyking@example.org,Male,HP Pavilion,13-05-2020,Cancellation request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. (Sorry! I am in no way responsible for anything I read on this page.)
 
 What is a brand?
@@ -4782,7 +4782,7 @@ Thank you I've performed a factory reset on my {product_purchased}, hoping it wo
 This is an automated process that ensures your account is enrolled in your account by going to Settings | Account Management | Account Management. When I run out of credits I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Medium,Chat,01-06-2023 02:10,,
 2001,Daniel Mclaughlin,crystalnavarro@example.net,Other,Fitbit Charge,14-08-2021,Billing inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. I'm only looking for new products that can be bought. Thank you.""
 
-? ""The only reason I buy a TV with a {product_purch I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Low,Email,,,
+• ""The only reason I buy a TV with a {product_purch I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Low,Email,,,
 2002,Stephen Hickman,cardenasashley@example.org,Other,Canon DSLR Camera,28-12-2021,Technical issue,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 Please do not copy & pastify my work with other people.
@@ -4895,9 +4895,9 @@ The instructions are quite short and the message is simple. The best way I've tr
 I'm having an issue with the {product_purchased}. Please assist.
 
 Yes Yes, the title of this item is from a store I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Medium,Chat,,,
-2051,John Morris,rodney14@example.org,Other,Nintendo Switch,09-03-2021,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. ? Google Play Store (@googleplay) October 22, 2016
+2051,John Morris,rodney14@example.org,Other,Nintendo Switch,09-03-2021,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. — Google Play Store (@googleplay) October 22, 2016
 
-If only I was this pissed? ? John H. (@KirkWatson) October 22 I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,Medium,Phone,01-06-2023 15:42,,
+If only I was this pissed? — John H. (@KirkWatson) October 22 I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,Medium,Phone,01-06-2023 15:42,,
 2052,Terry Cook,oadams@example.net,Male,LG Washing Machine,27-06-2020,Refund request,Product setup,I'm having an issue with the {product_purchased}. Please assist. As a developer who lives here I can work it out for you without using tools or features. I do this every morning (or in readily accessible IRC time between times I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.,Open,Critical,Social media,,,
 2053,Matthew Williams,torresduane@example.org,Male,Amazon Echo,28-03-2021,Product inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. Borgio says the company can't comment.
 
@@ -5119,9 +5119,9 @@ I understand my needs here (my business)
 Now that I am an example of a customer, to whom this product is related or what I can I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Medium,Phone,,,
 2126,Stephanie Rollins,aaron60@example.org,Female,Sony Xperia,11-02-2021,Technical issue,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
 
-? I want to update my name to {""category""} rather than using {product_purchased}. Please assist.
+• I want to update my name to {""category""} rather than using {product_purchased}. Please assist.
 
-? I need to configure I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,High,Social media,,,
+• I need to configure I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,High,Social media,,,
 2127,Luke Cochran,pmiller@example.net,Female,Microsoft Office,18-12-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 I've had a lot of questions on whether to purchase a $150 iPhone, I had to check a few online stores. Most of them said to start The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Low,Email,01-06-2023 18:04,,
@@ -5135,7 +5135,7 @@ Clicking the ""Buy now"" button again is not currently supported. I need assista
 Thank you for your I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Medium,Chat,,,
 2134,Steven Harvey,kevinkelly@example.org,Male,iPhone,05-06-2021,Billing inquiry,Refund request,"I've forgotten my password for my {product_purchased} account, and the password reset option is not working. How can I recover my account?
 
-Note For Microsoft? Outlook 2010 and later users, the following authentication is available for I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Critical,Email,01-06-2023 01:43,,
+Note For Microsoft® Outlook 2010 and later users, the following authentication is available for I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Critical,Email,01-06-2023 01:43,,
 2136,Ryan Baldwin,pjohnson@example.org,Female,Google Nest,28-06-2020,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. Thanks! I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,High,Phone,,,
 2137,Lauren Maddox,littlephyllis@example.net,Female,Samsung Galaxy,19-05-2021,Refund request,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -5226,9 +5226,9 @@ This item goes to current stock at the same time.
 2172,Steven Smith,shari97@example.com,Other,HP Pavilion,06-01-2020,Billing inquiry,Delivery problem,I'm having an issue with the {product_purchased}. Please assist. I need assistance as soon as possible because it's affecting my work and productivity.,Pending Customer Response,Medium,Chat,01-06-2023 20:09,,
 2173,Michael Washington,wmoore@example.org,Female,Google Pixel,04-02-2021,Refund request,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
 
-? Product and seller: It is possible that you may have the same item or the same device. Please support the seller.
+• Product and seller: It is possible that you may have the same item or the same device. Please support the seller.
 
-? Contact: You This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Critical,Email,01-06-2023 20:35,,
+• Contact: You This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Critical,Email,01-06-2023 20:35,,
 2175,Lisa Abbott,slogan@example.net,Other,Google Pixel,30-11-2020,Product inquiry,Display issue,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? If exhaust pipes are leaking from pipes, should the leak be caused by a hot I'm worried that the issue might be hardware-related and might require repair or replacement.",Pending Customer Response,High,Chat,01-06-2023 18:53,,
 2176,Emily Adams,xwalker@example.org,Other,LG Washing Machine,19-09-2020,Product inquiry,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. #6#2
 
@@ -5262,14 +5262,14 @@ It's possible you may not be able to receive all of your orders prior to The iss
 2184,Caleb Carter,ericpham@example.net,Male,Amazon Kindle,17-10-2020,Refund request,Product recommendation,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. I'm calling 911. My phone is down The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,High,Social media,,,
 2186,Melanie Parker,valerie99@example.com,Male,LG Smart TV,27-03-2021,Billing inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
-? A number of problems can happen when loading and saving a product is interrupted.
+• A number of problems can happen when loading and saving a product is interrupted.
 
-? When the product is paused or loading by a third-party I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,Medium,Email,,,
+• When the product is paused or loading by a third-party I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,Medium,Email,,,
 2187,Marvin Meyer,charlottecole@example.com,Other,iPhone,09-03-2021,Billing inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
-? If this is something you're seeing or purchasing, send me a message and I'll remove it from the list of products.
+• If this is something you're seeing or purchasing, send me a message and I'll remove it from the list of products.
 
-? Please enter I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,High,Phone,,,
+• Please enter I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,High,Phone,,,
 2189,Kelsey Williams,valdezsandra@example.org,Other,LG Smart TV,20-12-2021,Cancellation request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Pending Customer Response,Medium,Chat,01-06-2023 18:04,,
 2190,Jimmy Anderson,james14@example.org,Female,MacBook Pro,30-06-2020,Cancellation request,Data loss,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? On Windows 7
 
@@ -5311,7 +5311,7 @@ The Product Name: ""The Product I've already contacted customer support multiple
 
 In case you haven't already, there is a procedure available to recover an account I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Pending Customer Response,High,Email,01-06-2023 12:26,,
 2209,Aaron Chavez,jjackson@example.com,Female,Amazon Kindle,15-06-2020,Cancellation request,Network problem,"My {product_purchased} crashed, and I lost all the data stored on it. Is there any way to recover the lost data? If I am using a USB to Mac device, will it be able to recover data? No, I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Low,Phone,01-06-2023 21:59,,
-2210,Nicole Baxter,jonathandavis@example.net,Other,MacBook Pro,22-08-2020,Refund request,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. ?
+2210,Nicole Baxter,jonathandavis@example.net,Other,MacBook Pro,22-08-2020,Refund request,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. —
 
 Please enable JavaScript to view the comments powered by Disqus.
 
@@ -5436,7 +5436,7 @@ Please provide product number in box with purchase confirmation in order to chec
 2260,Renee Wilkerson,bianca47@example.net,Female,Sony PlayStation,18-04-2021,Cancellation request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 5 / 10 ( 10 votes ) Click here to view ratings and comments. Oracle Printed Card Name: Utopia Spire Mana Cost: Converted Mana Cost: I'm worried that the issue might be hardware-related and might require repair or replacement.",Open,High,Email,,,
-2261,Sharon Clarke,zbird@example.net,Female,Canon EOS,24-04-2021,Product inquiry,Data loss,"I'm having an issue with the {product_purchased}. Please assist. ? S
+2261,Sharon Clarke,zbird@example.net,Female,Canon EOS,24-04-2021,Product inquiry,Data loss,"I'm having an issue with the {product_purchased}. Please assist. — S
 
 This might have been my most important part of this interview since I've spent quite some time listening to a lot of podcasts. I found myself looking I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Low,Social media,,,
 2264,Amanda Hall DDS,xfranklin@example.org,Male,Canon EOS,02-12-2021,Cancellation request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -5580,7 +5580,7 @@ The Product's ID number:
 The product ID displayed should read a product ID field that indicates your order is online. Your I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,High,Phone,,,
 2310,Alex Faulkner,nmoreno@example.org,Female,Garmin Forerunner,22-12-2020,Billing inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
-# # Copyright ? 2014-2016 Mitsuya Shikishi
+# # Copyright © 2014-2016 Mitsuya Shikishi
 
 
 # - * (V) N.S.A., Inc. I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,High,Phone,01-06-2023 15:55,,
@@ -6298,7 +6298,7 @@ The solution listed is for a software that doesn't work on Ubuntu. I've already 
 
 
 I'll wait and see what you fix if you give it a try I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Low,Email,01-06-2023 12:38,,
-2595,Lori Vega,cassandra33@example.com,Other,Microsoft Office,25-06-2020,Refund request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Michael B (@michaelbkevin) August 17, 2016
+2595,Lori Vega,cassandra33@example.com,Other,Microsoft Office,25-06-2020,Refund request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Michael B (@michaelbkevin) August 17, 2016
 
 We've had this problem with a few people that have had a problem with the { I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Open,Low,Chat,,,
 2596,Stacey Burns,courtneyjones@example.org,Other,Roomba Robot Vacuum,03-09-2021,Refund request,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. Thanks for your patience, guys!""
@@ -6432,7 +6432,7 @@ You can help by changing the service you're subscribing to in the ' I'm concerne
 2656,Michael Gutierrez,michaeldavis@example.net,Male,Microsoft Surface,01-01-2020,Cancellation request,Battery life,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? Thanks. Thanks, G
 
 13.04 (Sat, 21 I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Low,Email,01-06-2023 16:34,,
-2658,Katrina Crawford,dgeorge@example.com,Female,Microsoft Xbox Controller,05-04-2021,Billing inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. ? David R. (@Dandel_T) March 12, 2017
+2658,Katrina Crawford,dgeorge@example.com,Female,Microsoft Xbox Controller,05-04-2021,Billing inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. — David R. (@Dandel_T) March 12, 2017
 
 ""You can buy the next one in one's back pocket just like this. I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Email,01-06-2023 22:38,,
 2659,Vincent Morton,hernandezbrenda@example.org,Female,Bose QuietComfort,14-10-2020,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist.
@@ -6536,7 +6536,7 @@ Do you wish to continue supporting this game? Please check BackerKit does not wo
 
 Thank you
 
-Please feel free to contact me via twitter or email, I hope to have a solution in the future and hope you guys like this ?? I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Low,Email,,,
+Please feel free to contact me via twitter or email, I hope to have a solution in the future and hope you guys like this 🙂 I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Low,Email,,,
 2690,Jason Hanna,kaitlin13@example.org,Male,Samsung Soundbar,01-09-2020,Technical issue,Network problem,"I'm having an issue with the {product_purchased}. Please assist. Contact.
 
 Discovery
@@ -6909,9 +6909,9 @@ My Name = http://t.co/L5fGnT4qkV [email protected] : http://t.co/K I've followed
 
 3.2.1.2:
 
-? ? Change title of the product before your purchase
+• • Change title of the product before your purchase
 
-? ? Add your name and your billing address I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Medium,Social media,,,
+• • Add your name and your billing address I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Medium,Social media,,,
 2836,Jennifer Solomon,adam62@example.org,Other,LG Smart TV,01-08-2021,Cancellation request,Display issue,I'm having an issue with the {product_purchased}. Please assist. sale_list_id: $50 = [ 'product_title'; $value ]; # $50 will change in order to see the new {product_name I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.,Pending Customer Response,Medium,Phone,01-06-2023 07:34,,
 2837,Christopher Washington,bryantpatricia@example.net,Female,Apple AirPods,07-05-2020,Billing inquiry,Peripheral compatibility,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account? vastly increased difficulty with I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Medium,Chat,01-06-2023 09:51,,
 2838,Annette Gomez,banksmichael@example.com,Female,Amazon Echo,29-10-2021,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. There are some products on this site that are made out of white plastic and aren't really as good as a good product. Here is the product that I was trying The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Low,Email,01-06-2023 17:37,,
@@ -6959,7 +6959,7 @@ My #{ProductID} is not an ID: I've tried clearing the cache and data for the {pr
 2864,Brandon Doyle,gmccarty@example.org,Other,Lenovo ThinkPad,12-02-2021,Product inquiry,Network problem,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond.
 
 Thanks for doing this... It made I need assistance as soon as possible because it's affecting my work and productivity.",Open,Critical,Email,,,
-2865,Maurice Love,andersonerin@example.com,Other,Samsung Galaxy,14-10-2021,Billing inquiry,Network problem,I'm having an issue with the {product_purchased}. Please assist. That was a small file.. I just got the item & got the item today and am looking forward the delivery & will be happy. Thank you - MichaelB ? I'm worried that the issue might be hardware-related and might require repair or replacement.,Pending Customer Response,High,Email,01-06-2023 07:08,,
+2865,Maurice Love,andersonerin@example.com,Other,Samsung Galaxy,14-10-2021,Billing inquiry,Network problem,I'm having an issue with the {product_purchased}. Please assist. That was a small file.. I just got the item & got the item today and am looking forward the delivery & will be happy. Thank you - MichaelB — I'm worried that the issue might be hardware-related and might require repair or replacement.,Pending Customer Response,High,Email,01-06-2023 07:08,,
 2866,Melissa Arellano,peter08@example.net,Female,Sony Xperia,05-02-2021,Cancellation request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,Critical,Social media,01-06-2023 16:23,,
 2867,Tiffany Oliver,pperez@example.net,Male,Nintendo Switch Pro Controller,20-04-2021,Refund request,Payment issue,I'm having an issue with the {product_purchased}. Please assist. Please note: This item is still subject to availability. I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.,Open,High,Social media,,,
 2868,Robert Acevedo,jcruz@example.net,Male,Garmin Forerunner,10-09-2020,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,High,Phone,01-06-2023 20:45,,
@@ -7060,7 +7060,7 @@ For more information about I've recently updated the firmware of my {product_pur
 2910,Linda James,jennifer40@example.org,Other,Fitbit Charge,13-02-2021,Technical issue,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. Thank you for reporting it, I will try my best not to get caught in traffic... if it turns out I am right, I will be able to return this I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Low,Chat,,,
 2912,Meredith Pineda,ebowen@example.net,Female,Asus ROG,08-07-2020,Technical issue,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
-?If you have any information in regards to your purchase that I should make available, please write to [email protected] to ask. If I can't I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,Low,Social media,,,
+•If you have any information in regards to your purchase that I should make available, please write to [email protected] to ask. If I can't I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,Low,Social media,,,
 2913,Shawn Rios,xhinton@example.net,Male,Google Nest,05-12-2021,Technical issue,Battery life,"I'm having an issue with the {product_purchased}. Please assist. The product information for the [product] you purchased is the product number of this item. ""] If you have a question about what you see is a product number I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Low,Chat,,,
 2916,Mr. Jeffrey Johnson,michael97@example.net,Male,Garmin Forerunner,01-01-2021,Billing inquiry,Payment issue,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? I tried using a Windows XP / 10 laptop but could not restore everything The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,High,Social media,01-06-2023 18:28,,
 2917,Charles Wright,carterchristy@example.net,Female,Apple AirPods,03-09-2020,Technical issue,Product compatibility,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? What to do? I need to fix my other computer.
@@ -7113,7 +7113,7 @@ There are some common ways the network can be affected by disconnection. I've pe
 2942,William Santos,zmurillo@example.org,Other,Philips Hue Lights,15-08-2021,Billing inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist.
 
 The Product Purchase Policy on this application states: ""The product purchased is the authorized reseller and/or agent of the Authorized Retailer, whose authorization I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,High,Email,01-06-2023 20:03,,
-2943,Sara Chapman,frank19@example.net,Other,Fitbit Charge,03-03-2021,Refund request,Data loss,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. I want it back. ? Scott McCaffrey (@scottmcaffrey) July 14, I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Medium,Email,,,
+2943,Sara Chapman,frank19@example.net,Other,Fitbit Charge,03-03-2021,Refund request,Data loss,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. I want it back. — Scott McCaffrey (@scottmcaffrey) July 14, I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Medium,Email,,,
 2944,Laura Marsh,timothy53@example.net,Female,Google Nest,11-04-2021,Product inquiry,Installation support,"I'm having an issue with the {product_purchased}. Please assist. #include <u> @include ""<u>{rpi}, @import {rxpi}""; }
 
 This will be the first set of functions that I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Email,,,
@@ -7175,9 +7175,9 @@ Answer, please see the next question in the tutorial.
 http://www.sharespace.com/account I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,Medium,Phone,,,
 2972,Dr. Aaron Perez,carlglenn@example.net,Male,Philips Hue Lights,17-03-2020,Billing inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
 
-? Please provide information such as a description of the product, approximate dimensions, and what you want.
+• Please provide information such as a description of the product, approximate dimensions, and what you want.
 
-? Use of the Product is subject to our I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Social media,,,
+• Use of the Product is subject to our I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Social media,,,
 2973,Dr. Joseph Nolan,mcintoshmaureen@example.com,Female,iPhone,27-10-2020,Refund request,Delivery problem,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue?
 
 Log into the app.
@@ -7225,7 +7225,7 @@ You can download the full details of this policy for Windows 10 with the install
 
 The only way it would freeze is if you have a new machine like I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Low,Chat,01-06-2023 11:43,,
 2987,Ronnie Kelley,amanda57@example.org,Male,Fitbit Charge,26-11-2020,Refund request,Installation support,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. No more switching on my new {product_ I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,High,Chat,,,
-2990,Hannah Wood,hansenvictoria@example.com,Male,Sony 4K HDR TV,01-07-2021,Technical issue,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ? Dr. J.P. (@Dr.J.P) July 11, 2014
+2990,Hannah Wood,hansenvictoria@example.com,Male,Sony 4K HDR TV,01-07-2021,Technical issue,Display issue,"I'm having an issue with the {product_purchased}. Please assist. — Dr. J.P. (@Dr.J.P) July 11, 2014
 
 He continued:
 
@@ -7296,7 +7296,7 @@ name : product I've noticed a peculiar error message popping up on my {product_p
 Thank you for being an expert in your fields of expertise. Don't hesitate to contact me if you have any issues.
 
 P.S.: If I'm not sure if this issue is specific to my device or if others have reported similar problems.",Pending Customer Response,Low,Phone,01-06-2023 21:46,,
-3026,Erica Norman,davidfranklin@example.org,Other,MacBook Pro,06-10-2020,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. ?
+3026,Erica Norman,davidfranklin@example.org,Other,MacBook Pro,06-10-2020,Product inquiry,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. —
 
 #7
 
@@ -7367,14 +7367,14 @@ Try sending an E I've already contacted customer support multiple times, but the
 
 Support for I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Medium,Phone,,,
 3068,Karen Hammond,shellyedwards@example.net,Male,MacBook Pro,04-02-2020,Product inquiry,Product compatibility,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account? If you enter your I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Open,High,Chat,,,
-3069,Katherine Stark,dhansen@example.com,Male,Microsoft Xbox Controller,14-04-2020,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. ? Ryan (@Ryan_Chron of The Biscuits) August 28, 2014
+3069,Katherine Stark,dhansen@example.com,Male,Microsoft Xbox Controller,14-04-2020,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. — Ryan (@Ryan_Chron of The Biscuits) August 28, 2014
 
 I thought that was a great question, and I'm sure you'll I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Low,Email,,,
 3072,Amy Miller,brian21@example.org,Other,Apple AirPods,24-05-2021,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
-? There were no purchases made from this store at the last minute. Please continue to view your purchase as expected.
+• There were no purchases made from this store at the last minute. Please continue to view your purchase as expected.
 
-? Please consider a full refund I'm not sure if this issue is specific to my device or if others have reported similar problems.",Pending Customer Response,Critical,Chat,01-06-2023 02:32,,
+• Please consider a full refund I'm not sure if this issue is specific to my device or if others have reported similar problems.",Pending Customer Response,Critical,Chat,01-06-2023 02:32,,
 3073,Gabriel King,vwilcox@example.net,Male,Dell XPS,08-06-2021,Technical issue,Product compatibility,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. Are you still worried that the {product_ The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,High,Social media,01-06-2023 08:44,,
 3074,Kyle Lopez,davisstephen@example.com,Male,Garmin Forerunner,07-12-2021,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -7411,11 +7411,11 @@ You're on my end I've noticed a sudden decrease in battery life on my {product_p
 3090,Christopher Stone,icarney@example.com,Female,Xbox,08-08-2020,Product inquiry,Software bug,I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? Or can we just update the product_purchased. I've checked the device settings and made sure that everything is configured correctly.,Pending Customer Response,Critical,Phone,01-06-2023 18:14,,
 3092,Jordan Peterson,josephlewis@example.org,Male,Sony 4K HDR TV,22-12-2021,Product inquiry,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. We'd love to help you and our members.
 
-? Posted in the forums
+— Posted in the forums
 
-? Posted in the forums
+— Posted in the forums
 
-? Posted in the forums I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Chat,01-06-2023 21:58,,
+— Posted in the forums I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Chat,01-06-2023 21:58,,
 3093,Patricia Williamson,owenstammy@example.org,Male,Sony 4K HDR TV,12-02-2020,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
 Note: The payment for the services are not currently paid, or they are not available for your purchases. We have received some enquiry as to whether that This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Medium,Email,,,
@@ -7433,7 +7433,7 @@ A few other issues: I'm experiencing this issue on multiple devices of the same 
 Here's how you can tell in which of these is where you should add your code.
 
 In order to get the API and its configuration: I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,High,Chat,01-06-2023 15:50,,
-3101,Joseph Huffman,james02@example.org,Male,iPhone,18-03-2021,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Mike O'Sullivan (@MikeO'Sullivan) January 9, 2015
+3101,Joseph Huffman,james02@example.org,Male,iPhone,18-03-2021,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Mike O'Sullivan (@MikeO'Sullivan) January 9, 2015
 
 As the tweet went viral online, more and more people shared their complaints about both I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Email,,,
 3103,Rodney Thompson,perrykayla@example.net,Other,Nintendo Switch Pro Controller,04-03-2020,Refund request,Display issue,"I'm having an issue with the {product_purchased}. Please assist. As soon as I can we'll do a custom job and work through it.
@@ -7567,7 +7567,7 @@ As is the case with all credit checks in this regard, you may consider contactin
 3153,Amy Carlson,amberchen@example.net,Other,Samsung Galaxy,25-09-2020,Product inquiry,Battery life,I'm having an issue with the {product_purchased}. Please assist. Thanks. I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?,Open,Medium,Email,,,
 3154,Kelly Murray,hayley71@example.com,Male,Xbox,26-12-2021,Refund request,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
-3.7 ? Added a new icon for loading a page or some custom content
+3.7 • Added a new icon for loading a page or some custom content
 
 
 - Optimization
@@ -7724,7 +7724,7 @@ Shannon
 Mt. Olive Green
 
 W I need assistance as soon as possible because it's affecting my work and productivity.",Open,High,Chat,,,
-3220,Teresa Woods,belliott@example.org,Other,Philips Hue Lights,30-09-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Daniel ""Darius"" DeGrootis (@Darius-DGrootis) September 19, 2015
+3220,Teresa Woods,belliott@example.org,Other,Philips Hue Lights,30-09-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Daniel ""Darius"" DeGrootis (@Darius-DGrootis) September 19, 2015
 
 @Darius-DGrootis I've checked the device settings and made sure that everything is configured correctly.",Open,Medium,Chat,,,
 3221,Valerie Cooper,whernandez@example.org,Female,Nintendo Switch Pro Controller,08-01-2020,Product inquiry,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -7773,7 +7773,7 @@ No, this is not a I need assistance as soon as possible because it's affecting m
 I'm having an issue with the # product_purchased is an empty string.
 
 In a future version of The Guide, we'll need I've checked the device settings and made sure that everything is configured correctly.",Open,Critical,Social media,,,
-3237,Heather Noble,goodwinlauren@example.net,Male,Microsoft Office,04-07-2020,Cancellation request,Network problem,"I'm having an issue with the {product_purchased}. Please assist. (If this option doesn't work for you or is available, please try to send me an email. I cannot reply to messages that don't work at the?? I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Low,Social media,01-06-2023 18:45,,
+3237,Heather Noble,goodwinlauren@example.net,Male,Microsoft Office,04-07-2020,Cancellation request,Network problem,"I'm having an issue with the {product_purchased}. Please assist. (If this option doesn't work for you or is available, please try to send me an email. I cannot reply to messages that don't work at the██ I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Low,Social media,01-06-2023 18:45,,
 3238,Loretta Simpson,nstone@example.com,Other,Nikon D,07-06-2020,Product inquiry,Hardware issue,I'm having an issue with the {product_purchased}. Please assist. Thanks. I am also having an issue with the {product_packaged} product... Please assist. Thanks. I'm having an issue with the {product_ This problem started occurring after the recent software update. I haven't made any other changes to the device.,Open,Low,Chat,,,
 3239,Bradley Haney,davisthomas@example.org,Other,Microsoft Office,13-10-2021,Refund request,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -7784,7 +7784,7 @@ Please support The Author on Patreon for your hard work.
 Thanks! I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,High,Chat,,,
 3240,Amy Clark,michelle37@example.org,Female,Nikon D,21-12-2021,Cancellation request,Refund request,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently.
 
-Step Two ? Set up Dropbox
+Step Two – Set up Dropbox
 
 On macOS, try to use a free Dropbox account This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Critical,Email,,,
 3241,Jacqueline Hansen,biancaward@example.org,Female,Garmin Forerunner,30-03-2020,Refund request,Account access,"I'm having an issue with the {product_purchased}. Please assist.
@@ -7858,9 +7858,9 @@ Enter ""Add"" at the end of the ""Product"" statement before adding I need assis
 3279,Tanner Palmer,amydavis@example.net,Other,Microsoft Xbox Controller,05-05-2021,Cancellation request,Battery life,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them?
 
 The {product_purchased} folder does not appear I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Critical,Email,01-06-2023 15:49,,
-3280,Rebecca Robinson,brownkathryn@example.net,Male,Bose QuietComfort,21-03-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Brian J. Jones (@BJJones) February 18, 2017
+3280,Rebecca Robinson,brownkathryn@example.net,Male,Bose QuietComfort,21-03-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Brian J. Jones (@BJJones) February 18, 2017
 
-It's a good thing the product isn't on sale? #SVCCs I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Medium,Email,01-06-2023 12:21,,
+It's a good thing the product isn't on sale… #SVCCs I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Medium,Email,01-06-2023 12:21,,
 3282,Melanie Campbell,maurice33@example.net,Male,Bose QuietComfort,01-07-2020,Cancellation request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. Sorry about that, but I'm trying hard not to get into an old ad with that kind of info. Thank you for your support, and do all you can I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Medium,Phone,,,
 3283,Robert Torres,davistravis@example.org,Other,Dell XPS,26-03-2020,Cancellation request,Account access,"I'm facing issues logging into my {product_purchased} account. It says my account is locked. What should I do to unlock it? To: m-a-s-i@dav.com.au (This is The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Low,Email,,,
 3284,Colton Dean,stoutmonica@example.com,Other,Sony PlayStation,24-07-2020,Billing inquiry,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. Please help. We were all given the ability to purchase and put some items into a different facilitating system for each of the retailers to use, and to have it all I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,High,Social media,01-06-2023 16:27,,
@@ -7974,7 +7974,7 @@ If you are an I rely heavily on my {product_purchased} for my daily tasks, and t
 To I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Medium,Chat,31-05-2023 23:54,,
 3326,Pamela Arnold,stephanielewis@example.net,Female,Dell XPS,25-01-2020,Billing inquiry,Battery life,"I'm having an issue with the {product_purchased}. Please assist. I cannot take all of their orders or use them just to create a new listing. Please contact me to see what that number is.
 
-In other news? I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Medium,Email,,,
+In other news… I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Medium,Email,,,
 3327,Deborah Sharp,trevor24@example.com,Other,Asus ROG,28-04-2021,Cancellation request,Peripheral compatibility,I'm having an issue with the {product_purchased}. Please assist. Thank you. #Bubble https://t.co/JKbCjE8vZH https://t.co/xDYJ This problem started occurring after the recent software update. I haven't made any other changes to the device.,Open,High,Phone,,,
 3329,Sharon Vaughn,paul73@example.org,Other,GoPro Action Camera,15-09-2020,Billing inquiry,Battery life,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do?
 
@@ -8247,7 +8247,7 @@ I've recently set up my phone into a wireless network to connect I've performed 
 
 * Please keep this in mind. I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Critical,Social media,,,
 3456,Heather Russell,ywalter@example.com,Female,iPhone,10-06-2020,Cancellation request,Display issue,"I'm having an issue with the {product_purchased}. Please assist. "" > > >.product "" /Users/joshuex-w1/Desktop"" ).product'""'>.product "" /Users/ I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Critical,Email,01-06-2023 04:28,,
-3457,Katherine Williams,marcjohnson@example.org,Male,Garmin Forerunner,22-03-2021,Refund request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. ?
+3457,Katherine Williams,marcjohnson@example.org,Male,Garmin Forerunner,22-03-2021,Refund request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. —
 
 $item.shtml
 
@@ -8411,7 +8411,7 @@ Help support this site by disabling your ad blocker. I'm unable to find the opti
 3526,Angela Nguyen,meganmedina@example.net,Other,LG Washing Machine,07-08-2021,Refund request,Account access,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue?
 
 If you have installed a custom Cisco Security Service, you can use This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Critical,Chat,01-06-2023 00:15,,
-3529,Brian White,taylor01@example.com,Male,Roomba Robot Vacuum,13-03-2020,Refund request,Hardware issue,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? ? Michael K. Hwang (@michaelkhunts) July 29, I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Critical,Social media,,,
+3529,Brian White,taylor01@example.com,Male,Roomba Robot Vacuum,13-03-2020,Refund request,Hardware issue,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? — Michael K. Hwang (@michaelkhunts) July 29, I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Critical,Social media,,,
 3530,Edward Russell,richard00@example.net,Other,Nikon D,22-10-2021,Technical issue,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. Otherwise you will be unable to use this product.
 
 Get a coupon by email or call 1-(800) 447-1227, we'll get back I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Low,Phone,,,
@@ -8440,10 +8440,10 @@ By the way I've recently updated the firmware of my {product_purchased}, and the
 3548,Morgan Waters,nmueller@example.org,Male,Fitbit Charge,29-02-2020,Cancellation request,Installation support,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue? If you have devices that connect I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,High,Social media,01-06-2023 21:13,,
 3550,Scott Reeves,paula71@example.org,Other,Amazon Kindle,03-11-2020,Product inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
 
-? Remove any missing or invalid credit card numbers from your cart or online store: this will work with online merchants.
+• Remove any missing or invalid credit card numbers from your cart or online store: this will work with online merchants.
 
 
-? Download and remove this software The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Medium,Chat,01-06-2023 01:07,,
+• Download and remove this software The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Medium,Chat,01-06-2023 01:07,,
 3551,Edward Baker,choikathleen@example.net,Other,Nintendo Switch,27-07-2020,Technical issue,Display issue,"I'm having an issue with the {product_purchased}. Please assist. I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,Medium,Chat,01-06-2023 14:53,,
 3553,Lauren Wilson,isaiahharris@example.net,Other,Asus ROG,17-12-2021,Product inquiry,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -8706,7 +8706,7 @@ It takes a nice long hard, but you'll always enjoy the quality I've tried troubl
 3666,Nathan Rosario,nicholas18@example.com,Male,Nintendo Switch Pro Controller,28-01-2021,Refund request,Data loss,I'm having an issue with the {product_purchased}. Please assist. I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.,Open,High,Email,,,
 3667,William Matthews,vanessa95@example.net,Female,LG Smart TV,12-01-2021,Refund request,Installation support,"I've noticed a software bug in the {product_purchased} app. It's causing data loss and unexpected errors. How can I resolve this issue?
 
-? If you buy multiple products, you have to pay for each one separately I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Critical,Chat,,,
+• If you buy multiple products, you have to pay for each one separately I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Critical,Chat,,,
 3670,Jose Davis,sullivanshannon@example.org,Other,Amazon Echo,30-11-2021,Technical issue,Software bug,"I'm having an issue with the {product_purchased}. Please assist. It will fix ASAP and I promise I will get it right!
 
 A bit of fun!
@@ -8937,7 +8937,7 @@ $5 (includes cover). $14.95, includes cover. I'm unable to find the option to pe
 [email protected] I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Chat,,,
 3765,James Morton,yvonnerose@example.org,Male,Sony PlayStation,14-01-2021,Technical issue,Data loss,"I'm having an issue with the {product_purchased}. Please assist. I need to know why.
 
-4:03 p.m. ? The bill comes face first into the House.
+4:03 p.m. — The bill comes face first into the House.
 
 Mr. Obama's administration will I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Pending Customer Response,Critical,Chat,01-06-2023 07:11,,
 3767,Stacy Lynch,zamorahunter@example.org,Other,Asus ROG,05-09-2021,Cancellation request,Refund request,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution?
@@ -9083,7 +9083,7 @@ How should I contact you if the product I ordered is unable to be used.
 
 Thank you for your assistance and I look forward to checking into it I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Medium,Email,,,
 3818,Jesse Silva,suzannelarson@example.com,Male,Autodesk AutoCAD,08-02-2020,Refund request,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. {item_id} has changed, so it may not appear on the correct product page. {product_name} has changed. If you have multiple item identifiers I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,High,Chat,01-06-2023 22:59,,
-3819,Phillip Clark,davidgarner@example.org,Other,Canon EOS,15-12-2021,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. ?(Vincent, ""Fuyo, what kind of thing is this, the product is a complete mess??)
+3819,Phillip Clark,davidgarner@example.org,Other,Canon EOS,15-12-2021,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. 」(Vincent, ""Fuyo, what kind of thing is this, the product is a complete mess?」)
 
 Even though she buses with I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,Critical,Chat,01-06-2023 06:43,,
 3821,Amanda Perry,carrollnatalie@example.org,Other,Lenovo ThinkPad,27-03-2021,Cancellation request,Refund request,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this?
@@ -9372,7 +9372,7 @@ S-G
 PSN: _________________PSN: x3_3 I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Social media,,,
 3963,Erika Silva,marquezthomas@example.com,Other,Sony PlayStation,05-09-2021,Technical issue,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. Thank you in any way.
 
-? You are not being paid by any third party. Please consider the purchase as a way to provide information regarding the buyer. I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,,,
+• You are not being paid by any third party. Please consider the purchase as a way to provide information regarding the buyer. I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,,,
 3964,Mr. Logan Fisher,hernandezkeith@example.org,Male,Sony PlayStation,09-07-2021,Billing inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
 
 {product=""4"", pw-order=""1,2"", price=""30"">
@@ -9563,7 +9563,7 @@ The new device can offer a variety of apps with a more intuitive interface. I've
 
 
 I am not getting my email account. How do I know if I am getting a I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Critical,Social media,,,
-4056,Jason Martinez,james03@example.org,Female,Google Pixel,05-03-2021,Billing inquiry,Installation support,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? [05:49:05 AM] Kj?rn Orgels: I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Medium,Social media,,,
+4056,Jason Martinez,james03@example.org,Female,Google Pixel,05-03-2021,Billing inquiry,Installation support,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? [05:49:05 AM] Kjørn Orgels: I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Medium,Social media,,,
 4057,Steven Foster,steveharris@example.net,Male,LG OLED,18-05-2021,Cancellation request,Product setup,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue?
 
 Try the test I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Critical,Phone,,,
@@ -9613,7 +9613,7 @@ My {product_purchased} is making strange I'm experiencing this issue on multiple
 4079,Mark Vazquez,claytoncole@example.net,Male,Sony Xperia,12-07-2021,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist. This item is currently Out of Stock Usually restocked within 2-3 weeks. Add to your wishlist to stay posted! Add to Wishlist
 
 Cig I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 13:21,,
-4082,Cody Bell,regina12@example.org,Female,Canon EOS,07-08-2021,Cancellation request,Refund request,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? ?There are several good starting points: 1) Set up a router I've checked the device settings and made sure that everything is configured correctly.",Pending Customer Response,High,Social media,01-06-2023 14:31,,
+4082,Cody Bell,regina12@example.org,Female,Canon EOS,07-08-2021,Cancellation request,Refund request,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue?  There are several good starting points: 1) Set up a router I've checked the device settings and made sure that everything is configured correctly.",Pending Customer Response,High,Social media,01-06-2023 14:31,,
 4083,Kimberly Strong,aruiz@example.net,Other,HP Pavilion,16-06-2021,Refund request,Installation support,"I'm having an issue with the {product_purchased}. Please assist. This should correct a problem like this."" ""Thank you. My name is Mark."" ""Mark, and I'm your customer and I have been contacting you about this I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Email,,,
 4084,Darryl Lopez,phall@example.com,Female,Canon DSLR Camera,09-12-2021,Product inquiry,Installation support,I'm having an issue with the {product_purchased}. Please assist. I'm working on this and am quite frustrated with the state of it. Please be as helpful as possible. (1) Remove that {product_purchased I'm not sure if this issue is specific to my device or if others have reported similar problems.,Pending Customer Response,Critical,Social media,01-06-2023 21:51,,
 4085,Richard Johnson,carneynathan@example.com,Other,Nintendo Switch Pro Controller,13-04-2021,Refund request,Data loss,"I'm having an issue with the {product_purchased}. Please assist.
@@ -9950,7 +9950,7 @@ I'm having an issue with the {product_purch I've tried troubleshooting steps men
 4202,Rachel Peterson,cchristian@example.com,Other,Lenovo ThinkPad,11-01-2020,Cancellation request,Display issue,"My {product_purchased} crashed, and I lost all the data stored on it. Is there any way to recover the lost data? Thank you for your assistance!
 
 If you are the first guy to know about this, there I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Critical,Email,01-06-2023 12:12,,
-4203,Dr. Angela Flores DVM,amandaluna@example.org,Male,Dell XPS,31-07-2020,Technical issue,Software bug,"I'm having an issue with the {product_purchased}. Please assist. ?@KlausJohansen
+4203,Dr. Angela Flores DVM,amandaluna@example.org,Male,Dell XPS,31-07-2020,Technical issue,Software bug,"I'm having an issue with the {product_purchased}. Please assist. —@KlausJohansen
 
 The product_purchased item is in a state of disrepair or could be out of business.
 
@@ -10081,7 +10081,7 @@ What can I need assistance as soon as possible because it's affecting my work an
 4253,Candace Saunders,obrown@example.com,Female,Dyson Vacuum Cleaner,25-03-2021,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
 I have a problem updating the {product_purchased}"" attribute to the product_purchased. This may appear to me to improve performance. The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Critical,Phone,,,
-4255,Paul Hill,russelltammy@example.com,Other,Microsoft Xbox Controller,01-03-2020,Billing inquiry,Network problem,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? ?I should ask a fellow player what it would have been like if I I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Email,,,
+4255,Paul Hill,russelltammy@example.com,Other,Microsoft Xbox Controller,01-03-2020,Billing inquiry,Network problem,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do?  I should ask a fellow player what it would have been like if I I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Email,,,
 4256,Jennifer Wilson,anthonymyers@example.com,Male,Samsung Galaxy,17-12-2021,Product inquiry,Product recommendation,"I've noticed a software bug in the {product_purchased} app. It's causing data loss and unexpected errors. How can I resolve this issue?
 
 Try getting the company to commit your data to the Azure Storage provider and use I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,High,Email,01-06-2023 08:47,,
@@ -10590,27 +10590,27 @@ Thank you for using this survey. Please check back soon for any changes to this 
 Logged-in customers can be notified when a change is made to a product without logging I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Medium,Social media,,,
 4455,Christopher Chase,anthonythompson@example.net,Other,Bose QuietComfort,04-08-2021,Product inquiry,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-?
+•
 
-? I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Pending Customer Response,Low,Social media,01-06-2023 08:41,,
+• I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Pending Customer Response,Low,Social media,01-06-2023 08:41,,
 4456,Jack House,julieatkinson@example.org,Male,Bose SoundLink Speaker,01-09-2021,Cancellation request,Delivery problem,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? Also, do I get to manually copy on files? Thanks for all I've checked the device settings and made sure that everything is configured correctly.",Open,High,Chat,,,
 4457,James Andrews,louistaylor@example.net,Female,Bose SoundLink Speaker,13-01-2020,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/Zg2X2sM3d8I,"" the spokesperson said in a press release posted on Friday.
 
@@ -11180,7 +11180,7 @@ To manage your item, click on the new item I've noticed a peculiar error message
 What if I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,High,Phone,01-06-2023 02:26,,
 4708,Shannon Murray,erika47@example.com,Male,Bose QuietComfort,04-08-2020,Product inquiry,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
-2.1.1 ? Fixes issues reported to be caused by the sale of more than one product
+2.1.1 – Fixes issues reported to be caused by the sale of more than one product
 
 Please refer to the ""Contact Us"" page I've followed online tutorials and community forums to troubleshoot the issue, but no luck so far.",Open,Low,Email,,,
 4710,Sarah Davis,ashleykelley@example.net,Other,LG OLED,25-12-2020,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. No way for me to fix it. Thanks for looking at this product.
@@ -11240,7 +11240,7 @@ The product_purchased line was created from a combination of a pre-shared, a pos
 4740,Candice Waller,stephanie72@example.com,Other,Xbox,29-09-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 3. Remove the product from my account and start the ""Clean Up"" button in the bottom left corner of the screen. The page will tell you which I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,High,Chat,,,
-4741,Jill Frey,susangonzales@example.net,Male,PlayStation,23-09-2021,Product inquiry,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. I'm sorry. I'm just starting. ? J.J. R. (@JRinso) December 19, 2013
+4741,Jill Frey,susangonzales@example.net,Male,PlayStation,23-09-2021,Product inquiry,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. I'm sorry. I'm just starting. — J.J. R. (@JRinso) December 19, 2013
 
 The NFL, in a I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Chat,,,
 4742,Cameron Brown,owhitaker@example.com,Other,GoPro Hero,15-08-2021,Refund request,Product setup,"My {product_purchased} crashed, and I lost all the data stored on it. Is there any way to recover the lost data? This will be the end of my account and I won't have any credit cards that need to be I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Critical,Chat,,,
@@ -11931,7 +11931,7 @@ How To Use : Get Product Info View: "" Product.GetProductInfo "" View: "" Produc
 
 It's an open-source version of the.NET Framework 4.0 by @erick.
 
-The project name is ??, I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Critical,Chat,,,
+The project name is 上星, I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Critical,Chat,,,
 5016,Tonya Daniel,nunezmelissa@example.net,Male,Bose QuietComfort,31-05-2021,Product inquiry,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
 5. I'm having an issue with the product_purchased}. Please assist.
@@ -12180,7 +12180,7 @@ We will I've noticed a sudden decrease in battery life on my {product_purchased}
 
 Product Rating This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Critical,Chat,01-06-2023 09:58,,
 5122,Bryan Norman,keith89@example.org,Other,Adobe Photoshop,30-01-2021,Product inquiry,Network problem,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Chat,01-06-2023 10:50,,
-5125,Craig Hamilton,madison23@example.com,Male,GoPro Hero,15-07-2020,Refund request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ? Mike Rogers (@mikerobbins) December 8, 2015
+5125,Craig Hamilton,madison23@example.com,Male,GoPro Hero,15-07-2020,Refund request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. — Mike Rogers (@mikerobbins) December 8, 2015
 
 #Duke's James Kelly was charged with shoplifting from a store last year. I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Medium,Email,,,
 5126,Kevin Jimenez,cmiller@example.net,Female,Adobe Photoshop,05-01-2020,Cancellation request,Data loss,"I'm having an issue with the {product_purchased}. Please assist.
@@ -12363,9 +12363,9 @@ It's not possible here, if one is using a single I've noticed a peculiar error m
 5208,Rodney Jones MD,huberkathleen@example.net,Other,Nikon D,13-07-2020,Cancellation request,Software bug,I'm having an issue with the {product_purchased}. Please assist. I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.,Open,Critical,Social media,,,
 5209,Jason Brown,henryjoe@example.net,Other,Dyson Vacuum Cleaner,23-09-2020,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
-? My item is a large number of pairs in size. No need to worry.
+• My item is a large number of pairs in size. No need to worry.
 
-? The sizing of the item is correct and the ""p I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,,,
+• The sizing of the item is correct and the ""p I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,,,
 5213,Henry Daniels,calvinwright@example.net,Female,GoPro Hero,04-03-2021,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
 If you have already purchased a product and have a link, the product will be available, but the link has not been marked as purchased and the link does I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Critical,Phone,01-06-2023 19:31,,
@@ -12386,7 +12386,7 @@ Product code: 5091914-D
 
 Description:
 
-? This watch has all standard controls and will have dial adjustment at a fully reset The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Critical,Chat,01-06-2023 08:42,,
+• This watch has all standard controls and will have dial adjustment at a fully reset The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Critical,Chat,01-06-2023 08:42,,
 5220,Lisa Chavez,nicole64@example.net,Other,Nikon D,13-03-2020,Product inquiry,Data loss,"I'm facing issues logging into my {product_purchased} account. It says my account is locked. What should I do to unlock it? I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Critical,Phone,,,
 5221,Cody Schmidt,zamorajonathon@example.org,Male,Microsoft Office,20-03-2021,Product inquiry,Battery life,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue?
 
@@ -12410,10 +12410,10 @@ Your username will be the same as your GoogleAccount. The issue I'm facing is in
 If you can tell your ISP that your internet This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Low,Phone,,,
 5227,Kayla Ballard,paulhill@example.com,Female,Bose SoundLink Speaker,23-11-2021,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. Thanks!""
 
-""As if this would help, this isn't going to go smoothly either?.""
+""As if this would help, this isn't going to go smoothly either….""
 
 ""My apologies, I apologize for getting in such I need assistance as soon as possible because it's affecting my work and productivity.",Open,High,Chat,,,
-5229,Dr. Brian Melton,riveramelissa@example.net,Other,Apple AirPods,08-01-2021,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. ? Sam Browning (@SamBrowning) January 13, 2014
+5229,Dr. Brian Melton,riveramelissa@example.net,Other,Apple AirPods,08-01-2021,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. — Sam Browning (@SamBrowning) January 13, 2014
 
 Hollywood fans should be especially concerned about who they may be paying for the video. I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Pending Customer Response,High,Chat,01-06-2023 14:11,,
 5233,Anthony Blackburn,cdillon@example.com,Other,Apple AirPods,20-02-2021,Cancellation request,Product setup,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue?
@@ -12448,7 +12448,7 @@ A: If you have purchased both, please let me know via I've followed the troubles
 When you install a new system, you should keep a backup of all your I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,Medium,Social media,01-06-2023 00:44,,
 5249,Andrea Cole,perrykemp@example.net,Female,Canon EOS,06-06-2021,Billing inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist. I'll contact in-store.
 
-#8: $6.99 / ?7.88 USD
+#8: $6.99 / £7.88 USD
 
 Add to cart I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Pending Customer Response,Medium,Chat,01-06-2023 20:07,,
 5250,Jocelyn Smith,jamie74@example.net,Other,Dell XPS,04-02-2021,Cancellation request,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
@@ -12458,7 +12458,7 @@ The error: Product purchased not from seller, but sent to
 Customer.
 
 The error: The following statement was quoted at the time the transaction I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Low,Chat,,,
-5252,Andrea Bowen,gabriel25@example.net,Other,Microsoft Office,06-02-2021,Product inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ------------------------- ------------------------- Next Product : --------------- ""Gravity Drive"" Brand ? Product Name : ""Gravity Drive"" Brand Version : 3 ? ? Age : I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Medium,Phone,01-06-2023 04:05,,
+5252,Andrea Bowen,gabriel25@example.net,Other,Microsoft Office,06-02-2021,Product inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist. ------------------------- ------------------------- Next Product : --------------- ""Gravity Drive"" Brand   Product Name : ""Gravity Drive"" Brand Version : 3     Age : I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Medium,Phone,01-06-2023 04:05,,
 5254,Jessica Shah,ryan93@example.org,Male,Lenovo ThinkPad,28-12-2021,Cancellation request,Account access,"I'm having an issue with the {product_purchased}. Please assist.
 
 The error message is:
@@ -12595,7 +12595,7 @@ I want to send you an email I've noticed that the issue occurs consistently when
 5306,Kathleen Martinez,farmerchad@example.net,Other,Garmin Forerunner,02-12-2020,Cancellation request,Product setup,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account?
 
 How can I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,Low,Email,01-06-2023 06:50,,
-5310,Christina Bishop,ana12@example.com,Other,Microsoft Surface,05-05-2021,Product inquiry,Installation support,"I'm having an issue with the {product_purchased}. Please assist. I have no control over it."" ?Shyakumir to the vendor to try and contact the vendor. [src]
+5310,Christina Bishop,ana12@example.com,Other,Microsoft Surface,05-05-2021,Product inquiry,Installation support,"I'm having an issue with the {product_purchased}. Please assist. I have no control over it."" ―Shyakumir to the vendor to try and contact the vendor. [src]
 
 Following the discovery of the This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Low,Email,,,
 5311,Phillip Barnett,lisagates@example.com,Female,LG Smart TV,17-06-2020,Refund request,Battery life,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account? I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Critical,Chat,01-06-2023 18:00,,
@@ -12813,9 +12813,9 @@ For the rest of you: we offer the same sales line, I've already contacted custom
 
 My order contains the following :
 
-? the package name of the product and the original receipt (the refund is not included)
+· the package name of the product and the original receipt (the refund is not included)
 
-? the name I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,Low,Social media,01-06-2023 13:56,,
+· the name I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,Low,Social media,01-06-2023 13:56,,
 5394,Leah Murray,brittany32@example.net,Male,iPhone,25-10-2021,Cancellation request,Peripheral compatibility,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue?
 
 The Wi-Fi The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Critical,Social media,01-06-2023 01:56,,
@@ -12975,7 +12975,7 @@ If you are having issues with your product, please contact me or contact me or c
 
 The user in question was on my My etsy store, my Etsy Store, I use the products as I see them. I do not control the content I need assistance as soon as possible because it's affecting my work and productivity.",Open,Critical,Social media,,,
 5466,Anthony Kaufman,thomasyoung@example.net,Female,Dyson Vacuum Cleaner,16-05-2021,Cancellation request,Installation support,"I'm having an issue with the {product_purchased}. Please assist. Thank you for helping me to get my order in there, as well as to people who have purchased from me on sale via eBay. Thank you again for that. I've checked for any available software updates for my {product_purchased}, but there are none.",Pending Customer Response,High,Chat,01-06-2023 05:22,,
-5469,Denise Dudley,gina55@example.com,Female,LG Smart TV,19-07-2020,Billing inquiry,Payment issue,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? ?Well, I have to uninstall all the apps for a while....I I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,Low,Email,01-06-2023 06:09,,
+5469,Denise Dudley,gina55@example.com,Female,LG Smart TV,19-07-2020,Billing inquiry,Payment issue,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do?  Well, I have to uninstall all the apps for a while....I I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,Low,Email,01-06-2023 06:09,,
 5470,Andrew Stone,thomas22@example.net,Female,LG OLED,06-03-2021,Billing inquiry,Display issue,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account?
 
 If you I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,Medium,Chat,01-06-2023 17:13,,
@@ -13118,7 +13118,7 @@ David A. I've tried different settings and configurations on my {product_purchas
 I'm having an issue with the $1.03 price tag. Please assist.
 
 I'm having an issue with missing product information. Please assist I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Social media,,,
-5532,Casey Nguyen,trevor37@example.com,Other,Google Pixel,06-07-2021,Billing inquiry,Delivery problem,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. ? Andrew (@harrym_r) April 28, 2016
+5532,Casey Nguyen,trevor37@example.com,Other,Google Pixel,06-07-2021,Billing inquiry,Delivery problem,"I've accidentally deleted important data from my {product_purchased}. Is there any way to recover the deleted files? I need them urgently. — Andrew (@harrym_r) April 28, 2016
 
 You're being irresponsible if I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,Low,Email,,,
 5533,Shaun Kelley,edwin62@example.com,Other,Microsoft Office,02-09-2021,Technical issue,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -13164,15 +13164,15 @@ Just not on this page anymore. I rely heavily on my {product_purchased} for my d
 If your email is out of date and you are using a different email address, I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Open,Low,Phone,,,
 5555,Brian Simpson,patriciawilliams@example.org,Male,Microsoft Xbox Controller,01-02-2021,Technical issue,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
 
-? There is a bug with the {product_page}. Please assist.
+• There is a bug with the {product_page}. Please assist.
 
-? There are several other issues and problems I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Email,01-06-2023 13:08,,
+• There are several other issues and problems I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Email,01-06-2023 13:08,,
 5556,Rebecca Fields,jacobsmith@example.net,Other,Bose QuietComfort,27-06-2021,Refund request,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 I'm having an issue with the {product_purchased}. Please assist.
 
 Unstable. The current version is not available on this host This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Critical,Chat,,,
-5559,Brian Montgomery,ohamilton@example.org,Male,Sony 4K HDR TV,12-11-2020,Refund request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. ? CITIZEN_ROOM #define PENDING_WIFI_REBOOTING_MODE 8
+5559,Brian Montgomery,ohamilton@example.org,Male,Sony 4K HDR TV,12-11-2020,Refund request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. — CITIZEN_ROOM #define PENDING_WIFI_REBOOTING_MODE 8
 
 Here is an overview page for I need assistance as soon as possible because it's affecting my work and productivity.",Open,Critical,Chat,,,
 5560,James Reynolds,jamescarter@example.com,Female,Asus ROG,18-01-2020,Refund request,Installation support,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue? I would like to see the I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Chat,,,
@@ -13398,7 +13398,7 @@ The following I've checked for software updates, and my {product_purchased} is a
 What should I do? You should ask your device how much you have The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Low,Email,01-06-2023 12:18,,
 5654,Tom Hunt,bstevenson@example.net,Male,Nintendo Switch Pro Controller,27-04-2021,Refund request,Network problem,"I'm having an issue with the {product_purchased}. Please assist. As soon as possible, try and get me all the way to your billing ID, this is NOT a good call for you. I just sent out a call, I'm worried that the issue might be hardware-related and might require repair or replacement.",Open,Medium,Email,,,
 5655,Jacob Robinson,lopezrichard@example.org,Female,Microsoft Surface,16-08-2021,Cancellation request,Payment issue,I'm having an issue with the {product_purchased}. Please assist. I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?,Open,Critical,Email,,,
-5656,Phillip Robinson,julie28@example.com,Male,Bose SoundLink Speaker,29-04-2020,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/nQ0eH4ZdUJ?
+5656,Phillip Robinson,julie28@example.com,Male,Bose SoundLink Speaker,29-04-2020,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/nQ0eH4ZdUJ—
 
 #Gamergate (@SethAJ) February 21, 2017 I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Chat,01-06-2023 18:14,,
 5657,Danielle Carpenter,deborah06@example.org,Other,Lenovo ThinkPad,20-01-2020,Product inquiry,Refund request,"I'm facing issues logging into my {product_purchased} account. It says my account is locked. What should I do to unlock it? I never get my phone back. Why does that mean I need an unlock code? The key I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Open,Low,Phone,,,
@@ -13599,7 +13599,7 @@ It looks like a simple request to I've recently updated the firmware of my {prod
 Download
 
 To download the version of the product, navigate to the { I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,Critical,Social media,01-06-2023 07:32,,
-5764,Nicholas Adams,tsmith@example.org,Other,Fitbit Versa Smartwatch,22-04-2020,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. ?Now ?here is a great one to offer your customers.
+5764,Nicholas Adams,tsmith@example.org,Other,Fitbit Versa Smartwatch,22-04-2020,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist.  Now  here is a great one to offer your customers.
 ""I was very surprised when I read the article on the {product_purch I've checked the device settings and made sure that everything is configured correctly.",Pending Customer Response,Medium,Phone,01-06-2023 06:03,,
 5765,George Estes,ortegajeffery@example.com,Other,Samsung Galaxy,10-05-2021,Technical issue,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -13703,7 +13703,7 @@ Step 2) Go to Settings -> Network... and then tap on I've noticed a sudden decre
 5813,Dana Gonzalez,robertwilson@example.org,Male,iPhone,22-11-2020,Technical issue,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. My solution will show 1.1.31. I also have a 1.5.0.0 file on github with a 1.1.31.1 I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Low,Phone,,,
 5814,Sandra Fritz,pierceeric@example.net,Male,Nikon D,02-02-2021,Refund request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
-If you are looking into a reseller, please don't hesitate to visit www.bethn.io ? www.bethn.io - I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,Critical,Social media,01-06-2023 21:38,,
+If you are looking into a reseller, please don't hesitate to visit www.bethn.io – www.bethn.io - I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,Critical,Social media,01-06-2023 21:38,,
 5817,Kevin Sexton,fischerjonathan@example.org,Female,Nest Thermostat,02-09-2020,Billing inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 We don't care what device you use. When you take photos, you want to take videos. When you download a file, you want to get it I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Low,Social media,01-06-2023 12:58,,
@@ -13828,7 +13828,7 @@ Microsoft might give you a way to recover your Microsoft account through a progr
 5864,Tina Myers,jose88@example.com,Female,Lenovo ThinkPad,13-05-2020,Refund request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. If you can't help it, please don't call Customer Service. I need some help. If you can't help it, you can go back to the product I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Medium,Chat,01-06-2023 20:44,,
 5869,Christopher Wagner,davidwelch@example.org,Other,Samsung Galaxy,26-11-2020,Technical issue,Display issue,"I've forgotten my password for my {product_purchased} account, and the password reset option is not working. How can I recover my account?
 
-Step 2 ? Remove the existing account
+Step 2 – Remove the existing account
 
 Delete the last 2 passwords from your I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.",Open,Critical,Email,,,
 5871,Jessica Gill,brendanyang@example.com,Female,Autodesk AutoCAD,16-04-2021,Product inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
@@ -14134,7 +14134,7 @@ In I've tried different settings and configurations on my {product_purchased}, b
 The number was given to me and I would appreciate if this info can be taken into account.
 
 I believe all sales are due on 1 July 2015 I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Critical,Chat,,,
-5985,Carrie Barrett,carlos08@example.com,Male,Apple AirPods,22-06-2021,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. ?I think I understand why you need to change your name with ""Nova"" :)
+5985,Carrie Barrett,carlos08@example.com,Male,Apple AirPods,22-06-2021,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist.  I think I understand why you need to change your name with ""Nova"" :)
 We could always talk more about it and have it be more clear I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Open,Medium,Chat,,,
 5986,Julian Robinson,dickersonneil@example.org,Male,Sony PlayStation,25-10-2020,Product inquiry,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -14487,7 +14487,7 @@ A system-wide fix is available from Google Chrome's Support page, but I've alrea
 How does the server detect a new product?
 
 This might I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Open,High,Chat,,,
-6128,Kevin Figueroa,nguyendavid@example.net,Male,Garmin Forerunner,30-03-2020,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist. "" ? Anastasia [DLC Content], referring to Anastasia's description of the item.
+6128,Kevin Figueroa,nguyendavid@example.net,Male,Garmin Forerunner,30-03-2020,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist. "" — Anastasia [DLC Content], referring to Anastasia's description of the item.
 
 
 Anastasia, it's the first time I I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Open,Critical,Social media,,,
@@ -14556,7 +14556,7 @@ It's clear that we cannot offer what I believe to be my best and most unique pro
 When asked (if we can't fix my issue we can at least provide some wrong information as to why i didn't buy a purchase)
 
 
-? I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Pending Customer Response,High,Social media,01-06-2023 09:21,,
+• I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Pending Customer Response,High,Social media,01-06-2023 09:21,,
 6156,Timothy Ortiz,stephanie05@example.net,Female,Samsung Galaxy,05-01-2021,Product inquiry,Network problem,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? Thank you.
 
 
@@ -15057,9 +15057,9 @@ There are two things you may need to figure out to resolve the network I'm worri
 When you use your browser, the browser doesn't respond automatically I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,Critical,Chat,01-06-2023 09:48,,
 6389,Autumn Mendez,carrollbrittney@example.org,Male,Roomba Robot Vacuum,04-05-2021,Refund request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
 
-? We've added a new price point to account for the cost of the original item, however it's now $30.
+• We've added a new price point to account for the cost of the original item, however it's now $30.
 
-? We also want I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Low,Email,01-06-2023 13:44,,
+• We also want I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Low,Email,01-06-2023 13:44,,
 6390,Mark Roach,thuffman@example.org,Male,Bose SoundLink Speaker,27-10-2020,Billing inquiry,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. I'm having an issue with the {product_purchased}. Please assist.
 
 Rated 2 out of 5 by jf from Poor Product I was able I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Medium,Phone,,,
@@ -15099,8 +15099,8 @@ After you place the orders, you will receive the product receipt with your invoi
 
 Please enable Javascript to watch this video
 
-ALBANY, N.Y.-- (CBSNewYork) ? The department of public safety today revealed I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,Critical,Social media,,,
-6405,Patricia Taylor,ihorn@example.com,Other,MacBook Pro,15-12-2021,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. 1 2 Next ? I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 00:36,,
+ALBANY, N.Y.-- (CBSNewYork) – The department of public safety today revealed I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Open,Critical,Social media,,,
+6405,Patricia Taylor,ihorn@example.com,Other,MacBook Pro,15-12-2021,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. 1 2 Next » I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 00:36,,
 6407,Richard Gates,scottgarcia@example.org,Male,Fitbit Charge,02-10-2020,Refund request,Refund request,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them? Thanks... - Eric
 
 4.1.4 A new version I'm not sure if this issue is specific to my device or if others have reported similar problems.",Open,Low,Phone,,,
@@ -15158,9 +15158,9 @@ I was told that the product is ""on a higher quantity"" of ""free"" from Amazon 
 6431,Samuel Lopez,grant32@example.org,Other,Microsoft Office,11-09-2021,Product inquiry,Hardware issue,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? Yes. Please check the {product_purchased_device} I'm not sure if this issue is specific to my device or if others have reported similar problems.",Open,Medium,Email,,,
 6432,Timothy White,rodrigueztimothy@example.org,Male,Canon DSLR Camera,05-01-2020,Cancellation request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist.
 
-? You asked the right question. Get a review in as soon as you can.
+• You asked the right question. Get a review in as soon as you can.
 
-? We can only offer this product through a third party. I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Low,Chat,,,
+• We can only offer this product through a third party. I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Low,Chat,,,
 6433,Tyler Gilbert,elliottfrank@example.net,Male,Fitbit Charge,27-01-2020,Cancellation request,Data loss,"I'm facing issues logging into my {product_purchased} account. It says my account is locked. What should I do to unlock it? If I have any questions, feel free to reach out and I'll try to help. I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,High,Email,01-06-2023 16:24,,
 6434,Susan Jackson,kharris@example.com,Other,Apple AirPods,10-03-2020,Refund request,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -15208,7 +15208,7 @@ Did I am paying a delivery charge that I have not paid. Can you provide me with 
 Pay I've checked for any available software updates for my {product_purchased}, but there are none.",Open,High,Email,,,
 6445,Denise Lane,qgonzalez@example.org,Female,Canon EOS,11-04-2021,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
-4.5 ? Bugfix: Ensure that your device will be powered-down when you log in ? Bugfix: Fix the crash log when we leave I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,High,Social media,,,
+4.5 • Bugfix: Ensure that your device will be powered-down when you log in • Bugfix: Fix the crash log when we leave I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,High,Social media,,,
 6446,Benjamin Castillo,alexanderlindsay@example.com,Female,Xbox,11-08-2020,Cancellation request,Data loss,"I'm having an issue with the {product_purchased}. Please assist. The problem must be resolved in one place. And I recommend you send the invoice to the vendor ASAP.
 
 Please, give a good explanation. I've done I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Critical,Email,,,
@@ -15428,9 +15428,9 @@ If you see it, please report it to the right. I'm unable to find the option to p
 You can tell if the product you bought is defective by clicking:
 
 
-? Check for: Product information on the product page
+• Check for: Product information on the product page
 
-? Check out what I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,High,Social media,01-06-2023 09:36,,
+• Check out what I've already contacted customer support multiple times, but the issue remains unresolved.",Pending Customer Response,High,Social media,01-06-2023 09:36,,
 6537,Loretta Shepherd,jonesmark@example.net,Female,GoPro Action Camera,30-08-2021,Technical issue,Battery life,I'm having an issue with the {product_purchased}. Please assist. I need assistance as soon as possible because it's affecting my work and productivity.,Pending Customer Response,Medium,Chat,01-06-2023 22:26,,
 6538,Patrick Solis,mckeelisa@example.org,Female,Philips Hue Lights,19-04-2020,Technical issue,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
@@ -15654,7 +15654,7 @@ I found out you can, however, receive a payment (or an acknowledgment of receipt
 6619,Charlotte Barnett,vmassey@example.net,Male,Google Nest,25-08-2020,Refund request,Display issue,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? This has been bothering me for a while, I really hope you're looking into I'm worried that the issue might be hardware-related and might require repair or replacement.",Open,High,Email,,,
 6623,Justin Kerr,dharper@example.org,Female,Dyson Vacuum Cleaner,03-03-2020,Cancellation request,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
-Product Code ?2018 Microsoft
+Product Code ©2018 Microsoft
 
 Purchase Guide
 
@@ -15804,7 +15804,7 @@ VIP offers a $1000 The issue I'm facing is intermittent. Sometimes it works fine
 6694,Nicole Aguilar,boydjames@example.net,Other,MacBook Pro,21-01-2020,Product inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist.
 
 To verify that there are no issues with this product, you will need to do an initial purchase. If the amount requested exceeds your payment method, you may I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Low,Social media,01-06-2023 03:06,,
-6695,Jessica Sanders,belinda38@example.com,Other,Autodesk AutoCAD,25-10-2020,Technical issue,Battery life,"I'm having an issue with the {product_purchased}. Please assist. ?
+6695,Jessica Sanders,belinda38@example.com,Other,Autodesk AutoCAD,25-10-2020,Technical issue,Battery life,"I'm having an issue with the {product_purchased}. Please assist. —
 
 1
 
@@ -15880,7 +15880,7 @@ Made from high-quality materials, in a perfect fit to support your body's needs.
 
 First, find the App Store website and make the error that caused the data I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Medium,Email,,,
 6719,Jason Thomas,timothy67@example.org,Other,Dyson Vacuum Cleaner,06-05-2021,Refund request,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. Thank you. {product_item} has been sold, but it doesn't appear to be in our possession. {product_item} is sold for a price I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,Critical,Social media,,,
-6720,Monica Ramirez,pattersonpaula@example.net,Male,Philips Hue Lights,29-08-2020,Cancellation request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/b0YgPZHcM9 ? Ben Kastel (@BenKastel) May 19, 2017 I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Social media,01-06-2023 06:40,,
+6720,Monica Ramirez,pattersonpaula@example.net,Male,Philips Hue Lights,29-08-2020,Cancellation request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/b0YgPZHcM9 — Ben Kastel (@BenKastel) May 19, 2017 I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Social media,01-06-2023 06:40,,
 6721,Isaiah Mcpherson,dawngreene@example.org,Other,HP Pavilion,05-09-2020,Product inquiry,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist.
 
 Coffee Shop
@@ -16188,7 +16188,7 @@ B-A-Z 0.7.11.12-1.0 B-AB-N-M0-3 I've already contacted customer support multiple
 
 Product Info
 
-? ""Wanna Use With A Game Of Thrones""- GameofThrones is ""a great game for a game of Thrones,"" the I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,High,Email,01-06-2023 06:27,,
+• ""Wanna Use With A Game Of Thrones""- GameofThrones is ""a great game for a game of Thrones,"" the I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,High,Email,01-06-2023 06:27,,
 6834,Taylor Griffin,charlesdominguez@example.net,Female,Lenovo ThinkPad,27-03-2021,Cancellation request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. */
 
 # endif
@@ -16314,7 +16314,7 @@ Thank you.
 
 The P.J. I've checked for software updates, and my {product_purchased} is already running the latest version.",Pending Customer Response,Medium,Phone,01-06-2023 08:01,,
 6878,Cynthia Snow,tdiaz@example.org,Female,Sony PlayStation,13-03-2020,Billing inquiry,Network problem,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? If none of the above would be useful for you, please contact us in the I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Low,Chat,,,
-6879,Michael Mcgee,adamsfrank@example.net,Female,Nintendo Switch,08-12-2020,Cancellation request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. ? The Product Order Address ? ? Address ?
+6879,Michael Mcgee,adamsfrank@example.net,Female,Nintendo Switch,08-12-2020,Cancellation request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist. 《 The Product Order Address 》 《 Address 》
 
 We have a lot of information in this site that you are not able I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Medium,Phone,,,
 6880,Kristen Hamilton,erussell@example.net,Female,Dyson Vacuum Cleaner,05-02-2020,Refund request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. Thank you for the help.
@@ -16577,7 +16577,7 @@ If you're out of the way, I'm not sure if this issue is specific to my device or
 
 My PC was able to connect directly to a wifi network at ~ I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 06:09,,
 6972,Sophia Morgan,stevensonnatalie@example.org,Other,Asus ROG,20-01-2020,Cancellation request,Battery life,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. How did you know the product's going to I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,Critical,Email,01-06-2023 22:04,,
-6973,Matthew Wong,lucasstone@example.com,Female,Xbox,18-03-2021,Technical issue,Data loss,"I'm having an issue with the {product_purchased}. Please assist. ? ? ?
+6973,Matthew Wong,lucasstone@example.com,Female,Xbox,18-03-2021,Technical issue,Data loss,"I'm having an issue with the {product_purchased}. Please assist. — — —
 
 SUBJECT: #2624: the #1248.1248.943_d3b00d36705027 I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,High,Phone,01-06-2023 10:06,,
 6974,Dorothy Williams,petersenlinda@example.org,Other,Roomba Robot Vacuum,03-09-2020,Refund request,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist.
@@ -16696,7 +16696,7 @@ P.S. If you're I've tried troubleshooting steps mentioned in the user manual, bu
 7037,Dennis Hernandez,john62@example.com,Female,Microsoft Xbox Controller,28-10-2021,Refund request,Product setup,"My {product_purchased} crashed, and I lost all the data stored on it. Is there any way to recover the lost data?
 
 As for restoring a data structure without making changes, that's a new technique. To do I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Open,Medium,Chat,,,
-7039,Sabrina Miller,rachelwarner@example.net,Male,Autodesk AutoCAD,04-04-2021,Billing inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist. </div> ? <br /> <br /> <br /> </div> <div id=""product_id"" style=""display:none!"" ><p></ I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Critical,Chat,,,
+7039,Sabrina Miller,rachelwarner@example.net,Male,Autodesk AutoCAD,04-04-2021,Billing inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist. </div> — <br /> <br /> <br /> </div> <div id=""product_id"" style=""display:none!"" ><p></ I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Critical,Chat,,,
 7041,Kathleen Love,lucerotimothy@example.com,Male,Bose SoundLink Speaker,12-09-2021,Cancellation request,Display issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 You're on your way to work. A number of companies are trying to make their software easier, but they're asking for trouble and may be getting in I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Critical,Email,,,
@@ -17633,7 +17633,7 @@ I apologize but all the product purchases are accepted at my house. The warranty
 The package, which was sent by the USPS in the previous week, contains 3 1/3rds of 2 of 2 $1 items. I'm I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.",Pending Customer Response,Low,Phone,01-06-2023 22:03,,
 7425,Johnny Sims,kcole@example.net,Male,HP Pavilion,10-09-2020,Billing inquiry,Product setup,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this?
 
-Reply ? Report Post I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,Medium,Phone,01-06-2023 20:07,,
+Reply · Report Post I've noticed a peculiar error message popping up on my {product_purchased} screen. It says '{error_message}'. What does it mean?",Pending Customer Response,Medium,Phone,01-06-2023 20:07,,
 7426,Donald Rios,ericlee@example.org,Male,Dyson Vacuum Cleaner,27-12-2020,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 For details, please see the instructions about what to look for under the 'Product Details' page.
@@ -17653,7 +17653,7 @@ Rated 3 out of 5 by Anonymous from Needs a few weeks to fix After reading all th
 7433,Melissa Morgan,davidgarcia@example.org,Other,iPhone,14-11-2020,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 ""Our customers in Russia like us and we want this to happen,"" Jelena Bailoschko said in a phone interview. ""We think I rely heavily on my {product_purchased} for my daily tasks, and this issue is hindering my productivity.",Open,Medium,Email,,,
-7435,Donna Collins,thomasteresa@example.com,Male,Fitbit Charge,08-07-2021,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. Please make sure everyone knows who the products are. Sorry for the inconvenience. ? Donald J. Trump (@realDonaldTrump) January 8, 2017
+7435,Donna Collins,thomasteresa@example.com,Male,Fitbit Charge,08-07-2021,Cancellation request,Product setup,"I'm having an issue with the {product_purchased}. Please assist. Please make sure everyone knows who the products are. Sorry for the inconvenience. — Donald J. Trump (@realDonaldTrump) January 8, 2017
 
 The Trump campaign has The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Medium,Chat,01-06-2023 10:58,,
 7436,Amanda Johnson,olucero@example.com,Female,Microsoft Surface,23-10-2020,Refund request,Battery life,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue?
@@ -17785,9 +17785,9 @@ I think it has something to do with the last sale I didn't make, etc. It's defin
 7470,Debra Stewart,omatthews@example.org,Female,PlayStation,09-01-2021,Technical issue,Installation support,"I'm having trouble connecting my {product_purchased} to my home Wi-Fi network. It doesn't detect any networks, although other devices are connecting fine. What can be done to resolve this issue? After installing the app, you I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Low,Social media,,,
 7472,Denise Smith MD,susan14@example.net,Male,Roomba Robot Vacuum,29-03-2021,Technical issue,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist.
 
-? I received two other similar products from you.
+• I received two other similar products from you.
 
-? I didn't get a response like this after I started using it, so it was a I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Chat,01-06-2023 04:33,,
+• I didn't get a response like this after I started using it, so it was a I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Chat,01-06-2023 04:33,,
 7473,Spencer Mullen,rachel62@example.com,Male,Google Nest,29-12-2020,Technical issue,Refund request,I'm having an issue with the {product_purchased}. Please assist. {product_purchased}. Please assist. {product_purchased}. Please assist. {product_purchased}. Please assist. {product_ I'm worried that the issue might be hardware-related and might require repair or replacement.,Pending Customer Response,High,Phone,01-06-2023 06:38,,
 7476,John Taylor MD,sharon05@example.com,Other,GoPro Hero,12-07-2020,Refund request,Hardware issue,I'm having an issue with the {product_purchased}. Please assist. :) - Thanks - - thanks :) (I don't know which part of the email has been removed or what I'm trying to do for this to work). Now I'm not sure if this issue is specific to my device or if others have reported similar problems.,Pending Customer Response,Critical,Phone,01-06-2023 03:06,,
 7481,John Castillo,cunninghamchristopher@example.net,Other,LG Washing Machine,05-07-2020,Refund request,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
@@ -17936,7 +17936,7 @@ If you I've reviewed the troubleshooting steps on the official support website, 
 7536,Julie Keller,jasminewise@example.net,Male,Dell XPS,06-04-2021,Refund request,Product recommendation,The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? In the network diagram above the network connection is broken and the user has taken the This problem started occurring after the recent software update. I haven't made any other changes to the device.,Pending Customer Response,High,Social media,01-06-2023 10:39,,
 7537,Abigail White PhD,davischristopher@example.net,Other,Asus ROG,25-09-2020,Billing inquiry,Display issue,"I'm having an issue with the {product_purchased}. Please assist. If it's not working, please do send an email to support@tasco.com
 
-[?] The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Low,Email,,,
+[…] The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Low,Email,,,
 7539,John Johnson,hornemichael@example.com,Female,Google Nest,04-02-2021,Billing inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
 
 It's a very simple script, but it's done just the same, with one significant change. We need to specify a script name for the product ( This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,High,Phone,,,
@@ -18259,7 +18259,7 @@ Yes, the software updates or fixes are always available. Updates I've already co
 7688,Gregory George,robertdavid@example.org,Female,Fitbit Charge,10-09-2021,Refund request,Data loss,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? I have a free-of-charge $30 device and just need a way I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Open,Critical,Chat,,,
 7689,William Butler,lschmidt@example.com,Other,GoPro Action Camera,12-02-2020,Billing inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
-? I have one for sale, I bought it just to get a new one. I want to try on it but no one was willing to take it I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Pending Customer Response,Critical,Email,01-06-2023 09:34,,
+• I have one for sale, I bought it just to get a new one. I want to try on it but no one was willing to take it I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Pending Customer Response,Critical,Email,01-06-2023 09:34,,
 7690,Deborah Williams,bfreeman@example.net,Female,Nintendo Switch Pro Controller,26-12-2020,Technical issue,Hardware issue,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them?
 
 It is common to find the items that are missing or stolen I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,High,Phone,01-06-2023 15:30,,
@@ -18365,7 +18365,7 @@ Are you sure you I've tried troubleshooting steps mentioned in the user manual, 
 7723,Angela Rivers,asharp@example.net,Male,Sony 4K HDR TV,23-11-2021,Technical issue,Battery life,"I'm having an issue with the {product_purchased}. Please assist.
 
 [10:23pm] <+x4b> I'm a very big gamer. I'm going to be doing something silly with our $100, I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Pending Customer Response,High,Social media,01-06-2023 16:01,,
-7724,Sandra Castaneda,michaelfarrell@example.net,Other,Canon EOS,15-07-2021,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. Thank you. ? Donald J. Trump (@realDonaldTrump) May 24, 2017
+7724,Sandra Castaneda,michaelfarrell@example.net,Other,Canon EOS,15-07-2021,Technical issue,Account access,"I'm having an issue with the {product_purchased}. Please assist. Thank you. — Donald J. Trump (@realDonaldTrump) May 24, 2017
 
 A spokeswoman for Trump International Hotel & Tower declined further comment, as did Trump International I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,High,Email,01-06-2023 10:28,,
 7726,Tiffany Chen,hcannon@example.net,Female,Amazon Kindle,01-04-2021,Refund request,Installation support,"I'm having an issue with the {product_purchased}. Please assist. */
@@ -18447,7 +18447,7 @@ F/16 I've noticed a sudden decrease in battery life on my {product_purchased}. I
 
 Edit: Added @_s, @w: thanks... I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,Medium,Chat,,,
 7752,Steven Vega,pelliott@example.net,Male,Sony PlayStation,01-12-2020,Product inquiry,Peripheral compatibility,I'm having an issue with the {product_purchased}. Please assist. [4/15/2015 3:26:43 PM] [Client thread/INFO] [mcjty.varia.Logging]: Sent event FML This problem started occurring after the recent software update. I haven't made any other changes to the device.,Pending Customer Response,High,Phone,01-06-2023 05:35,,
-7753,Katherine Allen,brownnancy@example.org,Male,HP Pavilion,14-07-2021,Technical issue,Data loss,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/QYFmVxJyS1 pic.twitter.com/XWfGdNgvGW ? I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Low,Phone,,,
+7753,Katherine Allen,brownnancy@example.org,Male,HP Pavilion,14-07-2021,Technical issue,Data loss,"I'm having an issue with the {product_purchased}. Please assist. https://t.co/QYFmVxJyS1 pic.twitter.com/XWfGdNgvGW — I've tried troubleshooting steps mentioned in the user manual, but the issue persists.",Open,Low,Phone,,,
 7754,Timothy Robinson,mark07@example.com,Male,PlayStation,18-12-2020,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
 
 If you need assistance please feel free to contact us directly or just email us at nmms.com.
@@ -18707,7 +18707,7 @@ Thank you,
 
 Kai, My Ex
 
-""The price is not for me."" ? Kai on the issue
+""The price is not for me."" — Kai on the issue
 
 This post has been I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Phone,01-06-2023 13:35,,
 7847,Sean Flynn,brandtcarol@example.org,Male,Roomba Robot Vacuum,03-12-2021,Product inquiry,Product setup,"I'm having an issue with the {product_purchased}. Please assist. - Please go to my ""Help with my car"" page of the shop! I didn't get a refund. (Note: If you find a problem with the I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Pending Customer Response,Critical,Email,01-06-2023 14:15,,
@@ -18954,7 +18954,7 @@ Use the search app settings for your country with http://developer.b I've perfor
 7958,Mrs. Deanna Campbell MD,davismiranda@example.org,Male,Nikon D,20-04-2021,Technical issue,Refund request,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem? For now, all you have to do is enable your computer on your networkrog I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,Medium,Social media,01-06-2023 06:38,,
 7959,Matthew Salazar,caldwellalexa@example.org,Other,PlayStation,12-03-2021,Cancellation request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist.
 
-3.6.2 ? The new (new) UI is getting better and better. Please assist.
+3.6.2 – The new (new) UI is getting better and better. Please assist.
 
 3.6.1 New UX design I've checked for software updates, and my {product_purchased} is already running the latest version.",Open,Critical,Phone,,,
 7960,Meagan Rowe,berryjeffrey@example.com,Male,Nintendo Switch,01-09-2020,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
@@ -19017,7 +19017,7 @@ The item(s) you were looking at may be out of stock. Please check the item back 
 If the order contains multiple items, please include the item name for each order you order.
 
 For example, if you I've reviewed the troubleshooting steps on the official support website, but they didn't resolve the problem.",Pending Customer Response,Medium,Email,01-06-2023 02:16,,
-7985,Dustin Duffy,smithmiranda@example.org,Female,Nest Thermostat,05-06-2020,Refund request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. ? Product Owner (@Product_Owner) March 4, 2017
+7985,Dustin Duffy,smithmiranda@example.org,Female,Nest Thermostat,05-06-2020,Refund request,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. — Product Owner (@Product_Owner) March 4, 2017
 
 A post dated March 4 has been removed under ""Notifications from B&H"": I've tried using different cables, adapters, or peripherals with my {product_purchased}, but the issue persists.",Open,Medium,Social media,,,
 7986,Andrew Thompson,richardfoster@example.net,Male,Bose SoundLink Speaker,12-05-2021,Cancellation request,Refund request,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. I'm in the process of changing my policy I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.",Pending Customer Response,Low,Email,01-06-2023 02:39,,
@@ -19040,7 +19040,7 @@ I just got my new LG G2 just shipped with the G2's new firmware update. It's wor
 7996,Susan Walters,joneskyle@example.com,Other,Nest Thermostat,27-05-2021,Technical issue,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 
-Thank you for??
+Thank you for�逓
 
 A.B.C.
 
@@ -19080,7 +19080,7 @@ if (! product_purchased ) {
 return results I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Open,High,Phone,,,
 8001,Mary Hopkins,ojordan@example.org,Other,Roomba Robot Vacuum,26-08-2020,Cancellation request,Refund request,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? I haven't set anything up yet, and I still have a lot of I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Critical,Social media,,,
 8004,Tonya Huber,debra81@example.net,Female,PlayStation,23-04-2020,Technical issue,Display issue,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? {Product} is not available anymore... {Purchased} was a good This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Medium,Email,01-06-2023 13:28,,
-8005,Tina Bond,patrickriley@example.net,Male,MacBook Pro,23-12-2021,Refund request,Account access,"I'm having an issue with the {product_purchased}. Please assist. "" ? Dr. James C. ""Trent"" L. ""Trent"" B. ""Trent"" A. ""Lorraine"" ""Lor I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,Low,Chat,01-06-2023 15:20,,
+8005,Tina Bond,patrickriley@example.net,Male,MacBook Pro,23-12-2021,Refund request,Account access,"I'm having an issue with the {product_purchased}. Please assist. "" — Dr. James C. ""Trent"" L. ""Trent"" B. ""Trent"" A. ""Lorraine"" ""Lor I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,Low,Chat,01-06-2023 15:20,,
 8006,Robert Small,joshuabaldwin@example.net,Female,Fitbit Charge,06-05-2021,Refund request,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
 
 Your product might be purchased as a gift, a personal investment, or a commercial gift. The purchase is complete and not required. Please contact your local bank This problem started occurring after the recent software update. I haven't made any other changes to the device.",Open,Medium,Chat,,,
@@ -19432,7 +19432,7 @@ My name is Chris, and I'm currently under my second year at the University I've 
 8169,Rebecca White,matthew09@example.org,Male,Amazon Echo,06-06-2021,Refund request,Battery life,I'm having an issue with the {product_purchased}. Please assist. This problem started occurring after the recent software update. I haven't made any other changes to the device.,Pending Customer Response,Critical,Email,01-06-2023 13:16,,
 8173,Tanya Meyer,iherrera@example.com,Other,Nikon D,22-03-2020,Billing inquiry,Product setup,"I've encountered a data loss issue with my {product_purchased}. All the files and documents seem to have disappeared. Can you guide me on how to retrieve them?
 
-? For the most part, it's been pretty easy to I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Low,Chat,01-06-2023 15:35,,
+• For the most part, it's been pretty easy to I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Low,Chat,01-06-2023 15:35,,
 8174,Michael Espinoza,cwilliams@example.com,Female,Roomba Robot Vacuum,20-02-2020,Technical issue,Payment issue,"I'm having an issue with the {product_purchased}. Please assist. Thank you!
 
 Sebastian, is this your problem?
@@ -19498,7 +19498,7 @@ As I mentioned above, if you can't get an order delivered within 3 days (as ther
 8197,Linda Freeman,zrios@example.net,Male,LG Smart TV,21-05-2020,Cancellation request,Display issue,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? In which part: Desktop, Mobile, or Other applications. I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Open,Medium,Chat,,,
 8198,Kyle Bell,patrickjames@example.net,Female,Garmin Forerunner,10-05-2021,Product inquiry,Network problem,"The {product_purchased} is unable to establish a stable internet connection. It keeps disconnecting intermittently. How can I troubleshoot this network problem?
 
-? After a period of unavailability due to network issues, you may I've checked the device settings and made sure that everything is configured correctly.",Open,High,Social media,,,
+• After a period of unavailability due to network issues, you may I've checked the device settings and made sure that everything is configured correctly.",Open,High,Social media,,,
 8200,Michele Gutierrez,rbrown@example.org,Female,Sony PlayStation,03-11-2020,Refund request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist.
 
 Thank you for your support, we appreciate all the support you have given.
@@ -19524,7 +19524,7 @@ If I want to update to the latest version of the company's blog, there is a link
 I'll post a short email about a reset. Please check my 'contact info I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Email,01-06-2023 11:43,,
 8211,Jason Martinez,diane25@example.net,Female,Sony Xperia,04-04-2021,Product inquiry,Battery life,"I've forgotten my password for my {product_purchased} account, and the password reset option is not working. How can I recover my account? Please try following this link: https://support.apple.com/kb/HT20 I've followed the troubleshooting steps mentioned in the user manual, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 13:04,,
 8212,Ryan Franklin,angela70@example.com,Male,Garmin Forerunner,28-08-2020,Billing inquiry,Software bug,"There seems to be a hardware problem with my {product_purchased}. The screen is flickering, and I'm unable to use it. What should I do? I think it Squadron 42's UI has not been changed or redesigned for this build I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,Low,Chat,01-06-2023 21:58,,
-8213,Wesley Lewis,daniellewhitaker@example.net,Male,Microsoft Xbox Controller,25-01-2020,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. ? David P. Whitehead (@DavidPWhitehead) October 18, 2015
+8213,Wesley Lewis,daniellewhitaker@example.net,Male,Microsoft Xbox Controller,25-01-2020,Cancellation request,Refund request,"I'm having an issue with the {product_purchased}. Please assist. — David P. Whitehead (@DavidPWhitehead) October 18, 2015
 
 So many people are saying they will get refund, they want to say yes The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,High,Email,01-06-2023 03:45,,
 8214,Michelle Ramos,wadesean@example.net,Other,Sony PlayStation,22-02-2020,Cancellation request,Data loss,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? I'd love to hear about your experience. Thank you, Jeff
@@ -19569,14 +19569,14 @@ My problem is, it doesn't get any further. You have a product that you purchased
 
 You can restore the data in the following case if you want to:
 
-? Copy I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Low,Email,,,
+• Copy I've already contacted customer support multiple times, but the issue remains unresolved.",Open,Low,Email,,,
 8236,Erica Burton,ericthomas@example.com,Female,Fitbit Charge,01-10-2021,Technical issue,Payment issue,"There seems to be a glitch in the {product_purchased} software. It freezes frequently, making it difficult to use. Can you please provide a solution? This problem started occurring after the recent software update. I haven't made any other changes to the device.",Pending Customer Response,Medium,Email,01-06-2023 20:28,,
 8237,Amy Anderson,hamiltonmark@example.org,Male,Garmin Forerunner,27-01-2021,Product inquiry,Network problem,"I'm having an issue with the {product_purchased}. Please assist. */
 
 }
 
 else if ( is_custom_custom_value ()? $. name_value_item_name : "" custom "" ) { I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Pending Customer Response,Critical,Phone,01-06-2023 02:00,,
-8240,Raymond Neal,jeffrey97@example.com,Female,LG Washing Machine,13-05-2020,Product inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. Please provincial government, please help us in your problem. https://t.co/rEzVX0gXmF ? JIM COLLAB I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Chat,,,
+8240,Raymond Neal,jeffrey97@example.com,Female,LG Washing Machine,13-05-2020,Product inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. Please provincial government, please help us in your problem. https://t.co/rEzVX0gXmF — JIM COLLAB I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Chat,,,
 8241,Christine Davis,rhonda49@example.com,Male,Google Pixel,09-10-2021,Technical issue,Display issue,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this?
 
 
@@ -19635,7 +19635,7 @@ I've I've tried using different cables, adapters, or peripherals with my {produc
 My {product_purchased} failed to install the update, and the new version I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Pending Customer Response,Critical,Chat,01-06-2023 11:53,,
 8258,Melinda Fox,melissaellis@example.net,Female,LG Washing Machine,24-07-2021,Billing inquiry,Software bug,"I'm having an issue with the {product_purchased}. Please assist. I might get this corrected...
 
-Sawyer's new iPhone 5X,? $1499 ?in an Apple Store. ?I'm having I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Low,Social media,,,
+Sawyer's new iPhone 5X,  $1499  in an Apple Store.  I'm having I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Low,Social media,,,
 8263,Brenda Taylor,jennifer29@example.com,Male,Dell XPS,17-11-2020,Refund request,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist. This has been a problem with our servers since July 2013. Any help or suggestion would be extremely appreciated.
 
 How do I do it and why do I need I'm using the original charger that came with my {product_purchased}, but it's not charging properly.",Open,Medium,Email,,,
@@ -19760,7 +19760,7 @@ Add a checkerbox below the list of features. I'm using the original charger that
 My question is, do you feel it's unreasonable and unethical to include this ""product"" I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Open,Critical,Phone,,,
 8326,David Smith,ashleythompson@example.com,Other,Nintendo Switch Pro Controller,22-07-2021,Billing inquiry,Installation support,"I'm having an issue with the {product_purchased}. Please assist. As I am on the device I am unable to connect to services.
 
-I'm about to turn off my computer when the screen appears as shown above?then I'm not sure if this issue is specific to my device or if others have reported similar problems.",Pending Customer Response,High,Email,01-06-2023 18:54,,
+I'm about to turn off my computer when the screen appears as shown above…then I'm not sure if this issue is specific to my device or if others have reported similar problems.",Pending Customer Response,High,Email,01-06-2023 18:54,,
 8327,William Stevens,msmith@example.org,Female,LG Smart TV,15-09-2020,Technical issue,Product compatibility,I'm having an issue with the {product_purchased}. Please assist. I need assistance as soon as possible because it's affecting my work and productivity.,Pending Customer Response,Medium,Social media,01-06-2023 08:26,,
 8328,Kevin Hudson,yvonnegeorge@example.net,Female,GoPro Action Camera,07-05-2021,Technical issue,Installation support,I'm having an issue with the {product_purchased}. Please assist. 1-800-813-1258: No: 1 The problem could happen to you if an expired gift card was made when your purchase was made. 1 This problem started occurring after the recent software update. I haven't made any other changes to the device.,Open,Low,Chat,,,
 8329,Alyssa Reynolds,danielleerickson@example.net,Female,Fitbit Charge,23-11-2020,Technical issue,Peripheral compatibility,"I'm having an issue with the {product_purchased}. Please assist.
@@ -19809,7 +19809,7 @@ Go to your Product Store. Under ""New The issue I'm facing is intermittent. Some
 8353,Megan Bowman,anthony12@example.net,Other,Asus ROG,14-08-2021,Refund request,Hardware issue,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account?
 
 If you I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,High,Email,01-06-2023 10:33,,
-8354,Victor Le,nguyenjason@example.org,Female,Autodesk AutoCAD,11-03-2020,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist. ? The First Nation of New York (@FirstNy) August 25, 2015
+8354,Victor Le,nguyenjason@example.org,Female,Autodesk AutoCAD,11-03-2020,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist. — The First Nation of New York (@FirstNy) August 25, 2015
 
 This is one way for people to get paid. The first one that has I've checked the device settings and made sure that everything is configured correctly.",Pending Customer Response,Low,Social media,01-06-2023 18:18,,
 8355,Pamela Grant,robertskatie@example.com,Male,Google Nest,29-05-2020,Technical issue,Product setup,"I'm having an issue with the {product_purchased}. Please assist.
@@ -19925,7 +19925,7 @@ Click Here to see what's available I'm unable to find the option to perform the 
 
 3.5.1 Fixed issues that might come up for you I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Low,Email,,,
 8408,Jennifer Cooper,francis23@example.org,Other,Garmin Forerunner,16-11-2021,Refund request,Hardware issue,"I'm having an issue with the {product_purchased}. Please assist. My name is Justin. I'm a photographer. In 2011 my son was diagnosed with post-traumatic stress disorder and was frighteningly in fear of losing his job."" I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Pending Customer Response,Medium,Phone,01-06-2023 07:47,,
-8409,Michelle Medina,jacobkim@example.net,Male,Fitbit Charge,19-01-2021,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist. ? M.G. (@m_geogar) September 21, 2014
+8409,Michelle Medina,jacobkim@example.net,Male,Fitbit Charge,19-01-2021,Cancellation request,Battery life,"I'm having an issue with the {product_purchased}. Please assist. — M.G. (@m_geogar) September 21, 2014
 
 When you say ""what about my purchase from me"" the company might respond I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Social media,,,
 8410,Samuel Beard,howardsean@example.com,Other,Asus ROG,28-09-2020,Billing inquiry,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. In the next update, we will include that information for all of our users. Thank you for your involvement!
