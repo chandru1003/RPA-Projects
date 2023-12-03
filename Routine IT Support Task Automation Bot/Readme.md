@@ -9,20 +9,7 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 1. **Ticket Categorization and Routing:**
    - Automate the categorization of tickets based on type and route them to the relevant teams.
-
-2. **Ticket Status Updates:**
-   - Develop a bot to automatically update ticket statuses based on resolutions or customer responses.
-
-3. **Ticket Priority Assessment:**
-   - Implement a bot to analyze ticket details and assign priority levels based on predefined criteria.
-
-4. **Customer Satisfaction Survey Analysis:**
-   - Create a bot to automatically aggregate and analyze customer satisfaction ratings.
-
-5. **Ticket Escalation Handling:**
-   - Develop a bot to analyze ticket details and automatically escalate tickets based on predefined criteria.
-
-### Ticket Categories and Assigned Designation
+##### Ticket Categories and Assigned Designation
 
 
 | S. No. | Designation                          | Ticket Categories                                       |
@@ -37,6 +24,20 @@ This repository contains a dataset related to customer support tickets in an IT 
 | 8      | Hardware Specialist                  | {"Hardware issue","Battery life"}          |
 | 9      | Network Engineer                      | {"Network problem"}                                     |
 | 10     | General Specialist                   | {"Delivery problem", "Cancellation request"}            |
+
+<br> <br/>
+2. **Ticket Status Updates:**
+   - Develop a bot to automatically update ticket statuses based on resolutions or customer responses.
+
+3. **Ticket Priority Assessment:**
+   - Implement a bot to analyze ticket details and assign priority levels based on predefined criteria.
+
+4. **Customer Satisfaction Survey Analysis:**
+   - Create a bot to automatically aggregate and analyze customer satisfaction ratings.
+
+5. **Ticket Escalation Handling:**
+   - Develop a bot to analyze ticket details and automatically escalate tickets based on predefined criteria.
+
 
 
 

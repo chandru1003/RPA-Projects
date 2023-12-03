@@ -139,6 +139,8 @@
           <InArgument x:TypeArguments="x:String">["Ticket Priority"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Ticket Channel"]</InArgument>
           <InArgument x:TypeArguments="x:String">["First Response Time"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Time to Resolution"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Customer Satisfaction Rating"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
@@ -188,7 +190,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MM&quot;) + &quot;\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
+          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
