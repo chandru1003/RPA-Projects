@@ -1,0 +1,9 @@
+﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
+7,Jacqueline Wright,donaldkeith@example.org,Microsoft Surface,23-02-2020,Product inquiry,Refund request,"I'm unable to access my {product_purchased} account. It keeps displaying an 'Invalid Credentials' error, even though I'm using the correct login information. How can I regain access to my account?
+
+Solution 1 I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,Critical,Social media,
+26,Gregory Bautista,johnstonbeth@example.com,HP Pavilion,05-07-2021,Product inquiry,Refund request,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this? Thank you,
+
+Thank you for posting.
+
+It took me a I'm experiencing this issue on multiple devices of the same model, so it seems to be a widespread problem.",Pending Customer Response,Medium,Social media,01-06-2023 19:02

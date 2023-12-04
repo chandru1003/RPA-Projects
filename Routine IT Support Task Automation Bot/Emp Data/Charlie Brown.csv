@@ -1,0 +1,17 @@
+﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
+22,Tanner Conley,zbond@example.net,Fitbit Versa Smartwatch,04-02-2020,Cancellation request,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
+
+The email address should change to: customer@julietr.com, as there is a unique id number unique for each product.
+
+You I've tried different settings and configurations on my {product_purchased}, but the issue persists.",Pending Customer Response,Critical,Social media,31-05-2023 23:57
+9,Nicolas Wilson,joshua24@example.com,Fitbit Versa Smartwatch,16-07-2020,Technical issue,Installation support,"I'm having an issue with the {product_purchased}. Please assist. Thank you.
+
+{product_purchased} is not the exact type you might prefer, they use the exact same method for different uses. Please help I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Social media,01-06-2023 10:32
+35,Stacy Jones,fernandezmark@example.org,Microsoft Xbox Controller,09-04-2021,Refund request,Installation support,"I'm having an issue with the {product_purchased}. Please assist.
+
+3-3 We are in, the first day, at the {product_purchased}. Please assist.
+
+3-2 Please assist us I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Pending Customer Response,Low,Chat,01-06-2023 20:50
+41,Casey Tran,shawn54@example.net,PlayStation,07-02-2021,Product inquiry,Installation support,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue?
+
+The next step is to resolve this issue if the user is not I've noticed that the issue occurs consistently when I use a specific feature or application on my {product_purchased}.",Pending Customer Response,Low,Phone,01-06-2023 09:11

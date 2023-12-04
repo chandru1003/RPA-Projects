@@ -1,0 +1,7 @@
+﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
+72,Joseph Costa,calvarez@example.org,iPhone,26-09-2020,Refund request,Delivery problem,"I've recently set up my {product_purchased}, but it fails to connect to any available networks. What steps should I take to troubleshoot this issue? I've tried clearing the cache and data for the {product_purchased} app, but the issue persists.",Open,Medium,Social media,
+46,Timothy Sutton,david40@example.org,LG Smart TV,01-02-2021,Product inquiry,Cancellation request,"I'm having an issue with the {product_purchased}. Please assist. Thanks"".
+
+""As a result I'm having an issue with the 1.0 patch. Please assist.""
+
+""All I'm asking is to update I'm concerned about the security of my {product_purchased} and would like to ensure that my data is safe.",Open,Low,Chat,

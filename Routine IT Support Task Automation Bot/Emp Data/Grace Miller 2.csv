@@ -1,0 +1,4 @@
+﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
+10,William Dawson,clopez@example.com,Dyson Vacuum Cleaner,06-03-2020,Refund request,Payment issue,"My {product_purchased} is making strange noises and not functioning properly. I suspect there might be a hardware issue. Can you please help me with this?
+
+} If we can, please send a ""request"" to dav The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Pending Customer Response,Critical,Phone,01-06-2023 09:25

@@ -1,0 +1,7 @@
+﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
+81,Sarah Lee,dclark@example.net,Microsoft Office,22-03-2021,Technical issue,Product recommendation,I'm having an issue with the {product_purchased}. Please assist. I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?,Pending Customer Response,Critical,Phone,01-06-2023 07:27
+16,Elizabeth Foley,amy41@example.net,GoPro Action Camera,24-06-2021,Billing inquiry,Product recommendation,"I'm having an issue with the {product_purchased}. Please assist.
+
+
+Please note, you might have already paid for this product, which means spectators are not buying any of the products from the sale as their donations will go straight I've noticed a sudden decrease in battery life on my {product_purchased}. It used to last much longer.",Pending Customer Response,High,Social media,01-06-2023 15:09
+33,Christina Gray,greenkeith@example.net,Fitbit Charge,07-12-2021,Billing inquiry,Product recommendation,I've noticed a software bug in the {product_purchased} app. It's causing data loss and unexpected errors. How can I resolve this issue? I need assistance as soon as possible because it's affecting my work and productivity.,Pending Customer Response,Medium,Chat,01-06-2023 19:36
