@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>928,2528</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>992,1819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DataProcessing_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -103,7 +103,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow focuses on reading and preprocessing the customer support ticket data. It includes activities to read the CSV file, clean and preprocess text data, and store the processed data in a DataTable variable." DisplayName="DataProcessing" sap:VirtualizedContainerService.HintSize="938,2463" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow focuses on reading and preprocessing the customer support ticket data. It includes activities to read the CSV file, clean and preprocess text data, and store the processed data in a DataTable variable." DisplayName="DataProcessing" sap:VirtualizedContainerService.HintSize="1002,1754" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="inpDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="processedDT" />
@@ -117,9 +117,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="876,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DataProcessing start&quot;]" />
-    <ui:ReadCsvFile DataTable="[inpDT]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\input\customer_support_tickets.csv" sap:VirtualizedContainerService.HintSize="876,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-    <ui:FilterDataTable DataTable="[inpDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="876,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[processedDT]" SelectColumnsMode="Keep">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="940,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DataProcessing start&quot;]" />
+    <ui:ReadCsvFile DataTable="[inpDT]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Data\input\customer_support_tickets.csv" sap:VirtualizedContainerService.HintSize="940,156" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:FilterDataTable DataTable="[inpDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="940,163" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[processedDT]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -152,31 +152,8 @@
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[yearFolderexist]" sap:VirtualizedContainerService.HintSize="876,115" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MM&quot;)]" PathType="Folder" />
-    <If Condition="[yearFolderexist]" sap:VirtualizedContainerService.HintSize="876,579" sap2010:WorkflowViewState.IdRef="If_2">
-      <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_4">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Year Folder existed&quot;]" />
-        </Sequence>
-      </If.Then>
-      <If.Else>
-        <Sequence sap:VirtualizedContainerService.HintSize="376,168" sap2010:WorkflowViewState.IdRef="Sequence_5">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;)]" />
-        </Sequence>
-      </If.Else>
-    </If>
-    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[processedFileExists]" sap:VirtualizedContainerService.HintSize="876,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" PathType="File" />
-    <If Condition="[processedFileExists]" sap:VirtualizedContainerService.HintSize="876,611" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[processedFileExists]" sap:VirtualizedContainerService.HintSize="940,117" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;Data\Output\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" PathType="File" />
+    <If Condition="[processedFileExists]" sap:VirtualizedContainerService.HintSize="940,616" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,13 +161,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="376,349" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap:VirtualizedContainerService.HintSize="376,352" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;processed File Exists&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;output File Exists&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -198,7 +175,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
+          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Output\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\CustomerSupportTickets_AssignedOutput_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,7 +186,7 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -218,6 +195,14 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:WriteCsvFile AddHeaders="True" DataTable="[processedDT]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\Processed\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;) + &quot;\customer_support_tickets_&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="876,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="940,81" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[&quot;Data\Output\&quot; + Now.Year.ToString + &quot;\&quot; + Now.ToString(&quot;MMMM&quot;)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="940,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[processedDTArg]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[processedDT]</InArgument>
+      </Assign.Value>
+    </Assign>
   </Sequence>
 </Activity>
