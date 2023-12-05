@@ -1,8 +1,0 @@
-﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
-23,Stephanie Nelson DVM,ljohnson@example.org,Xbox,11-02-2020,Cancellation request,Delivery problem,"I'm having an issue with the {product_purchased}. Please assist. (And if need be this time, that could help.)
-
-1.3.2.1 Update my version to 3.0 or more. The issue I'm facing is intermittent. Sometimes it works fine, but other times it acts up unexpectedly.",Open,Medium,Social media,
-82,Kiara Parker,gonzalezlarry@example.org,Apple AirPods,22-07-2021,Cancellation request,Cancellation request,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available? I don't know about any updates to the product. It's hard I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Pending Customer Response,Medium,Email,01-06-2023 11:37
-27,Ryan Sharp,pmercado@example.org,Lenovo ThinkPad,02-05-2020,Billing inquiry,Cancellation request,"I'm encountering a software bug in the {product_purchased}. Whenever I try to perform a specific action, the application crashes. Are there any updates or fixes available?
-
-On Windows Vista, this is not possible. If you are I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Low,Social media,01-06-2023 20:02

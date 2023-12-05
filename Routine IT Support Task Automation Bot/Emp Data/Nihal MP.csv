@@ -1,6 +1,0 @@
-﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
-49,Noah Mcknight,juliepowers@example.org,LG OLED,15-02-2021,Cancellation request,Network problem,"I'm having an issue with the {product_purchased}. Please assist.
-
-Please. Don't.
-
-Don't see my issue? Please contact me. I'm unable to find the option to perform the desired action in the {product_purchased}. Could you please guide me through the steps?",Open,High,Chat,

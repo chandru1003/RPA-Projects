@@ -1,5 +1,0 @@
-﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
-6,Rebecca Fleming,sheenasmith@example.com,Microsoft Office,28-07-2020,Cancellation request,Payment issue,"I'm facing a problem with my {product_purchased}. The {product_purchased} is not turning on. It was working fine until yesterday, but now it doesn't respond. To remove the new {product_purch I've checked for any available software updates for my {product_purchased}, but there are none.",Open,Low,Social media,
-24,Antonio Scott,carlsonmatthew@example.org,Nintendo Switch Pro Controller,06-08-2021,Technical issue,Refund request,"I'm having an issue with the {product_purchased}. Please assist.
-
-I'll take care of those. I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Low,Social media,01-06-2023 09:06

@@ -1,8 +1,0 @@
-﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
-21,Suzanne Holmes,rogermcgrath@example.net,HP Pavilion,31-05-2021,Refund request,Payment issue,"I'm having an issue with the {product_purchased}. Please assist.
-
-"" -name ""Microsoft Surface Pro. ""
-
-"" -version 1.10.2 ""1.10.2""
-
-"" -usage I've checked for any available software updates for my {product_purchased}, but there are none.",Pending Customer Response,High,Chat,01-06-2023 05:08

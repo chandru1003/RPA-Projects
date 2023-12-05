@@ -1,8 +1,0 @@
-﻿Ticket ID,Customer Name,Customer Email,Product Purchased,Date of Purchase,Ticket Type,Ticket Subject,Ticket Description,Ticket Status,Ticket Priority,Ticket Channel,First Response Time
-69,Brianna Scott MD,jbranch@example.net,Adobe Photoshop,06-02-2021,Technical issue,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist. If your product is purchased with the {product_purchased}, the {product_purchased} will be refunded.
-
-7) Pay it I've performed a factory reset on my {product_purchased}, hoping it would resolve the problem, but it didn't help.",Pending Customer Response,Critical,Chat,31-05-2023 23:00
-38,Morgan Wagner,elizabethlamb@example.com,Amazon Kindle,02-09-2020,Product inquiry,Product compatibility,"I've forgotten my password for my {product_purchased} account, and the password reset option is not working. How can I recover my account? I can reset my password by entering the following: My password still valid: password is expired I've recently updated the firmware of my {product_purchased}, and the issue started happening afterward. Could it be related to the update?",Open,Medium,Chat,
-43,Justin Giles,woodmargaret@example.org,Samsung Galaxy,10-10-2020,Product inquiry,Product compatibility,"I'm having an issue with the {product_purchased}. Please assist.
-
-The product_purchased attribute does not exist on your user's product. This is so that you can configure the {product_purchased} I need assistance as soon as possible because it's affecting my work and productivity.",Pending Customer Response,Medium,Phone,01-06-2023 18:41
