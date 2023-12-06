@@ -1,0 +1,153 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CustomerSatisfaction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dtinput" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>688,1228</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CustomerSatisfaction_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CustomerSatisfaction" sap:VirtualizedContainerService.HintSize="548,1163" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Customer Satisfaction started&quot;]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtinput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,871" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,685" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[(row(&quot;Ticket Status&quot;).ToString().Trim().ToLower() = &quot;closed&quot; Or&#xD;&#xA;       Not String.IsNullOrEmpty(row(&quot;Time to Resolution&quot;).ToString()) )AndAlso&#xD;&#xA;       String.IsNullOrEmpty(row(&quot;Customer Satisfaction Rating&quot;).ToString())]" sap:VirtualizedContainerService.HintSize="410,597" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,415" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Sending mail to &quot;+row(&quot;Customer Email&quot;).ToString]" />
+                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;html&gt;&quot; +&#xD;&#xA;&quot;&lt;head&gt;&quot; +&#xD;&#xA;&quot;   &lt;style&gt;&quot; +&#xD;&#xA;&quot;      body {&quot; +&#xD;&#xA;&quot;         font-family: Arial, sans-serif;&quot; +&#xD;&#xA;&quot;      }&quot; +&#xD;&#xA;&quot;      .container {&quot; +&#xD;&#xA;&quot;         max-width: 600px;&quot; +&#xD;&#xA;&quot;         margin: 20px auto;&quot; +&#xD;&#xA;&quot;      }&quot; +&#xD;&#xA;&quot;      .header {&quot; +&#xD;&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xD;&#xA;&quot;         padding: 15px;&quot; +&#xD;&#xA;&quot;         text-align: center;&quot; +&#xD;&#xA;&quot;      }&quot; +&#xD;&#xA;&quot;      .content {&quot; +&#xD;&#xA;&quot;         padding: 20px;&quot; +&#xD;&#xA;&quot;         background-color: #ffffff;&quot; +&#xD;&#xA;&quot;      }&quot; +&#xD;&#xA;&quot;      .footer {&quot; +&#xD;&#xA;&quot;         text-align: center;&quot; +&#xD;&#xA;&quot;         padding: 10px;&quot; +&#xD;&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xD;&#xA;&quot;      }&quot; +&#xD;&#xA;&quot;   &lt;/style&gt;&quot; +&#xD;&#xA;&quot;&lt;/head&gt;&quot; +&#xD;&#xA;&quot;&lt;body&gt;&quot; +&#xD;&#xA;&quot;   &lt;div class='container'&gt;&quot; +&#xD;&#xA;&quot;      &lt;div class='header'&gt;&quot; +&#xD;&#xA;&quot;         &lt;h2&gt;We Value Your Feedback&lt;/h2&gt;&quot; +&#xD;&#xA;&quot;      &lt;/div&gt;&quot; +&#xD;&#xA;&quot;      &lt;div class='content'&gt;&quot; +&#xD;&#xA;&quot;         &lt;p&gt;Dear &quot; + row(&quot;Customer Name&quot;).ToString+&quot;,&lt;/p&gt;&quot; +&#xD;&#xA;&quot;         &lt;p&gt;We hope you had a positive experience with our support services. Your feedback is important to us, and we would appreciate it if you could take a moment to share your satisfaction rating.&lt;/p&gt;&quot; +&#xD;&#xA;&quot;         &lt;p&gt;Please click on the link below to provide your rating:&lt;/p&gt;&quot; +&#xD;&#xA; &quot;&lt;p&gt;&lt;a href='https://your_survey_link_here'&gt;Rate Our Service&lt;/a&gt;&lt;/p&gt;&quot; +&#xD;&#xA;&quot;         &lt;p&gt;Thank you for choosing us. Your opinion matters!&lt;/p&gt;&quot; +&#xD;&#xA;&quot;      &lt;/div&gt;&quot; +&#xD;&#xA;&quot;      &lt;div class='footer'&gt;&quot; +&#xD;&#xA;&quot;         &lt;p&gt;Best regards,&lt;br&gt;Your Support Team&lt;/p&gt;&quot; +&#xD;&#xA;&quot;      &lt;/div&gt;&quot; +&#xD;&#xA;&quot;   &lt;/div&gt;&quot; +&#xD;&#xA;&quot;&lt;/body&gt;&quot; +&#xD;&#xA;&quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="femz fnxx euqr gbmb" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject=" We Value Your Feedback - Customer Satisfaction Rating Request" To="[row(&quot;Customer Email&quot;).ToString]">
+                    <ui:SendMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendMail.Files>
+                  </ui:SendMail>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4" />
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
