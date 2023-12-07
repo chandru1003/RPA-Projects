@@ -107,12 +107,8 @@
       <State.Entry>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DataProcessing.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Bin\DataProcessing.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="processedDTArg">
-              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="processedDTArg" />
-            </InOutArgument>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtInput">
-              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtinput" />
-            </InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="processedDTArg">[processedDTArg]</InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtInput">[dtinput]</InOutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </State.Entry>
@@ -187,6 +183,9 @@
                           <ui:InvokeWorkflowFile.Arguments>
                             <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtinput">
                               <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtinput" />
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">
+                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
                             </InOutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
