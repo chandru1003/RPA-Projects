@@ -148,7 +148,7 @@
           <InArgument x:TypeArguments="x:String">["Customer Email"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Customer Gender"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Product Purchased"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["Date of Purchase"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Created Date"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Ticket Type"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Ticket Subject"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Ticket Description"]</InArgument>
@@ -158,6 +158,7 @@
           <InArgument x:TypeArguments="x:String">["First Response Time"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Time to Resolution"]</InArgument>
           <InArgument x:TypeArguments="x:String">["Customer Satisfaction Rating"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Ticket Assigned To"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
