@@ -25,7 +25,6 @@ This repository contains a dataset related to customer support tickets in an IT 
 | 9      | Network Engineer                      | {"Network problem"}                                     |
 | 10     | General Specialist                   | {"Delivery problem", "Cancellation request"}            |
 
-<br> <br/>
 2. **Ticket Status Updates:**
    - Develop a bot to automatically update ticket statuses based on resolutions or customer responses.
 
@@ -37,10 +36,6 @@ This repository contains a dataset related to customer support tickets in an IT 
 
 5. **Ticket Escalation Handling:**
    - Develop a bot to analyze ticket details and automatically escalate tickets based on predefined criteria.
-
-
-
-
 
 ## How to Use
 
