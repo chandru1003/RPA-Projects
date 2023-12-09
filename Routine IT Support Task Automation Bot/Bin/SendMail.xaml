@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680,1089</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,1085</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendMail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,7 +110,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendMail" sap:VirtualizedContainerService.HintSize="572,1024" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendMail" sap:VirtualizedContainerService.HintSize="572,1020" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="mailbody" />
     </Sequence.Variables>
@@ -120,7 +120,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Sending mail started&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="510,85" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[mailbody]</OutArgument>
       </Assign.To>
@@ -162,13 +162,13 @@
            "&lt;/tr&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtAssignedTicketsArg]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,359" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtAssignedTicketsArg]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,357" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,173" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,171" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="mailTable" />
             </Sequence.Variables>
@@ -177,7 +177,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[mailbody]</OutArgument>
               </Assign.To>
@@ -202,7 +202,7 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[mailbody +&quot;&lt;/table&gt;&quot; +&#xA;            &quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xA;            &quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;            &quot;&lt;/body&gt;&quot; +&#xA;            &quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="510,208" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="lkyb igwy gatp mpih" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[&quot;List of Tickets date :&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[EmpMail]">
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[mailbody +&quot;&lt;/table&gt;&quot; +&#xA;            &quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xA;            &quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;            &quot;&lt;/body&gt;&quot; +&#xA;            &quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="510,208" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[&quot;List of Tickets date :&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[EmpMail]">
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>

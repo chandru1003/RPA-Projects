@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TicketsReport" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="680,830" sap2010:WorkflowViewState.IdRef="TicketsReport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TicketsReport" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dtEmprating" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>680,1250</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TicketsReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -28,6 +36,11 @@
       <x:String>UiPath.Word</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>UiPath.Word.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -75,29 +88,61 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TicketsReport" sap:VirtualizedContainerService.HintSize="595,765" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TicketsReport" sap:VirtualizedContainerService.HintSize="668,1185" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="533,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tickets Report&quot;]" />
-    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Data\Output\&quot; +&quot;Tickest_Report&quot;+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="533,473" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tickets Report&quot;]" />
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Data\Output\&quot; +&quot;Tickest_Report&quot;+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="606,893" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,363" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,783" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[&quot;Ticket Report Date &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" />
-            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="WordAppendText_2" Text="[&quot;Total Tickets  Assigned - 444 &quot;  &amp; vbnewline &amp; &#xD;&#xA;&quot; Total Tickets  Unasigned - 200&quot; &amp; vbnewline &amp; &#xD;&#xA;&quot;Customer rating on each employee&quot;]" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[&quot;Ticket Report Date &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_2" Text="[&quot;Total Tickets  Assigned - 444 &quot;  &amp; vbnewline &amp; &#xD;&#xA;&quot; Total Tickets  Unasigned - 200&quot; &amp; vbnewline &amp; &#xD;&#xA;&quot;Customer rating on each employee&quot;]" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmprating]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,380" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Currentrow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,194" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="WordAppendText_4" Text="[Currentrow(&quot;Name&quot;).ToString +&quot;-&quot; +Currentrow(&quot;Rating&quot;).ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
           </Sequence>
         </ActivityAction>
       </p:WordApplicationScope.Body>

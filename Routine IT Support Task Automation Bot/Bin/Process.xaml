@@ -3,11 +3,12 @@
     <x:Property Name="processedDTArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmployeeDetailsArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtinput" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="dtEmprating" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680,702</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>693,1074</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process1_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -91,9 +92,10 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID3}" DisplayName="Process" sap:VirtualizedContainerService.HintSize="703,1009" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID4}" DisplayName="Process" sap:VirtualizedContainerService.HintSize="703,1009" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -103,7 +105,7 @@
         <av:PointCollection x:Key="ConnectorLocation">297,77.5 297,107.5 199,107.5 199,119</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="This state is responsible for initiating the data processing workflow by invoking the 'DataProcess.xaml' file. After the data processing is completed, it proceeds to update the status using the 'UpdateStatus.xaml' file.&#xA;" DisplayName="State" sap:VirtualizedContainerService.HintSize="292,164" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID4" sap2010:Annotation.AnnotationText="This state is responsible for initiating the data processing workflow by invoking the 'DataProcess.xaml' file. After the data processing is completed, it proceeds to update the status using the 'UpdateStatus.xaml' file.&#xA;" DisplayName="State" sap:VirtualizedContainerService.HintSize="292,164" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DataProcessing.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Bin\DataProcessing.xaml">
           <ui:InvokeWorkflowFile.Arguments>
@@ -199,34 +201,72 @@
                       <State.Exit>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\CustomerSatisfaction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Bin\CustomerSatisfaction.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtinput">[dtinput]</InOutArgument>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">[dtEmployeeDetailsArg]</InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtinput">
+                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtinput" />
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">
+                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">
+                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmprating" />
+                            </InOutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </State.Exit>
                       <State.Transitions>
-                        <Transition DisplayName="T3" sap2010:WorkflowViewState.IdRef="Transition_3">
+                        <Transition DisplayName="T3" sap:VirtualizedContainerService.HintSize="450,507" sap2010:WorkflowViewState.IdRef="Transition_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">391,562.55 361,562.55 361,568.1 217,568.1</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">391,562.55 361,562.55 361,583.1 257,583.1</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">33</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="154,112" sap2010:WorkflowViewState.IdRef="State_3" IsFinal="True">
+                            <State x:Name="__ReferenceID3" DisplayName="State" sap:VirtualizedContainerService.HintSize="134,62" sap2010:WorkflowViewState.IdRef="State_5">
                               <State.Entry>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Routine IT Support Task done&quot;]" />
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketsReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Bin\TicketsReport.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">
+                                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmprating" />
+                                    </InOutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
                               </State.Entry>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">63,506.5</av:Point>
-                                  <av:Size x:Key="ShapeSize">154,112</av:Size>
+                                  <av:Point x:Key="ShapeLocation">123,549</av:Point>
+                                  <av:Size x:Key="ShapeSize">134,62</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  <x:Double x:Key="StateContainerWidth">120</x:Double>
-                                  <x:Double x:Key="StateContainerHeight">75.00000000000011</x:Double>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <State.Transitions>
+                                <Transition DisplayName="T4" sap2010:WorkflowViewState.IdRef="Transition_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <av:PointCollection x:Key="ConnectorLocation">190,549 190,519 80,519 80,476</av:PointCollection>
+                                      <x:Int32 x:Key="SrcConnectionPointIndex">38</x:Int32>
+                                      <x:Int32 x:Key="DestConnectionPointIndex">39</x:Int32>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Transition.To>
+                                    <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="154,112" sap2010:WorkflowViewState.IdRef="State_3" IsFinal="True">
+                                      <State.Entry>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Routine IT Support Task done&quot;]" />
+                                      </State.Entry>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <av:Point x:Key="ShapeLocation">3,364</av:Point>
+                                          <av:Size x:Key="ShapeSize">154,112</av:Size>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Double x:Key="StateContainerWidth">120</x:Double>
+                                          <x:Double x:Key="StateContainerHeight">75.00000000000011</x:Double>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </State>
+                                  </Transition.To>
+                                </Transition>
+                              </State.Transitions>
                             </State>
                           </Transition.To>
                         </Transition>
@@ -243,5 +283,6 @@
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
   </StateMachine>
 </Activity>
