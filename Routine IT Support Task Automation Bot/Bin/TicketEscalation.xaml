@@ -1,13 +1,13 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="TicketEscalation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="dtInput" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmpDetails" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="emailPassword" Type="InOutArgument(x:String)" />
+    <x:Property Name="dtUpdateTicketStatusArg" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>752,2068</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>752,2081</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TicketEscalation_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,7 +112,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TicketEscalation" sap:VirtualizedContainerService.HintSize="762,2003" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TicketEscalation" sap:VirtualizedContainerService.HintSize="762,2016" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="currentTime" />
       <Variable x:TypeArguments="s:DateTime" Name="ticketCreatedDate" />
@@ -124,26 +124,26 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="700,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket Escalation Started&quot;]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="700,1711" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="700,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ticket Escalation Started&quot;]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtUpdateTicketStatusArg]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="700,1722" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="666,1525" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="666,1534" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap:VirtualizedContainerService.HintSize="624,1437" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap:VirtualizedContainerService.HintSize="624,1446" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="562,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="562,83" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:DateTime">[ticketCreatedDate]</OutArgument>
                 </Assign.To>
@@ -151,7 +151,7 @@
                   <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(row("Ticket Created Date").ToString(), "dd-MM-yyyy", CultureInfo.InvariantCulture)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="562,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="562,83" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:DateTime">[currentTime]</OutArgument>
                 </Assign.To>
@@ -159,7 +159,7 @@
                   <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[row(&quot;Ticket Type&quot;).ToString() =&quot;Cancellation request&quot;  AndAlso &#xA;(currentTime - ticketCreatedDate).TotalHours &gt; 48]" sap:VirtualizedContainerService.HintSize="562,1082" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[row(&quot;Ticket Type&quot;).ToString() =&quot;Cancellation request&quot;  AndAlso &#xA;(currentTime - ticketCreatedDate).TotalHours &gt; 48]" sap:VirtualizedContainerService.HintSize="562,1089" sap2010:WorkflowViewState.IdRef="If_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -167,13 +167,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="528,900" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence sap:VirtualizedContainerService.HintSize="528,906" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[empname]</OutArgument>
                       </Assign.To>
@@ -181,27 +181,27 @@
                         <InArgument x:TypeArguments="x:String">[row("Ticket Assigned To").ToString()]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmpDetails]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,690" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmpDetails]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486,695" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,504" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,507" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[empname = CurrentRow(&quot;Employee Name&quot;).ToString()]" sap:VirtualizedContainerService.HintSize="410,416" sap2010:WorkflowViewState.IdRef="If_2">
+                            <If Condition="[empname = CurrentRow(&quot;Employee Name&quot;).ToString()]" sap:VirtualizedContainerService.HintSize="410,419" sap2010:WorkflowViewState.IdRef="If_2">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="376,234" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,236" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;table style='width:100%; border-collapse: collapse;'&gt;&quot; +&#xA;    &quot;&lt;tr&gt;&quot; +&#xA;        &quot;&lt;th&gt;Ticket ID&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Customer Name&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Ticket Type&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Escalation Reason&lt;/th&gt;&quot; +&#xA;        &quot;&lt;/tr&gt;&quot; +&#xA;    &quot;&lt;tr&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Ticket ID&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Customer Name&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Ticket Type&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + &quot; This ticket type is Cancellation request and remains unresolved after 48 hours.&quot; + &quot;&lt;/td&gt;&quot; +&#xA;    &quot;&lt;/tr&gt;&quot; +&#xA;&quot;&lt;/table&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you For your attention To these urgent matters.&lt;P&gt;&quot;+&#xA;&quot;&lt;p&gt;We kindly request that you prioritize And address these issues at your earliest convenience. &#xA;Your prompt assistance Is crucial In ensuring a smooth resolution.&lt;p&gt;&quot;+&#xA;&quot;&lt;p&gt; Please Do Not hesitate To reach Out If you require any further information Or clarification. &#xA;We appreciate your dedication To providing excellent support. Solve these issues ASAP To ensure customer satisfaction. &#xA;&#xA;&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;&quot;&lt;/body&gt;&quot; +&#xA;&quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="[emailPassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="Urgent: Unresolved Cancellation Request Ticket Escalation - Immediate Attention Required  " To="[CurrentRow(&quot;Employee Email&quot;).ToString()]">
+                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;table style='width:100%; border-collapse: collapse;'&gt;&quot; +&#xA;    &quot;&lt;tr&gt;&quot; +&#xA;        &quot;&lt;th&gt;Ticket ID&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Customer Name&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Ticket Type&lt;/th&gt;&quot; +&#xA;        &quot;&lt;th&gt;Escalation Reason&lt;/th&gt;&quot; +&#xA;        &quot;&lt;/tr&gt;&quot; +&#xA;    &quot;&lt;tr&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Ticket ID&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Customer Name&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + row(&quot;Ticket Type&quot;).ToString() + &quot;&lt;/td&gt;&quot; +&#xA;        &quot;&lt;td&gt;&quot; + &quot; This ticket type is Cancellation request and remains unresolved after 48 hours.&quot; + &quot;&lt;/td&gt;&quot; +&#xA;    &quot;&lt;/tr&gt;&quot; +&#xA;&quot;&lt;/table&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you For your attention To these urgent matters.&lt;P&gt;&quot;+&#xA;&quot;&lt;p&gt;We kindly request that you prioritize And address these issues at your earliest convenience. &#xA;Your prompt assistance Is crucial In ensuring a smooth resolution.&lt;p&gt;&quot;+&#xA;&quot;&lt;p&gt; Please Do Not hesitate To reach Out If you require any further information Or clarification. &#xA;We appreciate your dedication To providing excellent support. Solve these issues ASAP To ensure customer satisfaction. &#xA;&#xA;&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xA;&quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;&quot;&lt;/body&gt;&quot; +&#xA;&quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="[emailPassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="Urgent: Unresolved Cancellation Request Ticket Escalation - Immediate Attention Required  " To="[CurrentRow(&quot;Employee Email&quot;).ToString()]">
                                     <ui:SendMail.Files>
                                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                     </ui:SendMail.Files>

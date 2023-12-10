@@ -1,14 +1,14 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="CustomerSatisfaction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="dtinput" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmpData" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmprating" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="EmailPassword" Type="InOutArgument(x:String)" />
+    <x:Property Name="dtUpdateTicketStatusArg" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>714,3800</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>714,3796</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CustomerSatisfaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,7 +121,7 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CustomerSatisfaction" sap:VirtualizedContainerService.HintSize="724,3735" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CustomerSatisfaction" sap:VirtualizedContainerService.HintSize="724,3731" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="avgRating" />
       <Variable x:TypeArguments="x:String" Name="empRatingDictionary" />
@@ -135,8 +135,8 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="662,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Customer Satisfaction started&quot;]" />
-    <ui:BuildDataTable DataTable="[dtEmprating]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtinput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,871" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:BuildDataTable DataTable="[dtEmprating]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtUpdateTicketStatusArg]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,871" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -163,7 +163,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Sending mail to &quot;+row(&quot;Customer Email&quot;).ToString]" />
-                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;html&gt;&quot; +&#xA;&quot;&lt;head&gt;&quot; +&#xA;&quot;   &lt;style&gt;&quot; +&#xA;&quot;      body {&quot; +&#xA;&quot;         font-family: Arial, sans-serif;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .container {&quot; +&#xA;&quot;         max-width: 600px;&quot; +&#xA;&quot;         margin: 20px auto;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .header {&quot; +&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xA;&quot;         padding: 15px;&quot; +&#xA;&quot;         text-align: center;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .content {&quot; +&#xA;&quot;         padding: 20px;&quot; +&#xA;&quot;         background-color: #ffffff;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .footer {&quot; +&#xA;&quot;         text-align: center;&quot; +&#xA;&quot;         padding: 10px;&quot; +&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;   &lt;/style&gt;&quot; +&#xA;&quot;&lt;/head&gt;&quot; +&#xA;&quot;&lt;body&gt;&quot; +&#xA;&quot;   &lt;div class='container'&gt;&quot; +&#xA;&quot;      &lt;div class='header'&gt;&quot; +&#xA;&quot;         &lt;h2&gt;We Value Your Feedback&lt;/h2&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;      &lt;div class='content'&gt;&quot; +&#xA;&quot;         &lt;p&gt;Dear &quot; + row(&quot;Customer Name&quot;).ToString+&quot;,&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;We hope you had a positive experience with our support services. Your feedback is important to us, and we would appreciate it if you could take a moment to share your satisfaction rating.&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;Please click on the link below to provide your rating:&lt;/p&gt;&quot; +&#xA; &quot;&lt;p&gt;&lt;a href='https://your_survey_link_here'&gt;Rate Our Service&lt;/a&gt;&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;Thank you for choosing us. Your opinion matters!&lt;/p&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;      &lt;div class='footer'&gt;&quot; +&#xA;&quot;         &lt;p&gt;Best regards,&lt;br&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;   &lt;/div&gt;&quot; +&#xA;&quot;&lt;/body&gt;&quot; +&#xA;&quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="ozgp egfg myfu grhe" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject=" We Value Your Feedback - Customer Satisfaction Rating Request" To="[row(&quot;Customer Email&quot;).ToString]">
+                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;html&gt;&quot; +&#xA;&quot;&lt;head&gt;&quot; +&#xA;&quot;   &lt;style&gt;&quot; +&#xA;&quot;      body {&quot; +&#xA;&quot;         font-family: Arial, sans-serif;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .container {&quot; +&#xA;&quot;         max-width: 600px;&quot; +&#xA;&quot;         margin: 20px auto;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .header {&quot; +&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xA;&quot;         padding: 15px;&quot; +&#xA;&quot;         text-align: center;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .content {&quot; +&#xA;&quot;         padding: 20px;&quot; +&#xA;&quot;         background-color: #ffffff;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;      .footer {&quot; +&#xA;&quot;         text-align: center;&quot; +&#xA;&quot;         padding: 10px;&quot; +&#xA;&quot;         background-color: #f2f2f2;&quot; +&#xA;&quot;      }&quot; +&#xA;&quot;   &lt;/style&gt;&quot; +&#xA;&quot;&lt;/head&gt;&quot; +&#xA;&quot;&lt;body&gt;&quot; +&#xA;&quot;   &lt;div class='container'&gt;&quot; +&#xA;&quot;      &lt;div class='header'&gt;&quot; +&#xA;&quot;         &lt;h2&gt;We Value Your Feedback&lt;/h2&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;      &lt;div class='content'&gt;&quot; +&#xA;&quot;         &lt;p&gt;Dear &quot; + row(&quot;Customer Name&quot;).ToString+&quot;,&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;We hope you had a positive experience with our support services. Your feedback is important to us, and we would appreciate it if you could take a moment to share your satisfaction rating.&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;Please click on the link below to provide your rating:&lt;/p&gt;&quot; +&#xA; &quot;&lt;p&gt;&lt;a href='https://your_survey_link_here'&gt;Rate Our Service&lt;/a&gt;&lt;/p&gt;&quot; +&#xA;&quot;         &lt;p&gt;Thank you for choosing us. Your opinion matters!&lt;/p&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;      &lt;div class='footer'&gt;&quot; +&#xA;&quot;         &lt;p&gt;Best regards,&lt;br&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;&quot;      &lt;/div&gt;&quot; +&#xA;&quot;   &lt;/div&gt;&quot; +&#xA;&quot;&lt;/body&gt;&quot; +&#xA;&quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="[EmailPassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject=" We Value Your Feedback - Customer Satisfaction Rating Request" To="[row(&quot;Customer Email&quot;).ToString]">
                     <ui:SendMail.Files>
                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                     </ui:SendMail.Files>
@@ -184,19 +184,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmpData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,2432" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmpData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,2428" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2246" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2242" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign sap:VirtualizedContainerService.HintSize="586,81" sap2010:WorkflowViewState.IdRef="Assign_9">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[Count]</OutArgument>
               </Assign.To>
@@ -204,7 +204,7 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign sap:VirtualizedContainerService.HintSize="586,81" sap2010:WorkflowViewState.IdRef="Assign_10">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[Sum]</OutArgument>
               </Assign.To>
@@ -212,19 +212,19 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtinput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,748" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtUpdateTicketStatusArg]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,746" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,562" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,560" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[Not String.IsNullOrEmpty(row(&quot;Customer Satisfaction Rating&quot;).ToString()) AndAlso&#xA;CurrentRow(&quot;Employee Name&quot;).ToString().Trim().ToLower() =row(&quot;Ticket Assigned To&quot;).ToString().Trim().ToLower()]" sap:VirtualizedContainerService.HintSize="510,474" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[Not String.IsNullOrEmpty(row(&quot;Customer Satisfaction Rating&quot;).ToString()) AndAlso&#xA;CurrentRow(&quot;Employee Name&quot;).ToString().Trim().ToLower() =row(&quot;Ticket Assigned To&quot;).ToString().Trim().ToLower()]" sap:VirtualizedContainerService.HintSize="510,472" sap2010:WorkflowViewState.IdRef="If_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,13 +232,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476,292" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,290" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_5">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[Sum]</OutArgument>
                             </Assign.To>
@@ -246,7 +246,7 @@
                               <InArgument x:TypeArguments="x:Int32">[CInt(row("Customer Satisfaction Rating").ToString())+Sum]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_6">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[Count]</OutArgument>
                             </Assign.To>
