@@ -3,6 +3,7 @@
     <x:Property Name="dtAssignedTicketsArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="EmpMail" Type="InOutArgument(x:String)" />
     <x:Property Name="EmpNameArg" Type="InOutArgument(x:String)" />
+    <x:Property Name="emailPassword" Type="InOutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -108,6 +109,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="SendMail" sap:VirtualizedContainerService.HintSize="572,1020" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -202,7 +204,7 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[mailbody +&quot;&lt;/table&gt;&quot; +&#xA;            &quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xA;            &quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xA;            &quot;&lt;/body&gt;&quot; +&#xA;            &quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="510,208" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[&quot;List of Tickets date :&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[EmpMail]">
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[mailbody +&quot;&lt;/table&gt;&quot; +&#xD;&#xA;            &quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xD;&#xA;            &quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xD;&#xA;            &quot;&lt;/body&gt;&quot; +&#xD;&#xA;            &quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="510,208" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="[emailPassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[&quot;List of Tickets date :&quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[EmpMail]">
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>

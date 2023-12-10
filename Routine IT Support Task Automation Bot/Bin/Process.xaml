@@ -4,6 +4,9 @@
     <x:Property Name="dtEmployeeDetailsArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtinput" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmprating" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="emailPassword" Type="InOutArgument(x:String)" />
+    <x:Property Name="unassignedCountarg" Type="InOutArgument(x:Int32)" />
+    <x:Property Name="assignedCountarg" Type="InOutArgument(x:Int32)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -145,8 +148,18 @@
               <State.Entry>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Ticket_Categorization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Bin\Ticket_Categorization.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">[processedDTArg]</InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">[dtEmployeeDetailsArg]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">
+                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="processedDTArg" />
+                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">
+                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
+                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">
+                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="unassignedCountarg" />
+                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">
+                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="assignedCountarg" />
+                    </InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </State.Entry>
@@ -166,6 +179,7 @@
                     <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">[processedDTArg]</InOutArgument>
                     <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">[dtEmployeeDetailsArg]</InOutArgument>
                     <InOutArgument x:TypeArguments="x:String" x:Key="EmpMailArg" />
+                    <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">[emailPassword]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </State.Exit>
@@ -185,6 +199,7 @@
                           <ui:InvokeWorkflowFile.Arguments>
                             <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtInput">[processedDTArg]</InOutArgument>
                             <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpDetails">[dtEmployeeDetailsArg]</InOutArgument>
+                            <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">[Emailpassword]</InOutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </State.Entry>
@@ -201,15 +216,10 @@
                       <State.Exit>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\CustomerSatisfaction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Bin\CustomerSatisfaction.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtinput">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtinput" />
-                            </InOutArgument>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
-                            </InOutArgument>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmprating" />
-                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtinput">[dtinput]</InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">[dtEmployeeDetailsArg]</InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">[dtEmprating]</InOutArgument>
+                            <InOutArgument x:TypeArguments="x:String" x:Key="EmailPassword">[Emailpassword]</InOutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </State.Exit>
@@ -223,12 +233,21 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID3" DisplayName="State" sap:VirtualizedContainerService.HintSize="134,62" sap2010:WorkflowViewState.IdRef="State_5">
+                            <State x:Name="__ReferenceID3" DisplayName="State" sap:VirtualizedContainerService.HintSize="380,474" sap2010:WorkflowViewState.IdRef="State_5">
                               <State.Entry>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketsReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Bin\TicketsReport.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">
                                       <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmprating" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:String" x:Key="emailpassword">
+                                      <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Emailpassword" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">
+                                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="unassignedCountarg" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">
+                                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="assignedCountarg" />
                                     </InOutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
@@ -284,5 +303,8 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
+    <StateMachine.Variables>
+      <Variable x:TypeArguments="x:String" Default="ozgp egfg myfu grhe" Name="Emailpassword" />
+    </StateMachine.Variables>
   </StateMachine>
 </Activity>

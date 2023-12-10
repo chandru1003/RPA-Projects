@@ -3,6 +3,7 @@
     <x:Property Name="dtTicketCategorizantionArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dtEmployeeDetailsArg" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="EmpMailArg" Type="InOutArgument(x:String)" />
+    <x:Property Name="emailPassword" Type="InOutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -119,6 +120,7 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TicketPriority" sap:VirtualizedContainerService.HintSize="710,2334" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -266,6 +268,9 @@
                         </InOutArgument>
                         <InOutArgument x:TypeArguments="x:String" x:Key="EmpNameArg">
                           <VisualBasicReference x:TypeArguments="x:String" ExpressionText="employeeName" />
+                        </InOutArgument>
+                        <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">
+                          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="emailPassword" />
                         </InOutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>

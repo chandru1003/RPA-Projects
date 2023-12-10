@@ -1,11 +1,14 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="TicketsReport" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="dtEmprating" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="emailpassword" Type="InOutArgument(x:String)" />
+    <x:Property Name="unassignedCountarg" Type="InOutArgument(x:Int32)" />
+    <x:Property Name="assignedCountarg" Type="InOutArgument(x:Int32)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680,1250</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,1396</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TicketsReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -41,6 +44,11 @@
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -103,29 +111,128 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TicketsReport" sap:VirtualizedContainerService.HintSize="668,1185" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TicketsReport" sap:VirtualizedContainerService.HintSize="572,1112" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="reportMailbody" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tickets Report&quot;]" />
-    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Data\Output\&quot; +&quot;Tickest_Report&quot;+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="606,893" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Tickets Report&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[reportMailbody]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html&gt;" +
+"&lt;head&gt;" +
+"   &lt;style&gt;" +
+"      body {" +
+"         font-family: Arial, sans-serif;" +
+"      }" +
+"      .container {" +
+"         max-width: 600px;" +
+"         margin: 20px auto;" +
+"      }" +
+"      .header {" +
+"         background-color: #f2f2f2;" +
+"         padding: 15px;" +
+"         text-align: center;" +
+"      }" +
+"      .content {" +
+"         padding: 20px;" +
+"         background-color: #ffffff;" +
+"      }" +
+"      .footer {" +
+"         text-align: center;" +
+"         padding: 10px;" +
+"         background-color: #f2f2f2;" +
+"      }" +
+"      table {" +
+"         width: 100%;" +
+"         border-collapse: collapse;" +
+"         margin-top: 20px;" +
+"      }" +
+"      th, td {" +
+"         border: 1px solid #dddddd;" +
+"         text-align: left;" +
+"         padding: 8px;" +
+"      }" +
+"   &lt;/style&gt;" +
+"&lt;/head&gt;" +
+"&lt;body&gt;" +
+"   &lt;div class='container'&gt;" +
+"      &lt;div class='header'&gt;" +
+"         &lt;h2&gt;IT Support Ticket Summary&lt;/h2&gt;" +
+"      &lt;/div&gt;" +
+"      &lt;div class='content'&gt;" +
+"         &lt;p&gt;Dear IT Support Team,&lt;/p&gt;" +
+"         &lt;p&gt;Below is the summary of the IT support tickets:&lt;/p&gt;" +
+"         &lt;p&gt;Total Tickets Assigned: " + assignedCountarg.ToString + "&lt;/p&gt;" +
+"         &lt;p&gt;Total Tickets Unassigned: " + unassignedCountarg.ToString+ "&lt;/p&gt;" +
+"         &lt;table&gt;" +
+"            &lt;thead&gt;" +
+"               &lt;tr&gt;" +
+"                  &lt;th&gt;Employee Name&lt;/th&gt;" +
+"                  &lt;th&gt;Average Rating&lt;/th&gt;" +
+"               &lt;/tr&gt;"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmprating]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,357" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,171" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[reportMailbody]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[reportMailbody+"&lt;tr&gt;" +
+                "&lt;td&gt;" + row("Name").ToString + "&lt;/td&gt;" +
+                "&lt;td&gt;" + row("Rating").ToString + "&lt;/td&gt;" +
+"               &lt;/tr&gt;"]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[reportMailbody +&quot;&lt;/table&gt;&quot; +&#xD;&#xA;            &quot;&lt;p&gt;Thank you,&lt;/p&gt;&quot; +&#xD;&#xA;            &quot;&lt;p&gt;Your Support Team&lt;/p&gt;&quot; +&#xD;&#xA;            &quot;&lt;/body&gt;&quot; +&#xD;&#xA;            &quot;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="chandrukongari@gmail.com" EnableSSL="True" From="chandrukongari@gmail.com" sap:VirtualizedContainerService.HintSize="510,208" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Name="Chandru" Password="[EmailPassword]" Port="587" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="[&quot;Summary of Tickets as of &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="ITSupport@comapany.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[Environment.CurrentDirectory +&quot;\Data\Output\&quot; +&quot;Tickest_Report&quot;+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,783" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,929" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[&quot;Ticket Report Date &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" />
-            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_2" Text="[&quot;Total Tickets  Assigned - 444 &quot;  &amp; vbnewline &amp; &#xD;&#xA;&quot; Total Tickets  Unasigned - 200&quot; &amp; vbnewline &amp; &#xD;&#xA;&quot;Customer rating on each employee&quot;]" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_2" Text="[&quot;Total Tickets  Assigned - 444 &quot;  &amp; vbnewline &amp; &#xA;&quot; Total Tickets  Unasigned - 200&quot; &amp; vbnewline &amp; &#xA;&quot;Customer rating on each employee&quot;]" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="WordAppendText_5" Text="Customer rating on each employee -" />
             <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtEmprating]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,380" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
@@ -146,6 +253,12 @@
           </Sequence>
         </ActivityAction>
       </p:WordApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </p:WordApplicationScope>
   </Sequence>
 </Activity>
