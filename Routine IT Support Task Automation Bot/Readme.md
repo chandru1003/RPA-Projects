@@ -8,7 +8,8 @@ This repository contains a dataset related to customer support tickets in an IT 
 ## Identified Repetitive Tasks for RPA Automation
 
 1. **Ticket Categorization and Routing:**
-   - Automate the categorization of tickets based on type and route them to the relevant teams.
+    - Automated the categorization of tickets into specific types and routed them to relevant teams based on predefined categories, as outlined in the provided designation-to-category mapping table.
+
 ##### Ticket Categories and Assigned Designation
 
 
@@ -26,16 +27,19 @@ This repository contains a dataset related to customer support tickets in an IT 
 | 10     | General Specialist                   | {"Delivery problem", "Cancellation request"}            |
 
 2. **Ticket Status Updates:**
-   - Develop a bot to automatically update ticket statuses based on resolutions or customer responses.
+   - Implemented a bot to streamline the process of automatically updating ticket statuses, ensuring timely and accurate status changes based on resolutions or customer responses.
 
 3. **Ticket Priority Assessment:**
-   - Implement a bot to analyze ticket details and assign priority levels based on predefined criteria.
+   - Developed a bot to analyze ticket details and assign priority levels based on predefined criteria for efficient issue resolution.
 
 4. **Customer Satisfaction Survey Analysis:**
-   - Create a bot to automatically aggregate and analyze customer satisfaction ratings.
+   - Created a bot for aggregating and analyzing customer satisfaction ratings to gather insights for service improvement.
 
 5. **Ticket Escalation Handling:**
-   - Develop a bot to analyze ticket details and automatically escalate tickets based on predefined criteria.
+   - Developed a bot to automatically analyze ticket details and escalate tickets based on predefined criteria for prompt issue resolution.
+
+6. **Tickets Report**
+   - Implemented a reporting system to generate comprehensive reports on ticket data, offering insights into support operations and performance.
 
 ## How to Use
 

@@ -107,23 +107,19 @@
         <av:PointCollection x:Key="ConnectorLocation">297,77.5 297,107.5 199,107.5 199,119</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID4" sap2010:Annotation.AnnotationText="Invokes the data preprocessing and updates ticket statuses, ensuring that incoming ticket data is formatted and current statuses are accurately reflected.&#xA;" DisplayName="DataProcessingState:" sap:VirtualizedContainerService.HintSize="292,154" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID4" sap2010:Annotation.AnnotationText="Invokes the data preprocessing and updates ticket statuses, ensuring that incoming ticket data is formatted and current statuses are accurately reflected.&#xA;" DisplayName="DataProcessingState:" sap:VirtualizedContainerService.HintSize="292,149" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DataProcessing.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Bin\DataProcessing.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="processedDTArg">
-              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtUpdateTicketStatusArg" />
-            </InOutArgument>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtInput">
-              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtinput" />
-            </InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="processedDTArg">[dtUpdateTicketStatusArg]</InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtInput">[dtinput]</InOutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </State.Entry>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">53,119</av:Point>
-          <av:Size x:Key="ShapeSize">292,154</av:Size>
+          <av:Size x:Key="ShapeSize">292,149</av:Size>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Double x:Key="StateContainerWidth">258</x:Double>
           <x:Double x:Key="StateContainerHeight">25</x:Double>
@@ -133,9 +129,7 @@
       <State.Exit>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UpdateTicketStatus.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Bin\UpdateTicketStatus.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtUpdateTicketStatusArg">
-              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtUpdateTicketStatusArg" />
-            </InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtUpdateTicketStatusArg">[dtUpdateTicketStatusArg]</InOutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </State.Exit>
@@ -143,35 +137,27 @@
         <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="450,507" sap2010:WorkflowViewState.IdRef="Transition_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">286.6,273 286.6,286 433.99999999999994,286 433.99999999999994,256 464,256</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">286.6,268 286.6,282 434,282 434,252 464,252</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">63</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">37</x:Int32>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Initiates the ticket categorization process, ensuring proper classification, and invokes ticket priority assessment to assign appropriate priority levels, streamlining ticket management and resolution." DisplayName="CategorizationPriorityState:" sap:VirtualizedContainerService.HintSize="201,214" sap2010:WorkflowViewState.IdRef="State_2">
+            <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Initiates the ticket categorization process, ensuring proper classification, and invokes ticket priority assessment to assign appropriate priority levels, streamlining ticket management and resolution." DisplayName="CategorizationPriorityState:" sap:VirtualizedContainerService.HintSize="201,206" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TicketCategorization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Bin\TicketCategorization.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtUpdateTicketStatusArg" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">
-                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="unassignedCountarg" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">
-                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="assignedCountarg" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">[dtUpdateTicketStatusArg]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">[dtEmployeeDetailsArg]</InOutArgument>
+                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">[unassignedCountarg]</InOutArgument>
+                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">[assignedCountarg]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">464,149</av:Point>
-                  <av:Size x:Key="ShapeSize">201,214</av:Size>
+                  <av:Size x:Key="ShapeSize">201,206</av:Size>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Double x:Key="StateContainerWidth">167.45696959667453</x:Double>
                   <x:Double x:Key="StateContainerHeight">37.40513774612032</x:Double>
@@ -181,16 +167,10 @@
               <State.Exit>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TicketPriority.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Bin\TicketPriority.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtUpdateTicketStatusArg" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTicketCategorizantionArg">[dtUpdateTicketStatusArg]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmployeeDetailsArg">[dtEmployeeDetailsArg]</InOutArgument>
                     <InOutArgument x:TypeArguments="x:String" x:Key="EmpMailArg" />
-                    <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">
-                      <VisualBasicReference x:TypeArguments="x:String" ExpressionText="emailPassword" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">[emailPassword]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </State.Exit>
@@ -198,32 +178,26 @@
                 <Transition DisplayName="T2" sap2010:WorkflowViewState.IdRef="Transition_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">564.5,363 564.5,393 576.1,393 576.1,395</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">564.5,355 564.5,385 576.1,385 576.1,395</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">34</x:Int32>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.To>
-                    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Drives the ticket escalation process based on predefined criteria, ensuring high-priority issues are addressed promptly. Additionally, triggers the customer satisfaction analysis, contributing to a proactive approach in enhancing customer experience." DisplayName="Escalation and SatisfactionState:" sap:VirtualizedContainerService.HintSize="278,170" sap2010:WorkflowViewState.IdRef="State_4">
+                    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Drives the ticket escalation process based on predefined criteria, ensuring high-priority issues are addressed promptly. Additionally, triggers the customer satisfaction analysis, contributing to a proactive approach in enhancing customer experience." DisplayName="Escalation and SatisfactionState:" sap:VirtualizedContainerService.HintSize="380,564" sap2010:WorkflowViewState.IdRef="State_4">
                       <State.Entry>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketEscalation.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Bin\TicketEscalation.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketEscalation.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Bin\TicketEscalation.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpDetails">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
-                            </InOutArgument>
-                            <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">
-                              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="emailPassword" />
-                            </InOutArgument>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtUpdateTicketStatusArg">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtUpdateTicketStatusArg" />
-                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpDetails">[dtEmployeeDetailsArg]</InOutArgument>
+                            <InOutArgument x:TypeArguments="x:String" x:Key="emailPassword">[emailPassword]</InOutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtUpdateTicketStatusArg">[dtUpdateTicketStatusArg]</InOutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </State.Entry>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">451.00000000000006,395</av:Point>
-                          <av:Size x:Key="ShapeSize">278,170</av:Size>
+                          <av:Size x:Key="ShapeSize">278,164</av:Size>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           <x:Double x:Key="StateContainerWidth">244</x:Double>
@@ -231,7 +205,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <State.Exit>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\CustomerSatisfaction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Bin\CustomerSatisfaction.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\CustomerSatisfaction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Bin\CustomerSatisfaction.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmpData">
                               <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmployeeDetailsArg" />
@@ -252,27 +226,35 @@
                         <Transition DisplayName="T3" sap:VirtualizedContainerService.HintSize="450,514" sap2010:WorkflowViewState.IdRef="Transition_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">451.00000000000006,471.5 421.00000000000006,471.5 421.00000000000006,576.1 388,576.1</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">451.00000000000006,468.8 421.00000000000006,468.8 421.00000000000006,574.45 388,574.45</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">33</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Activates the generation of comprehensive ticket reports, providing insights into ticket assignments, statuses. Facilitates informed decision-making and process improvement." DisplayName="ReportingState:" sap:VirtualizedContainerService.HintSize="376,122" sap2010:WorkflowViewState.IdRef="State_5">
+                            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Activates the generation of comprehensive ticket reports, providing insights into ticket assignments, statuses. Facilitates informed decision-making and process improvement." DisplayName="ReportingState:" sap:VirtualizedContainerService.HintSize="376,119" sap2010:WorkflowViewState.IdRef="State_5">
                               <State.Entry>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketsReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Bin\TicketsReport.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bin\TicketsReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Bin\TicketsReport.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">[dtEmprating]</InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="emailpassword">[Emailpassword]</InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">[unassignedCountarg]</InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">[assignedCountarg]</InOutArgument>
+                                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtEmprating">
+                                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtEmprating" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:String" x:Key="emailpassword">
+                                      <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Emailpassword" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="unassignedCountarg">
+                                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="unassignedCountarg" />
+                                    </InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="assignedCountarg">
+                                      <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="assignedCountarg" />
+                                    </InOutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                               </State.Entry>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">12,509</av:Point>
-                                  <av:Size x:Key="ShapeSize">376,122</av:Size>
+                                  <av:Size x:Key="ShapeSize">376,119</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   <x:Double x:Key="StateContainerWidth">341.97020983917594</x:Double>
@@ -324,11 +306,7 @@
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
     <StateMachine.Variables>
-      <Variable x:TypeArguments="x:String" Name="emailPassword">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">pcii euld nzcf njrh</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="pcii euld nzcf njrh" Name="emailPassword" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
