@@ -1,9 +1,21 @@
-# IT Support Automation with RPA - Ticket Dataset
+# IT Support Task Automation Bot 
 
 ## Overview
 
-This repository contains a dataset related to customer support tickets in an IT environment. The dataset includes various fields such as customer information, ticket details, and resolution data. The goal is to identify repetitive tasks within this dataset that can be automated using Robotic Process Automation (RPA) to enhance the efficiency of IT support processes.
+This repository contains the implementation of an IT Support Task Automation Bot designed to streamline and enhance various aspects of IT support operations. The bot automates routine tasks, improves response times, and contributes to overall operational efficiency
 
+## Features
+1. **Null Value Handling:** Checks for null values in ticket data and removes them.
+
+2. **Ticket Status Update:** Updates ticket status based on resolutions and customer ratings, automatically closing resolved tickets.
+
+3. **Ticket Categorization:** Assigns tickets to specialist employees based on categorization criteria.
+
+4. **Individual Employee Assignment:** Sends individualized lists of tickets to respective specialist employees.
+
+5. **Customer Rating Collection:** Requests customer ratings for closed tickets and sends reminders if not provided.
+
+6. **Employee Rating Feedback:** Sends employee performance ratings collected from customers.
 
 ## Identified Repetitive Tasks for RPA Automation
 
@@ -49,3 +61,8 @@ This repository contains a dataset related to customer support tickets in an IT 
 4. Adapt and customize the RPA solutions based on your specific requirements.
 
 Feel free to contribute or provide feedback!
+
+### License
+This project is licensed under the [MIT](https://opensource.org/license/mit/) License. See the LICENSE file for details.
+
+Happy Automating!
