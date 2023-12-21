@@ -53,6 +53,8 @@ This repository contains the implementation of an IT Support Task Automation Bot
 6. **Tickets Report**
    - Implemented a reporting system to generate comprehensive reports on ticket data, offering insights into support operations and performance.
 
+7. Customer Reminder: 
+ -Sends an email prompt to customers requesting necessary details if any essential information is found to be null.
 ## How to Use
 
 1. Download or clone the repository.
